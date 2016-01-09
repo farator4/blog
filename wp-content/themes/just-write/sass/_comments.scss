@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+12.3 Comments
+--------------------------------------------------------------*/
+.comments-title {
+	display: block;
+	margin: 48px 0 24px 0;
+}
+
+#respond {
+	margin: 24px 0 12px 0;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	border-left: 4px solid $color__primary;
+	padding-left: 16px;
+}
+
+ol.comment-list {
+	list-style: none;
+	margin: 20px 0;
+
+	ol.children {
+		list-style: none;
+	}
+
+	li {
+		margin: 1em 0;
+
+		.comment-body {
+			border-bottom: 2px dashed $color__secondary-text;
+			padding: 1em 0 2em 0;
+		}
+
+		.comment-meta {
+			text-align: center;
+
+			.comment-author {
+				float: left;
+
+				.avatar {
+					border-radius: 50px;
+					margin: 0 8px 8px 0;
+					vertical-align: middle;
+					width: 70px;
+				}
+
+				.comment-metadata {
+					float: right;
+				}
+
+				.fn {
+
+				}
+			}
+
+			time {
+				display: block;
+				font-size: 12px;
+				text-align: right;
+
+				&:before {
+					@include dashicon(f469, 16px);
+				}
+			}
+		}
+
+		.comment-content {
+			clear: both;
+		}
+
+		.reply {
+			clear: both;
+
+			.comment-reply-link {
+				&:before {
+					@include dashicon(f101, 16px);
+					padding: 4px 2px;
+				}
+			}
+		}
+	}
+}

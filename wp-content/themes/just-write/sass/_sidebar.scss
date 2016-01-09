@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+5.4 Sidebar
+--------------------------------------------------------------*/
+#secondary {
+	background: $color__secondary-background;
+	color: $color__secondary-text;
+	float: left;
+	font-size: 13px;
+	font-size: 1.3rem;
+	height: 100%;
+	margin: 0 0 0 -300px;
+	padding: 20px;
+	width: 300px;
+	z-index: 9999;
+	overflow: auto;
+	position: fixed;
+		top: 0;
+
+	h3 {
+
+	}
+
+	a {
+		color: $color__link-secondary;
+	}
+
+	a:hover {
+		color: $color__link-secondary--hover;
+	}
+
+	ul {
+		list-style: none;
+		margin: 8px 0 24px 0;
+		padding: 0;
+
+		li {
+			margin: 4px 0;
+		}
+	}
+}

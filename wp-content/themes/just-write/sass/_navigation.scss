@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------
+7.0 Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+7.1 Links
+--------------------------------------------------------------*/
+a {
+	color: $color__link;
+	text-decoration: none;
+	@include transition-property(all);
+	@include transition-duration(400ms);
+
+	&:visited {
+		color: $color__link--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link--hover;
+	}
+
+	.entry-content & {
+		color: $color__primary-text;
+		border-bottom: 1px solid $color__link;
+
+		&:hover {
+			background: $color__link--hover;
+			color: $color__content-back;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+7.2 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	display: block;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			background: $color__page-back;
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			display: none;
+			float: left;
+			left: 0;
+			position: absolute;
+			top: 2em;
+			z-index: 99999;
+
+			a {
+				display: block;
+				padding: .5em;
+				width: 200px;
+
+				&:hover {
+					color: darken($color__primary, 10%);
+				}
+			}
+
+			:hover > a {
+
+			}
+
+			ul {
+				left: 100%;
+				top: 0;
+			}
+
+		}
+
+		li:hover > ul {
+			display: block;
+		}
+	}
+
+
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a {
+
+		}
+	}
+
+
+	a {
+		display: block;
+		margin: 0 .5em 0 0;
+		padding: 6px;
+		text-decoration: none;
+	}
+}
+
+.main-navigation .current_page_item a,
+.main-navigation .current-menu-item a {
+}
+/* Small menu */
+.menu-toggle {
+	display: none;
+}
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+.site-main {
+	.comment-navigation,
+	.site-main .paging-navigation,
+	.site-main .post-navigation {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+}
+
+.post-navigation {
+	overflow: hidden;
+}
+
+.nav-previous {
+ 	.comment-navigation &,
+	.paging-navigation &,
+	.post-navigation & {
+		float: left;
+		width: 50%;
+	}
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+
+/*--------------------------------------------------------------
+7.3 Sidebar toggle
+--------------------------------------------------------------*/
+a.sidebar-toggle {
+	color: $color__content-back;
+	cursor: pointer;
+	font: normal 28px/1 'dashicons';
+
+	&.open {
+		background: $color__secondary-background;
+	}
+
+	&:hover {
+		color: darken($color__content-back, 10%);
+	}
+
+	.dashicons {
+		font: normal 32px/1 'dashicons';
+	}
+}
+
+a.open {
+	@include border-radius(0px 0px 8px 0);
+	padding: 14px 28px 18px 14px;
+	position: fixed;
+		top: 0;
+		left: 0;
+
+	.admin-bar & {
+		top: 28px;
+	}
+}
+
+a.close {
+	margin: 14px 0x 18px 14px;
+	padding: 0 0 18px 0;
+	width: 100%;
+	text-align: right;
+	float: right;
+
+	.admin-bar & {
+		margin-top: 28px;
+	}
+}

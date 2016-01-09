@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+12.0 Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+12.1 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+}
+.hentry {
+	margin: 0 0 4em;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.posted-on time:before {
+	@include dashicon(f145, 16px);
+	padding-right: 4px;
+}
+
+.byline .author a:before {
+	@include dashicon(f110, 16px);
+	padding-right: 4px;
+}
+
+.entry-footer:before {
+	@include dashicon(f323, 16px);
+	padding-right: 4px;
+}
+
+/*--------------------------------------------------------------
+12.2 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}

@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+5.2 Layout
+--------------------------------------------------------------*/
+body {
+	background: $color__page-back;
+}
+
+#page {
+	background: $color__content-back;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+#masthead {
+	border-bottom: 18px solid $color__page-back;
+	padding: 60px 40px 10px 40px;
+}
+
+#content {
+	padding: 20px 40px;
+}
+
+#colophon {
+	background: $color__page-back;
+	padding: 20px 20px 80px 20px;
+}

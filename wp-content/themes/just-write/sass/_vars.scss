@@ -1,0 +1,61 @@
+/*--------------------------------------------------------------
+2.0 Variables
+--------------------------------------------------------------*/
+$content-width: 880px;
+
+/*--------------------------------------------------------------
+2.1 Fonts
+--------------------------------------------------------------*/
+//@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+$serif: 'Roboto Slab', serif;
+$sans-serif: Verdana, sans-serif;
+
+/*--------------------------------------------------------------
+2.2 Colors
+--------------------------------------------------------------*/
+$color__primary: #009393;
+$color__primary-text: #7C7C7C;
+$color__secondary-text: #ddd;
+$color__secondary-background: darken(#009393, 10%);
+$color__content-back: #fff;
+$color__page-back: #eee;
+
+/*--------------------------------------------------------------
+2.3 Links
+--------------------------------------------------------------*/
+$color__link: $color__primary;
+$color__link--visited: darken($color__link, 2%);
+$color__link--hover: darken($color__link, 10%);
+$color__link-secondary: #fff;
+$color__link-secondary--hover: lighten($color__link-secondary, 10%);
+
+/*--------------------------------------------------------------
+2.4 Mixins
+--------------------------------------------------------------*/
+@mixin bp($point) {
+	@if $point == large {
+		@media (max-width: $content-width) { @content; }
+	}
+	@else if $point == medium {
+		@media (max-width: 640px) { @content; }
+	}
+	@else if $point == small {
+		@media (max-width: 480px)  { @content; }
+	}
+}
+
+/* Dashicons */
+/*--------------------------------------------------------------
+The char-from-code function is a workaround for
+https://github.com/sass/sass/issues/659
+--------------------------------------------------------------*/
+@function char-from-code($char) {
+  @return unquote('\"\\#{$char}\"');
+}
+@mixin dashicon($icon, $size) {
+	content: char-from-code($icon);
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal $size/1 'dashicons';
+	vertical-align: top;
+}

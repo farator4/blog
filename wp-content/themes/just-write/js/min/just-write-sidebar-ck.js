@@ -1,0 +1,1 @@
+jQuery(document).ready(function($){var n;$(".sidebar-toggle").click(function(){return 1!=n?($("#secondary").animate({marginLeft:"0px"},300,function(){n=!0}),!1):($("#secondary").animate({marginLeft:"-300px"},300,function(){n=!1}),!1)})});
