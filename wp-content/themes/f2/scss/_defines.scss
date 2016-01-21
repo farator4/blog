@@ -1,0 +1,166 @@
+$sans-font: 'Gudea', sans-serif;
+$serif-font: 'Bitter', serif;
+$primary-color: #6d97b7;
+$link-color: #258;
+
+
+@mixin spread-out-layout {
+	body {
+		padding: 20px;
+		padding: 2rem;
+	}
+
+	.site-header {
+		text-align: left;
+		.site-branding {
+			padding: 20px;
+			padding: 2rem;
+		}
+	}
+
+	#header-image {
+		padding: 20px;
+		padding: 2rem;
+	}
+
+	.sidebar {
+		padding: 20px 20px 0;
+		padding: 2rem 2rem 0;
+	}
+
+	.widget {
+		margin: 0 0 20px;
+		margin: 0 0 2rem;
+	}
+
+	.site-content {
+		margin: 20px;
+		margin: 2rem;
+	}
+	.paging-navigation, .post-navigation, #image-navigation, .page-header {
+		background: #eee;
+		padding: 10px 20px;
+		padding: 1rem 2rem;
+	}
+
+	.wp-post-image.attachment-post-thumbnail {
+		width:150px;
+	}
+
+	.comments-area article, .pingback {
+		margin: 20px 0;
+		margin: 2rem 0;
+		padding: 20px;
+		padding: 2rem;
+	}
+
+	cite.fn, .comment-meta {
+		top: 20px;
+		top: 2rem;
+		left: 73px;
+	}
+	time.pubdate, .comment-meta {
+		top: 44px;
+		top: 4.4rem;
+	}
+}
+
+@mixin two-cols($sidebar_width) {
+	&.one-sidebar-left,
+	&.two-sidebars {
+		#main {
+			padding: 0 0 0 ($sidebar_width + 4rem);
+		}
+
+		#primary {
+			padding: 0;
+			margin: 0;
+			float: left;
+			margin-right: -100%;
+			width: 100%;
+		}
+
+		#secondary {
+			float: left;
+			width: ($sidebar_width + 4rem);
+			margin-left: -1*($sidebar_width + 4rem);
+			@include box-shadow( rgba(0, 0, 0, 0.1) 0 0 0 0.1rem);
+		}
+
+		#sidebar-1,
+		#sidebar-2 {
+			float: left;
+			width: $sidebar_width;
+		}
+		#sidebar-2 {
+			padding-top: 0;
+		}
+	}
+	&.one-sidebar-right {
+		#main {
+			padding: 0 ($sidebar_width + 4rem) 0 0;
+		}
+
+		#primary {
+			padding: 0;
+			margin: 0;
+			float: left;
+			margin-right: -100%;
+			width: 100%;
+		}
+
+		#secondary {
+			float: right;
+			width: ($sidebar_width + 4rem);
+			margin-right: -1*($sidebar_width + 4rem);
+			@include box-shadow( rgba(0, 0, 0, 0.1) 0 0 0 0.1rem);
+			border-bottom-left-radius: 0.5rem;
+		}
+		#sidebar-1 {
+			float: right;
+			width: $sidebar_width;
+			border-bottom-left-radius: 0.5rem;
+		}
+	}
+	&.one-sidebar-left #sidebar-1,
+	&.two-sidebars #sidebar-2 {
+		border-bottom-right-radius: 0.5rem;
+	}
+}
+
+@mixin three-cols($sidebar_width) {
+	&.two-sidebars {
+		#main {
+			padding: 0 ($sidebar_width + 4rem);
+		}
+
+		#primary {
+			float: left;
+			margin-right: -100%;
+			width: 100%;
+		}
+
+		#secondary {
+			width: auto;
+			float: none;
+			margin: 0;
+			@include box-shadow(none);
+		}
+
+		#sidebar-1 {
+			float: left;
+			margin-left: -1*($sidebar_width + 4rem);
+			border-bottom-right-radius: 0.5rem;
+			@include box-shadow( rgba(0, 0, 0, 0.1) 0 0 0 0.1rem);
+		}
+
+		#sidebar-2 {
+			float: right;
+			margin-right: -1*($sidebar_width + 4rem);
+			padding-top: 2rem;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0.5rem;
+			@include box-shadow( rgba(0, 0, 0, 0.1) 0 0 0 0.1rem);
+		}
+	}
+}

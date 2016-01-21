@@ -1,0 +1,277 @@
+Changelog Legend:
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Changes
+[x] = Deleted
+[!] = Bugs
+
+----
+
+(15/10/2015) - Update - Version 1.3.6
+
+[*] Updated deprecated constructor method of the LeatherDiary Homepage Default-Posts custom widget.
+[*] Updated the TGM Plugin Activation to the version 2.5.2.
+[*] Specified a recommended height of the Header Image.
+[!] Fixed problem with floating of the Reply form in the Comments section.
+
+----
+
+(04/03/2015) - Update - Version 1.3.5
+
+[+] Added support for the "pingback" link in <head> section.
+[+] Added support for the Title Tag feature.
+[+] Added ability to use the "nextpage" tag on pages.
+
+----
+
+(24/01/2015) - Update - Version 1.3.4
+
+[+] Added unminified version of the Placeholders.js script.
+[*] Updated Placeholders.js script to the version 3.0.2.
+[*] Updated including of the TGM_Plugin_Activation class (only the users who are allowed to install plugins can see it now).
+[*] Updated paginate_links() arguments (added "add_args").
+
+----
+
+(28/12/2014) - Update - Version 1.3.3
+
+[*] Updated the "viewport" meta tag.
+[*] Enqueue the "HTML5 Shiv" through the function leatherdiary_scripts_styles().
+
+----
+
+(05/12/2014) - Update - Version 1.3.2
+
+[+] Mentioned the Text Domain in style.css.
+[*] Set the priority of excerpt_length filter from 999 to 20.
+[*] Updated German translation.
+
+----
+
+(13/11/2014) - Update - Version 1.3.1
+
+[+] Added Polish translation.
+
+----
+
+(22/10/2014) - Update - Version 1.3.0
+
+[+] Added Danish translation.
+[*] Updated custom WooCommerce styles (Sale Marker position and Related Products floating).
+
+----
+
+(06/10/2014) - Update - Version 1.2.9
+
+[+] Added Dutch translation.
+[x] Removed custom shortcodes (plugin-territory functionality).
+[x] Removed deprecated function "screen_icon()" from class-tgm-plugin-activation.php.
+
+----
+
+(24/09/2014) - Update - Version 1.2.8
+
+[*] Updated displaying of widgets in the Right Sidebar.
+[*] Updated displaying of sticky posts (uppercase titles).
+
+----
+
+(15/09/2014) - Update - Version 1.2.7
+
+[*] Updated displaying of the footer widget areas.
+
+----
+
+(02/09/2014) - Update - Version 1.2.6
+
+[*] Updated editor-style.css.
+[*] Updated displaying of the comment form.
+
+----
+
+(23/08/2014) - Update - Version 1.2.5
+
+[+] Added Italian translation.
+
+----
+
+(14/08/2014) - Update - Version 1.2.4
+
+[+] Added transition hover effect for the Post Thumbnails.
+
+----
+
+(05/08/2014) - Update - Version 1.2.3
+
+[*] Changed function for displaying the post excerpts.
+
+----
+
+(23/07/2014) - Update - Version 1.2.2
+
+[+] Added custom Page Template for displaying Full-width pages without Title.
+[!] Fixed possible "Undefined index" debug notices in widget-homepage-default.php.
+
+----
+
+(14/07/2014) - Update - Version 1.2.1
+
+[*] Changed function for dispalying the breadcrumb navigation (hide it on a static front page).
+[!] Fixed displaying of the drop-down submenus in the Top Menu when the text takes up more than 1 line.
+
+----
+
+(01/07/2014) - Update - Version 1.2.0
+
+[+] Added support for WooCommerce plugin.
+
+----
+
+(19/06/2014) - Update - Version 1.1.11
+
+[*] Moved $content_width definition inside the Theme setup function.
+[*] Edited styling of the "pre" element.
+
+----
+
+(07/06/2014) - Update - Version 1.1.10
+
+[*] Edited URL address for the Google fonts call (removed http to avoid errors when https is used).
+[*] Edited CSS for "iframe" and "embed" elements.
+
+----
+
+(25/05/2014) - Update - Version 1.1.9
+
+[+] Added "edit post" links.
+[+] Added theme-slug prefixes to the enqueued scripts and styles.
+
+----
+
+(14/05/2014) - Update - Version 1.1.8
+
+[+] Added Greek translation.
+[*] Allowed flexible width for the custom header images.
+[!] Fixed function for marking selected options in Theme Options panel.
+
+----
+
+(02/05/2014) - Update - Version 1.1.7
+
+[*] Edited styling of the navigation links to next/previous pages.
+[*] Changed the navigation to next/previous posts on single posts (added post titles).
+[*] Changed the functions for Theme Options output (translatable strings containing PHP variables replaced by echo).
+
+----
+
+(25/04/2014) - Update - Version 1.1.6
+
+[*] Changed the name of TGM_Plugin_Activation class to avoid conflicts with some plugins.
+[*] Changed the navigation to next/previous pages (added page links).
+[*] Updated language localizations.
+[x] Removed Theme Options link from the admin bar.
+
+----
+
+(19/04/2014) - Update - Version 1.1.5
+
+[+] Added custom Page Template for displaying the Landing Page.
+[*] Changed the functions for TGM-Plugin-Activation output (translatable strings containing PHP variables replaced by esc_attr) and some description texts.
+
+----
+
+(13/04/2014) - Update - Version 1.1.4
+
+[+] Added custom Page Template for displaying pages without the Comments area.
+[+] Added custom Page Template for displaying pages without the Page Title.
+
+----
+
+(06/04/2014) - Update - Version 1.1.3.2
+
+[!] Changed the function for displaying the Header Image.
+
+----
+
+(06/04/2014) - Update - Version 1.1.3.1
+
+[!] Changed the functions for displaying the Top Header bar.
+
+----
+
+(06/04/2014) - Update - Version 1.1.3
+
+[+] Added custom Page Template for displaying the page content only for logged in users.
+[+] Added custom Page Template for displaying pages without Breadcrumb Navigation.
+[*] Updated language localizations.
+
+----
+
+(02/04/2014) - Update - Version 1.1.2
+
+[*] Edited the offer of Google Fonts in Theme Options.
+
+----
+
+(26/03/2014) - Update - Version 1.1.1
+
+[+] Added the option for displaying the Header Image only on the homepage.
+[+] Added LinkedIn link into the header Social Networking bar.
+
+----
+
+(18/03/2014) - Update - Version 1.1.0
+
+[+] Added 2 new default color schemes (Silver and Tan).
+[+] Added Russian language localization.
+
+----
+
+(13/03/2014) - Update - Version 1.0.6
+
+[+] Added 2 new default color schemes (Brown and Turquoise).
+[*] Edited the query function for LeatherDiary Homepage Default-Posts widget.
+[!] Fixed displaying of the right sidebar on Archive pages after Theme Options reset. 
+
+----
+
+(06/03/2014) - Update - Version 1.0.5
+
+[+] Added the option for selecting between Content/Excerpt displaying on Archive pages.
+[*] Replaced the custom new queries for WordPress core queries on Archive pages.
+[*] Changed the source of Breadcrumb NavXT plugin to the WordPress Repository.
+
+----
+
+(02/03/2014) - Update - Version 1.0.4
+
+[+] Added options for displaying the right sidebar on Pages, Posts, Homepage and Archives.
+[*] Edited function for hiding Post Meta Data (also hides the date arrows on archive pages).
+[*] Edited marking of active items in the Fixed Menu.
+
+----
+
+(24/02/2014) - Update - Version 1.0.3
+
+[*] Edited displaying of footer widget areas.
+[!] Removed unnecessary code from the Search results template (search.php).
+
+----
+
+(07/02/2014) - The initial public release - Version 1.0.2
+
+[*] Edited nonce checking of Theme Options.
+
+----
+
+(05/02/2014) - Testing release - Version 1.0.1
+
+[+] Added validating functions and nonce checking of Theme Options.
+[*] Edited enqueue function for Theme Options framework CSS.
+[x] Removed function for selecting custom background patterns.
+
+----
+
+(05/02/2014) - The initial testing release - Version 1.0.0

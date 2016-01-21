@@ -1,0 +1,1110 @@
+# Translation of the WordPress theme LeatherDiary 1.3 by Tomas Toman.
+# This file is distributed under the same license as the LeatherDiary package.
+# Tomas Toman <webdesign@tomastoman.cz>, 2014.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LeatherDiary 1.3\n"
+"POT-Creation-Date: 2014-02-04 08:52+0100\n"
+"PO-Revision-Date: 2014-10-14 11:34+0100\n"
+"Last-Translator: \n"
+"Language-Team: Pawel Grochowski\n"
+"Language: Polski\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+# @ leatherdiary
+#: 404.php:12 search.php:34
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+# @ leatherdiary
+#: 404.php:14
+msgid ""
+"Apologies, but no results were found for your request. Perhaps searching "
+"will help you to find a related content."
+msgstr ""
+"Przepraszamy, ale nie znaleziono żadnych wyników spełniających kryteria "
+"wyszukiwania."
+
+# @ leatherdiary
+#: archive.php:15
+#, php-format
+msgid "Daily Archive: %s"
+msgstr "Archiwum: %s"
+
+# @ leatherdiary
+#: archive.php:17
+#, php-format
+msgid "Monthly Archive: %s"
+msgstr "Archiwum: %s"
+
+# @ leatherdiary
+#: archive.php:19
+#, php-format
+msgid "Yearly Archive: %s"
+msgstr "Archiwum: %s"
+
+# @ leatherdiary
+#: archive.php:21
+msgid "Archive"
+msgstr "Archiwum"
+
+# @ leatherdiary
+#: author.php:14
+#, php-format
+msgid "Author Archive: %s"
+msgstr "Archiwum: %s"
+
+#: author.php:20
+#, php-format
+msgid "About %s"
+msgstr "O %s"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:156 functions.php:400
+msgid "Install Required Plugins"
+msgstr "Zainstaluj wymagane wtyczki"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:157 functions.php:401
+msgid "Install Plugins"
+msgstr "Zainstaluj wtyczki"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:158 functions.php:405
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Instalacja wtyczki: %s"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:159
+msgid "Something went wrong."
+msgstr "Coś poszło źle."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:170 functions.php:411
+msgid "Return to Required Plugins Installer"
+msgstr "Powrót do instalatora wymaganej wtyczki"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:171
+msgid "Return to the dashboard"
+msgstr "Powrót do Kokpitu"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:172 class-tgm-plugin-activation.php:1840
+msgid "Plugin activated successfully."
+msgstr "Wtyczka aktywowana."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:173 class-tgm-plugin-activation.php:1538
+msgid "The following plugin was activated successfully:"
+msgstr "Wtyczka została aktywowana:"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:174
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Wszystkie wtyczki zostały zainstalowane i są  aktywowane. %1$s"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:175
+msgid "Dismiss this notice"
+msgstr "Odrzuć tę informację"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1085
+msgid "External Link"
+msgstr "Link zewnętrzny"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1090
+msgid "Private Repository"
+msgstr "Prywatne repozytorium"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1093
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1097
+msgid "WordPress Repository"
+msgstr "Repozytorium WordPress"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1100
+msgid "Required"
+msgstr "Wymagane"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1100
+msgid "Recommended"
+msgstr "Zalecane"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1103
+msgid "Not Installed"
+msgstr "Niezainstalowany"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1105
+msgid "Installed But Not Activated"
+msgstr "Zainstalowane, ale nieaktywne"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1275
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Brak wtyczki do instalacji lub aktywacji. <a href=\"%1$s\" title=\"Return do "
+"Dashboard\">Powrót do Dashboard</a>"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1291
+msgid "Plugin"
+msgstr "Wtyczka"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1292
+msgid "Source"
+msgstr "Źródło"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1293
+msgid "Type"
+msgstr "Typ"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1294
+msgid "Status"
+msgstr "Status"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1312
+msgid "Install"
+msgstr "Instaluj"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1313
+msgid "Activate"
+msgstr "Aktywuj"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1823
+msgid "Install package not available."
+msgstr "Pakiet instalacyjny nie jest dostępny."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1824
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Pobieranie instalowanego pakietu z <span class=\"code\">%s</span>&#8230;"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1825
+msgid "Unpacking the package&#8230;"
+msgstr "Rozpakowywanie paczki&#8230;"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1826
+msgid "Installing the plugin&#8230;"
+msgstr "Instalowanie wtyczki&#8230;"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1827
+msgid "Plugin install failed."
+msgstr "Nie zainstalowano wtyczki"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1828
+msgid "Plugin installed successfully."
+msgstr "Wtyczki zainstalowane pomyślnie."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1839
+msgid "Plugin activation failed."
+msgstr "Aktywacja wtyczki nie powiodła się."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1949
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Proces instalacji i aktywacji rozpoczęty. Ten proces może trochę potrwać, "
+"więc proszę o cierpliwość."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1950
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s zainstalowana i aktywowana pomyślnie."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Show Details"
+msgstr "Pokaż szczegóły"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Hide Details"
+msgstr "Ukryj szczegóły"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1951
+msgid "All installations and activations have been completed."
+msgstr "Wszystkie instalacje i aktywacje zostały zakończone"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1952
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalowanie i aktywowanie wtyczki %1$s (%2$d/%3$d)"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Instalacja rozpoczęta. Ten proces może trochę potrwać, więc proszę o "
+"cierpliwość."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Wystąpił błąd podczas instalacji %1$s: <strong>%2$s</strong>."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Instalacja %1$s nie powiodła się."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s zainstalowano pomyślnie."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1960
+msgid "All installations have been completed."
+msgstr "Wszystkie instalacje zostały zakończone."
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:1961
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Instalacja wtyczki %1$s (%2$d/%3$d)"
+
+# @ leatherdiary
+#: class-tgm-plugin-activation.php:2052
+msgid "Return to the Dashboard"
+msgstr "Powrót do Dashboard"
+
+# @ leatherdiary
+#: comments.php:16
+msgid "Comment (1)"
+msgid_plural "Comments (%1$s)"
+msgstr[0] "Komentarz (1)"
+msgstr[1] "Komentarzy (%1$s)"
+
+# @ leatherdiary
+#: comments.php:24
+msgid "Comment navigation"
+msgstr "Komentarze nawigacji"
+
+# @ leatherdiary
+#: comments.php:25
+msgid "&larr; Older Comments"
+msgstr "&larr; Starsze komentarze"
+
+# @ leatherdiary
+#: comments.php:26
+msgid "Newer Comments &rarr;"
+msgstr "Najnowsze komentarze &rarr;"
+
+# @ leatherdiary
+#: comments.php:31
+msgid "Comments are closed."
+msgstr "Komentarze są zamknięte."
+
+# @ leatherdiary
+#: comments.php:36
+msgid "Your name"
+msgstr "Twoje imię"
+
+# @ leatherdiary
+#: comments.php:37
+msgid "Website"
+msgstr "strona"
+
+# @ leatherdiary
+#: comments.php:38
+msgid "Comment..."
+msgstr "Komentarz ..."
+
+# @ leatherdiary
+#: comments.php:42
+msgid "Leave a Comment"
+msgstr "Dodaj komentarz"
+
+# @ leatherdiary
+#: functions.php:124
+msgid "Fixed Menu"
+msgstr "Menu stałe"
+
+# @ leatherdiary
+#: functions.php:125
+msgid "Top Header Menu"
+msgstr "Górny pasek - menu"
+
+# @ leatherdiary
+#: functions.php:137
+msgid "Right Sidebar"
+msgstr "Prawy pasek boczny"
+
+# @ leatherdiary
+#: functions.php:139
+msgid "Right sidebar which appears on all posts and pages."
+msgstr ""
+"Prawy pasek boczny, który pojawia się we wszystkich postach i na stronach."
+
+# @ leatherdiary
+#: functions.php:146
+msgid "Footer left widget area"
+msgstr "Stopka, lewa strona widget"
+
+# @ leatherdiary
+#: functions.php:148
+msgid "Left column with widgets in footer."
+msgstr "Stopka, lewa kolumna z widgetami."
+
+# @ leatherdiary
+#: functions.php:155
+msgid "Footer middle widget area"
+msgstr "Stopka, środek widget"
+
+# @ leatherdiary
+#: functions.php:157
+msgid "Middle column with widgets in footer."
+msgstr "Stopka, środkowa kolumna z widgetami."
+
+# @ leatherdiary
+#: functions.php:164
+msgid "Footer right widget area"
+msgstr "Stopka, prawa strona widget"
+
+# @ leatherdiary
+#: functions.php:166
+msgid "Right column with widgets in footer."
+msgstr "Stopka, prawa kolumna z widgetami."
+
+# @ leatherdiary
+#: functions.php:173
+msgid "Footer notices"
+msgstr "Stopka, pole notatek"
+
+# @ leatherdiary
+#: functions.php:175
+msgid ""
+"The line for copyright and other notices below the footer widget areas. "
+"Insert here one Text widget. The \"Title\" field at this widget should stay "
+"empty."
+msgstr ""
+"Linia do praw autorskich i innych informacji, poniżej obszarów widgetów "
+"stopki. Wstaw tutaj jeden widget tekstu. Pole \"Tytuł\" w tym widgecie "
+"powinno zostać puste."
+
+# @ leatherdiary
+#: functions.php:182
+msgid "Homepage slideshow"
+msgstr "Pokaz slajdów strona główna"
+
+# @ leatherdiary
+#: functions.php:184
+msgid ""
+"The area for Cyclone Slider Widget which displays a slideshow on your "
+"homepage."
+msgstr ""
+"Obszar dla Cyclone Slider Widget, który wyświetla pokaz slajdów na stronie "
+"głównej."
+
+# @ leatherdiary
+#: functions.php:191
+msgid "Homepage posts"
+msgstr "Ostatnie posty, Homepage"
+
+# @ leatherdiary
+#: functions.php:193
+msgid ""
+"The area for any LeatherDiary Homepage Widgets, which display latest posts "
+"from a specific category."
+msgstr ""
+"Obszar dla wszelkich LeatherDiary Homepage widgetu, który wyświetla "
+"najnowsze wiadomości z określonej kategorii poniżej domyślnego obszaru "
+"Ostatnich postów."
+
+# @ leatherdiary
+#: functions.php:240
+msgid "Post navigation"
+msgstr "Temat nawigacji"
+
+#: functions.php:241
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Starsze posty"
+
+#: functions.php:242
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nowsze posty <span class=\"meta-nav\">&rarr;</span>"
+
+# @ leatherdiary
+#: functions.php:254
+msgid "&larr; Previous post"
+msgstr "&larr; Poprzedni post"
+
+# @ leatherdiary
+#: functions.php:255
+msgid "Next post &rarr;"
+msgstr "Następny post &rarr;"
+
+# @ leatherdiary
+#: functions.php:271
+msgid "Pingback:"
+msgstr "Pingback:"
+
+# @ leatherdiary
+#: functions.php:271
+msgid "(Edit)"
+msgstr "(Eytuj)"
+
+# @ leatherdiary
+#: functions.php:284
+msgid "(Post author)"
+msgstr "(Post autora)"
+
+# @ leatherdiary
+#: functions.php:290
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s - %2$s"
+
+# @ leatherdiary
+#: functions.php:296
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz czeka na akceptację."
+
+# @ leatherdiary
+#: functions.php:302
+msgid "Reply"
+msgstr "Odpowiedź"
+
+# @ leatherdiary
+#: functions.php:304
+msgid "Edit"
+msgstr "Edycja"
+
+# @ leatherdiary
+#: functions.php:402
+#, php-format
+msgid ""
+"The %1$s plugin is required for this theme. Click on the big blue button "
+"below to install and activate %1$s."
+msgstr ""
+"%1$s wtyczka jest wymagana do tego tematu. Kliknij na poniższy duży "
+"niebieski przycisk aby ją zainstalować i aktywować %1$s."
+
+# @ leatherdiary
+#: functions.php:403
+#, php-format
+msgid ""
+"The %1$s is installed but currently inactive. Please go to the <a href=\"%2$s"
+"\">plugin administration page</a> page to activate it."
+msgstr ""
+"%1$s jest zainstalowana, ale nieaktywna. Przejdź do zakładki <a href=\"%2$s"
+"\">Wtyczki</a>, aby ją aktywować."
+
+# @ leatherdiary
+#: functions.php:404
+#, php-format
+msgid "Install %s Now"
+msgstr "Zainstaluj teraz %s"
+
+# @ leatherdiary
+#: functions.php:406
+msgid "Something went wrong with the plugin API."
+msgstr "Coś poszło nie tak z API wtyczki."
+
+# @ leatherdiary
+#: functions.php:407
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. <a href=\"%2$s\"><strong>Click here to "
+"begin the installation process</strong></a>. You may be asked for FTP "
+"credentials based on your server setup."
+msgstr ""
+"Temat ten wymaga %1$s wtyczki. <a href=\"%2$s\"><strong> Kliknij tutaj, aby "
+"rozpocząć proces instalacji </ strong></a>. Możesz zostać poproszony o "
+"poświadczenie FTP w oparciu o konfiguracji serwera."
+
+# @ leatherdiary
+#: functions.php:408
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Przepraszamy, ale nie masz odpowiednich uprawnień, aby zainstalować wtyczkę "
+"%s. Skontaktuj się z administratorem strony aby to zrobić."
+
+# @ leatherdiary
+#: functions.php:409
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. That plugin is currently inactive, so "
+"please go to the <a href=\"%2$s\">plugin administration page</a> to activate "
+"it."
+msgstr ""
+"Temat ten wymaga wtyczki %1$s. Wtyczka jest aktualnie nieaktywna, proszę iść "
+"do <a href=\"%2$s\">strony administracji wtyczki</a>, aby go uaktywnić."
+
+# @ leatherdiary
+#: functions.php:410
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Przepraszamy, ale nie masz odpowiednich uprawnień, aby aktywować %s wtyczkę. "
+"Aby ją aktywować skontaktuj się z administratorem strony."
+
+# @ leatherdiary
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Wyniki wyszukiwania dla: %s"
+
+# @ leatherdiary
+#: search.php:14
+msgid "<strong>Number of Results</strong>: "
+msgstr "<strong>Liczba wyników:</strong>: "
+
+# @ leatherdiary
+#: search.php:27
+msgid "Search results navigation"
+msgstr "Wyniki wyszukiwania nawigacji"
+
+#: search.php:28
+msgid "<span class=\"meta-nav\">&larr;</span> Previous results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Następny"
+
+#: search.php:29
+msgid "Next results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Następny <span class=\"meta-nav\">&rarr;</span>"
+
+# @ leatherdiary
+#: search.php:35
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Przepraszamy, ale nie znaleziono żadnych wyników spełniających kryteria "
+"wyszukiwania. Spróbuj ponownie używając innych słów kluczowych."
+
+# @ leatherdiary
+#: searchform.php:9
+msgid "Search here..."
+msgstr "Szukaj..."
+
+# @ leatherdiary
+#: single.php:21
+msgid "Pages:"
+msgstr "Strony:"
+
+# @ leatherdiary
+#: tag.php:13
+#, php-format
+msgid "Tag Archive: %s"
+msgstr "Archiwum: %s"
+
+# @ cycloneslider
+#: cycloneslider/dark/slider.php:43
+msgid "View Larger Image"
+msgstr "Powiększ zdjęcie"
+
+# @ cycloneslider
+#: cycloneslider/dark/slider.php:46 cycloneslider/dark/slider.php:48
+msgid "Learn More"
+msgstr "Dowiedz się więcej"
+
+# @ cycloneslider
+#: cycloneslider/dark/slider.php:64 cycloneslider/default/slider.php:62
+#: cycloneslider/default/slider.php:66 cycloneslider/default/slider.php:70
+#: cycloneslider/standard/slider.php:70 cycloneslider/thumbnails/slider.php:70
+msgid "Slide type not supported."
+msgstr "Typ slajdów nie działa."
+
+# @ leatherdiary
+#: functions/be/fw-options.php:1208
+msgid "settings reset."
+msgstr "przywróć ustawienia."
+
+# @ leatherdiary
+#: functions/be/fw-setup.php:16
+msgid "Theme Options"
+msgstr "Opcje motywu"
+
+# @ leatherdiary
+#: functions/fe/google-map-shortcode.php:100
+msgid "No location found for the entered address."
+msgstr "Nie znaleziono podanego adresu lokalizacji."
+
+# @ leatherdiary
+#: functions/fe/google-map-shortcode.php:102
+msgid "Invalid request. Did you enter an address?"
+msgstr "Nieprawidłowe żądanie. Czy podałeś adres?"
+
+# @ leatherdiary
+#: functions/fe/google-map-shortcode.php:104
+msgid ""
+"Something went wrong while retrieving your map, please ensure you have "
+"entered the short code correctly."
+msgstr ""
+"Coś poszło nie tak podczas pobierania mapy, należy upewnić się, że "
+"prawidłowo wpisano krótki kod."
+
+# @ leatherdiary
+#: functions/fe/google-map-shortcode.php:107
+msgid "Unable to contact Google API service."
+msgstr "Nie można połączyć się z serwisem Google API."
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:12
+msgid "Displays Facebook Like Box."
+msgstr "Facebook Like Box."
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:14
+msgid "LeatherDiary Facebook Like Box Widget"
+msgstr "LeatherDiary Facebook Like Box Widget"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:56
+#: functions/fe/widget-homepage-column.php:41
+#: functions/fe/widget-homepage-default.php:41
+#: functions/fe/widget-homepage-list.php:41
+#: functions/fe/widget-homepage-slider.php:41
+#: functions/fe/widget-homepage-thumbnail.php:41
+#: functions/fe/widget-social.php:86 functions/fe/widget-twitter.php:39
+msgid "Title:"
+msgstr "Tytuł:"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:63
+msgid "Facebook Page URL:"
+msgstr "Adres URL strony na Facebook:"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:67
+msgid ""
+"Insert here the full URL of your Facebook Page that will be liked (example: "
+"http://www.facebook.com/FacebookDevelopers)."
+msgstr ""
+"Wstaw tutaj pełny adres URL swojej strony na Facebook, (przykład: http://www."
+"facebook.com/FacebookDevelopers)."
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:73
+msgid "Like Box Height: (optional)"
+msgstr "Wysokość boksu Like (opcjonalnie)"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:77
+msgid ""
+"Insert here the height of Like Box. The value is in pixels, but in the field "
+"please write ONLY NUMBERS (without symbol \"px\")!"
+msgstr ""
+"Wstaw tutaj wysokość boksu Like. Wartość w pikselach, w polu należy wpisać "
+"TYLKO CYFRY (bez symbolu \"px\")!"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:83
+msgid "Show Faces:"
+msgstr "Pokaż profile:"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:90
+msgid "Specify whether to display profile photos of people who like the page."
+msgstr "Określ, czy wyświetlać zdjęcia ludzi, którzy lubią stronę."
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:96
+msgid "Show Stream:"
+msgstr "Pokaż strumień wiadomości:"
+
+# @ leatherdiary
+#: functions/fe/widget-facebook.php:103
+msgid "Specify whether to display a stream of the latest posts by the Page."
+msgstr "Określ, czy wyświetlać strumień najnowszych wiadomości przez stronę."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:12
+msgid ""
+"Displays the latest posts from the selected category as a column with "
+"highlighted first post."
+msgstr ""
+"Najnowsze posty z wybranej kategorii jako kolumny z podświetlonym pierwszym "
+"postem."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:14
+msgid "LeatherDiary Homepage Column-Posts"
+msgstr "LeatherDiary Homepage Column-Posts"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:48
+#: functions/fe/widget-homepage-default.php:48
+#: functions/fe/widget-homepage-list.php:48
+#: functions/fe/widget-homepage-slider.php:48
+#: functions/fe/widget-homepage-thumbnail.php:48
+msgid "Category:"
+msgstr "Kategoria:"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:58
+#: functions/fe/widget-homepage-default.php:58
+#: functions/fe/widget-homepage-list.php:58
+#: functions/fe/widget-homepage-slider.php:58
+#: functions/fe/widget-homepage-thumbnail.php:58
+msgid "Select a category of posts."
+msgstr "Wybierz kategorię postu."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:64
+#: functions/fe/widget-homepage-default.php:64
+#: functions/fe/widget-homepage-list.php:64
+#: functions/fe/widget-homepage-slider.php:64
+#: functions/fe/widget-homepage-thumbnail.php:64
+msgid "Number of posts:"
+msgstr "Liczba postów:"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:68
+#: functions/fe/widget-homepage-default.php:68
+#: functions/fe/widget-homepage-list.php:68
+#: functions/fe/widget-homepage-slider.php:68
+#: functions/fe/widget-homepage-thumbnail.php:68
+msgid ""
+"Insert here the number of latest posts from the selected category which you "
+"want to display."
+msgstr ""
+"Wstaw tutaj liczbę najnowszych wiadomości z wybranej kategorii, które mają "
+"być wyświetlane."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-column.php:113
+#: functions/fe/widget-homepage-list.php:113
+msgid "Read more &gt;"
+msgstr "Więcej &gt;"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-default.php:12
+msgid ""
+"Displays the latest posts from the selected category in the default manner."
+msgstr "Najnowsze domyślne posty z wybranej kategorii."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-default.php:14
+msgid "LeatherDiary Homepage Default-Posts"
+msgstr "LeatherDiary Homepage Default-Posts"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-list.php:12
+msgid ""
+"Displays the latest posts from the selected category as an unordered list "
+"with highlighted first post."
+msgstr ""
+"Najnowsze posty z wybranej kategorii jako nieuporządkowana lista z "
+"podświetlonym pierwszym postem."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-list.php:14
+msgid "LeatherDiary Homepage List-Posts"
+msgstr "LeatherDiary Homepage List-Posts"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-slider.php:12
+msgid "Displays the latest posts from the selected category as a slider."
+msgstr "Najnowsze posty z wybranej kategorii jako suwak."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-slider.php:14
+msgid "LeatherDiary Homepage Slider-Posts"
+msgstr "LeatherDiary Homepage Slider-Posts"
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-thumbnail.php:12
+msgid "Displays the latest posts from the selected category as the thumbnails."
+msgstr "Najnowsze posty z wybranej kategorii jako miniatury."
+
+# @ leatherdiary
+#: functions/fe/widget-homepage-thumbnail.php:14
+msgid "LeatherDiary Homepage Thumbnail-Posts"
+msgstr "LeatherDiary Homepage Thumbnail-Posts"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:12
+msgid "A Social widget by LeatherDiary"
+msgstr "Social widget LeatherDiary"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:14
+msgid "LeatherDiary Social Widget"
+msgstr "LeatherDiary Social Widget"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:93
+msgid "Twitter:"
+msgstr "Twitter:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:97
+msgid "Insert the full URL of your Twitter profile."
+msgstr "Wprowadź pełny adres URL swojego profilu na Twitterze."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:103
+msgid "Facebook:"
+msgstr "Facebook:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:107
+msgid "Insert the full URL of your Facebook profile, page or group."
+msgstr "Wprowadź pełny adres URL profilu, strony lub grupy na Facebook."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:113
+msgid "RSS:"
+msgstr "RSS:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:117
+msgid "Insert the Url of your RSS. You may include your RSS from Feedburner."
+msgstr "Wprowadź adres URL RSS. Możesz podać swój RSS z FeedBurner."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:123
+msgid "Google Plus:"
+msgstr "Google Plus:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:127
+msgid "Insert the full URL of your Google Plus profile"
+msgstr "Wprowadź pełny adres URL swojego profilu Google Plus"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:133
+msgid "You Tube:"
+msgstr "YouTube:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:137
+msgid "Insert the full URL of your YouTube profile."
+msgstr "Wprowadź pełny adres URL swojego profilu na YouTube."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:143
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:147
+msgid "Insert the full URL of your Linkedin profile."
+msgstr "Wprowadź pełny adres URL swojego profilu na LinkedIn."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:153
+msgid "Delicious:"
+msgstr "Delicious:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:157
+msgid "Insert the full URL of your Delicious profile."
+msgstr "Wprowadź pełny adres URL swojego profilu Delicious."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:163
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:167
+msgid "Insert the full URL of your Pinterest profile."
+msgstr "Wprowadź pełny adres URL swojego profilu na Pinterest."
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:173
+msgid "Flickr:"
+msgstr "Flickr:"
+
+# @ leatherdiary
+#: functions/fe/widget-social.php:177
+msgid "Insert the full URL of your Flickr profile."
+msgstr "Wprowadź pełny adres URL swojego profilu na Flickr."
+
+# @ leatherdiary
+#: functions/fe/widget-twitter.php:13
+msgid "Twitter widget by LeatherDiary"
+msgstr "LeatherDiary Twitter widget."
+
+# @ leatherdiary
+#: functions/fe/widget-twitter.php:15
+msgid "LeatherDiary Twitter Widget"
+msgstr "LeatherDiary Twitter Widget"
+
+# @ leatherdiary
+#: functions/fe/widget-twitter.php:25
+msgid "Join us on Twitter"
+msgstr "Dołącz do nas na Twitterze"
+
+# @ leatherdiary
+#: functions/fe/widget-twitter.php:46
+msgid "Twitter Username:"
+msgstr "Nazwa użytkownika na Twitter:"
+
+# @ leatherdiary
+#: functions/fe/widget-twitter.php:50
+msgid "Insert your Twitter username. (ex: leatherdiary)."
+msgstr "Wprowadź swoją nazwę użytkownika na Twitter. (przykład: leatherdiary)."
+
+# @ leatherdiary
+#: template-logged-in.php:25
+msgid "You must be logged in to view this page."
+msgstr "Musisz być zalogowany, aby zobaczyć tę stronę."
+
+# @ leatherdiary
+#: functions.php:247 search.php:28
+msgid "&larr; Previous"
+msgstr "&larr; Następny"
+
+# @ leatherdiary
+#: functions.php:248 search.php:29
+msgid "Next &rarr;"
+msgstr "Następny &rarr;"
+
+# @ leatherdiary
+msgid ""
+"Display popular posts, recent posts, comments and tags in tabbed format."
+msgstr ""
+"Wyświetl popularne posty, ostatnie posty, komentarze i tagi w formacie "
+"zakładkami."
+
+# @ leatherdiary
+msgid "Select Tabs"
+msgstr "Wybierz zakładki"
+
+# @ leatherdiary
+msgid "Popular Tab"
+msgstr "Popularne zakładki"
+
+# @ leatherdiary
+msgid "Recent Tab"
+msgstr "Najnowsze zakładki"
+
+# @ leatherdiary
+msgid "Comments Tab"
+msgstr "Zakładki komentarzy"
+
+# @ leatherdiary
+msgid "Comments"
+msgstr "Komentarze"
+
+# @ leatherdiary
+msgid "Tags Tab"
+msgstr "Zakładka tagów"
+
+# @ leatherdiary
+msgid "Tab Order"
+msgstr "Kolejność zakładek"
+
+# @ leatherdiary
+msgid "Popular"
+msgstr "Popularne"
+
+# @ leatherdiary
+msgid "Recent"
+msgstr "Najnowsze"
+
+# @ leatherdiary
+msgid "Tags"
+msgstr "Tagi"
+
+# @ leatherdiary
+msgid "Advanced Options"
+msgstr "Opcje zaawansowane"
+
+# @ leatherdiary
+msgid "Allow pagination"
+msgstr "Umożliwiają podział na strony"
+
+# @ leatherdiary
+msgid "Number of posts to show:"
+msgstr "Liczba postów do pokazania:"
+
+# @ leatherdiary
+msgid "Show post thumbnails"
+msgstr "Pokaż miniatury postów"
+
+# @ leatherdiary
+msgid "Show post date"
+msgstr "Pokaż datę postu"
+
+# @ leatherdiary
+msgid "Show number of comments"
+msgstr "Pokaż liczbę komentarzy"
+
+# @ leatherdiary
+msgid "Show post excerpt"
+msgstr "Pokaż wiadomość - fragment"
+
+# @ leatherdiary
+msgid "Excerpt length (words):"
+msgstr "Długość fragmentu (słowa):"
+
+# @ leatherdiary
+msgid "Number of comments on Comments Tab:"
+msgstr "Ilość komentarzy w zakładce Komentarze:"
+
+# @ leatherdiary
+msgid "Show avatars on Comments Tab"
+msgstr "Pokaż awatary na zakładce Komentarze"
+
+# @ leatherdiary
+msgid "No Comment"
+msgstr "Brak komentarzy"
+
+# @ leatherdiary
+msgid "One Comment"
+msgstr "Jeden komentarz"
+
+# @ leatherdiary
+msgid "No comments yet."
+msgstr "Brak komentarzy."
+
+# @ leatherdiary
+msgid "No tags created."
+msgstr "Brak tagów."

@@ -1,0 +1,54 @@
+/* =Media queries
+------------------------------------------------ */
+
+@-ms-viewport { width: device-width; } /* One for Windows 8 */
+
+/* Things get a little spaced out at viewport widths approximately > 640px */
+@media screen and (min-width: 41em) { 
+	@include spread-out-layout;
+}
+
+/* Defining breakpoints. We make sure the content width doesn't get > 720px */
+
+@media screen and (min-width: 48.125em) { /* ~770px */
+
+	.narrow-sidebar {
+		@include two-cols(16rem);
+	}
+
+	.medium-sidebar {
+		@include two-cols(26rem);
+	}
+
+	.wide-sidebar {
+		@include two-cols(30rem);
+	}
+
+}
+
+
+@media screen and (min-width: 60.625em) { /* ~970px */
+	
+	.narrow-sidebar {
+		@include three-cols(16rem);
+	}
+
+}
+
+
+@media screen and (min-width: 66.875em) { /* ~ 1070px */
+
+	.medium-sidebar {
+		@include three-cols(26rem);
+	}
+
+}
+
+
+@media screen and (min-width: 69.375em) { /* ~ 1110px */
+
+	.wide-sidebar {
+		@include three-cols(30rem)
+	}
+
+}

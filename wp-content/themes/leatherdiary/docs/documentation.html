@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>LeatherDiary Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">LeatherDiary 1.3 Documentation by Tomas Toman</h3>
+		
+		<hr>
+		
+		<h1 class="center">LeatherDiary</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 04/02/2014<br>
+					By: Tomas Toman<br>
+          Web: <a href="http://www.tomastoman.cz" target="_blank">www.tomastoman.cz</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">First of all, I would like to thank you for choosing LeatherDiary! I firmly believe that you will be satisfied with the product. In case of any problems or doubts you can use the <a href="http://www.tomastoman.cz/support">LeatherDiary Official Support</a> (in English, German or Czech).<br /> Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Navigation</h2>
+		<ol class="alpha">
+			<li><a href="#about">About LeatherDiary</a></li>
+			<li><a href="#installation">Theme installation</a>
+      <ol>
+        <li><a href="#update-premium">Update to Premium Version</a></li>
+      </ol>
+      </li>
+			<li><a href="#options">Theme options</a>
+      <ol>
+        <li><a href="#general-settings">General settings</a></li>
+        <li><a href="#homepage-settings">Homepage settings</a></li>
+        <li><a href="#colors">Colors</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#social-networking">Social networking</a></li>
+        <li><a href="#other-settings">Other settings</a></li>
+      </ol>
+      </li>
+      <li><a href="#background">Background and Header settings</a></li>	
+			<li><a href="#widget-areas">Widget areas</a>
+      <ol>
+        <li><a href="#sidebar-area">Right Sidebar widget area</a></li>
+        <li><a href="#footer-area">Footer widget areas</a></li>
+        <li><a href="#footer-notices">Footer notices</a></li>
+        <li><a href="#homepage-slideshow-widget">Homepage slideshow</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#homepage-posts-widget">Homepage posts</a></li>
+      </ol>
+      </li>
+      <li><a href="#custom-widgets">Custom widgets</a>
+      <ol>
+        <li><a href="#homepage-widgets">LeatherDiary Homepage Widgets</a></li>
+        <li><a href="#social-widget">LeatherDiary Social Widget</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#facebook-widget">LeatherDiary Facebook Like Box Widget</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#twitter-widget">LeatherDiary Twitter Widget</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#tab-widget">LeatherDiary Tab Widget</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+      </ol>
+      </li>
+			<li><a href="#menu-areas">Menu areas</a></li>	
+      <li><a href="#page-templates">Page templates</a>
+      <ol>
+        <li><a href="#sitemap-page">Sitemap page</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#full-width-page">Full-width page</a></li>
+        <li><a href="#page-without-breadcrumb">Page without Breadcrumb Navigation</a></li>
+        <li><a href="#page-without-comments">Page without Comments</a></li>
+        <li><a href="#page-without-title">Page without Title</a></li>
+        <li><a href="#page-logged-in">Logged In page</a></li>
+        <li><a href="#page-landing">Landing page</a></li>
+        <li><a href="#full-width-page-without-title">Full-width page without Title</a></li>
+      </ol>
+      </li>
+      <li><a href="#plugins">Plugins</a>
+      <ol>
+        <li><a href="#breadcrumb-plugin">Breadcrumb Navigation plugin</a></li>
+        <li><a href="#sitemap-plugin">Sitemap plugin</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+        <li><a href="#slideshow-plugin">Slideshow plugin</a> <em style="color: #666666;">(only in Premium Version available)</em></li>
+      </ol>
+      </li>
+      <li><a href="#shortcodes">Custom Shortcodes</a></li>
+      <li><a href="#translations">Translations</a></li>	
+      <li><a href="#faq">FAQs about WordPress</a></li>	
+		</ol>
+		
+		<hr>
+		
+		<h3 id="about"><strong>A) About LeatherDiary</strong> - <a href="#toc">top</a></h3>
+    
+		<p>LeatherDiary is an easily customizable WordPress multipurpose theme. It is a fully responsive theme that allows for easy viewing on any device. 
+Write your online book of Life with LeatherDiary theme! Using Theme Options panel, you can customize this theme directly to your needs. LeatherDiary is fully compatible with the popular WooCommerce plugin.</p>
+    
+    <h4 class="headline-without-space">LeatherDiary Features</h4>
+    <ul class="without-indent">
+      <li>HTML5/CSS3 support</li>
+      <li>Responzive design</li>
+      <li>Intuitive Theme Options panel</li>
+      <li>WooCommerce 2.1+ ready</li>
+      <li>Integrated Drag-and-drop Page Builder with 35 default widgets for creating custom page templates <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>14 pre-defined color schemes <em style="color: #666666;">(7 in Free Version)</em></li>
+      <li>2 pre-defined background patterns (Dark and Light)</li>
+      <li>Unlimited main background settings (pre-defined pattern/custom image/one color)</li>
+      <li>Unlimited ability to create custom color schemes <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Selection from 220 Google fonts for individual headlines and text passages</li>
+      <li>Select between  displaying the page on the left or in the middle of the browser window</li>
+      <li>Select between viewing with or without right sidebar</li>
+      <li>Select between displaying Logo/Site Title in header</li>
+      <li>Widgetized homepage with possibility to display the latest posts from the specific categories</li>
+      <li>Custom Header image</li>
+      <li>Ability to set different Header Images for individual pages <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Homepage slideshow <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Breadcrumb navigation</li>
+      <li>2 menu areas (horizontal and vertical) with unlimited levels of drop-down submenus</li>
+      <li>Scroll-top button</li>
+      <li>Sidebar and Footer widget areas</li>
+      <li>5 Custom widgets for displaying the latest posts from the specific categories on the homepage <em style="color: #666666;">(1 in Free Version)</em></li>
+      <li>Custom Tab Widget (displays popular posts, recent posts, comments and tags in tabbed format) <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Social networking Custom widget <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Facebook Like Box Custom widget <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Twitter Following Custom widget <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Integrated Facebook/Twitter/Google +1 sharing buttons <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Integrated automatic Sitemap generator with advanced options <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Sitemap <em style="color: #666666;">(only in Premium Version available)</em> and Full-width custom page templates</li>
+      <li>Options for single posts/pages displaying</li>
+      <li>Related posts box <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Custom shortcodes for displaying buttons, tables <em style="color: #666666;">(only in Premium Version available)</em>, highlighted text and images anywhere you like</li>
+      <li>Custom shortcodes for displaying a listing of posts anywhere you like <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Custom shortcode for displaying Google maps <em style="color: #666666;">(only in Premium Version available)</em></li>
+      <li>Easily add your own logo in header</li>
+      <li>Easily add your own favicon</li>
+      <li>Easily add custom CSS</li>
+      <li>Ready for translation into your language (.pot file integrated)</li>
+      <li>Integrated Czech, Danish, Dutch, French, German, Greek, Italian, Polish, Russian, Slovak and Spanish language localization</li>
+      <li>RTL languages supported</li> 
+    </ul>
+    
+    <p><strong>Compatible Browsers</strong>: Internet Explorer 8+, Google Chrome, Mozilla Firefox, Opera, Safari<br />
+    <strong>Compatible WordPress Versions</strong>: 3.5+</p>  
+
+		<hr>
+
+		<h3 id="installation"><strong>B) Theme installation</strong> - <a href="#toc">top</a></h3>
+
+		<p class="headline-without-space">For LeatherDiary installation, you must follow these basic steps:</p>
+    <ol>
+      <li>Extract the folder "leatherdiary.zip".</li>
+      <li>Using FTP client (for example Total Commander) upload the extracted folder "leatherdiary" to "wp-content/themes" directory on your host web server.</li>
+      <li>Log in to your WordPress administration.</li>
+      <li>Select the "Appearance => Themes" panel.</li>
+      <li>Click on the link "Activate" at the LeatherDiary theme.</li>
+    </ol>
+    
+    <p>Alternatively, you can install this theme via your WordPress administration.  Go to “Appearance > Themes” panel and using “Install Themes” tool upload the original ZIP file. After uploading, activate the theme.</p>
+    
+    <h4 class="headline-without-space" id="update-premium">1. Update to Premium Version</h4>
+    
+    <p>Once you have purchased <a href="http://www.tomastoman.cz/downloads/leatherdiary/" target="_blank">LeatherDiary Premium Version</a>, simply delete the "leatherdiary" folder in "wp-content/themes" directory on your host web server and replace it by extracted folder that you have got by purchasing LeatherDiary Premium Version.</p>
+    
+    <p>Or, if the previous described procedure will not be comfortable for you, go to “Appearance > Themes” panel in your WordPress administration and using “Install Themes” tool upload the ZIP file which you got by purchasing LeatherDiary Premium Version. Before this, you should delete the original Free Version of this theme, if you have installed it (but it is not necessary).</p>
+
+		<hr>
+		
+		<h3 id="options"><strong>C) Theme options</strong> - <a href="#toc">top</a></h3>
+    <p>The options framework is available through the link "Theme Options" located on the upper horizontal admin bar (or via panel "Appearance => Theme Options").</p>
+		
+		<h4 class="headline-without-space" id="general-settings">1. General settings</h4>
+    
+    <p>This tab is used for choosing one of the basic color schemes and setting the main parts of layout (header, right sidebar, footer, favicon). <br />You can find here the single posts/pages displaying options, too. You can set if you want to display the related posts, featured images, dates, categories, tags and authors on individual posts.</p>
+    
+    <h4 class="headline-without-space" id="homepage-settings">2. Homepage settings</h4>
+    
+    <p>There are 2 options for displaying your homepage. You can set them in "Settings > Reading" panel in your WordPress administration:<br />
+1. Your latest posts<br />
+2. A static page<br /></p>
+    
+    <p>By default, the latest posts from all the categories are displayed on your homepage. LeatherDiary theme allows to display the latest posts from the specific categories. This is done by the <strong>LeatherDiary Homepage Widgets</strong>. You can choose from 5 different LeatherDiary Homepage Widgets:<br />
+1. LeatherDiary Homepage Column-Posts<br />
+2. LeatherDiary Homepage Default-Posts<br />
+3. LeatherDiary Homepage List-Posts<br />
+4. LeatherDiary Homepage Slider-Posts<br />
+5. LeatherDiary Homepage Thumbnail-Posts</p>
+
+    <p>The individual widgets differ in the way how the latest posts are displayed. In the Free version is available only LeatherDiary Homepage Default-Posts widget. <br />
+    For displaying boxes with the latest posts from a specific category, go to "Appearance > Widgets" settings. Insert as many LeatherDiary Homepage Widgets as you want into "Homepage posts" widget section.</p>
+    
+    <p>LeatherDiary also allows displaying a <strong>slideshow</strong> on the homepage. For displaying a Slideshow at the top of your homepage, the Cyclone Slider 2 plugin has to be installed. For creating a new Slideshow, go to the Cyclone Slider settings. After creating the Slideshow, go to the Widgets settings. Insert one Cyclone Slider Widget into "Homepage slideshow" widget section and select the desired Slideshow from a drop-down list. <em style="color: #666666;">(only in Premium Version available)</em></p>
+    
+    <h4 class="headline-without-space" id="colors">3. Colors <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>This tab is used for setting your own color scheme. You can choose here the colors of individual parts of layout, headlines and texts. Using color pickers, you can easily choose exactly that color you want. You can also directly enter the hexadecimal code of your favorite color.</p>
+    
+    <p>Tip: If you want to use the same color for more items, simply copy and paste its hexadecimal code instead of setting it using color pickers on each item.</p>
+    
+    <img src="assets/images/img1.png" alt="Color Options" />
+    <p class="img-describe">Color settings panel</p>
+    
+    
+    <h4 class="headline-without-space" id="fonts">4. Fonts</h4>
+    
+    <p>This tab is used for selecting Google fonts for individual headlines and text areas. LeatherDiary offers more than 200 fonts for choosing. The default fonts are specified in the main stylesheet file (style.css in the main theme folder).<br />
+    In Premium version, you also can set the font-size of individual headlines and text areas.</p>
+    
+    
+    <h4 class="headline-without-space" id="social-networking">5. Social networking</h4>
+    
+    <p>On this tab, you can choose wheter to display or not the Facebook, Twitter and Google +1 sharing buttons which may appear below your single posts/pages content. <em style="color: #666666;">(only in Premium Version available)</em></p>
+    
+    <p>There also are fields for URL addresses of your social networking profiles and RSS, which will display the icon-links in header.</p>
+    
+    <img src="assets/images/img2.png" alt="Social Networking" />
+    <p class="img-describe">Social networking panel</p>
+    
+    
+    <h4 class="headline-without-space" id="other-settings">6. Other settings</h4>
+    
+    <p>On this tab, you can fill your own cascading style sheet information (CSS) for modifying the layout. So you do not have to write your custom CSS straight into the file style.css in the main theme folder. The CSS information defined on this tab appear in the "head" section of source code.</p>
+    
+    <p>Above the Custom CSS field, there are also links for editing widgets, slideshows, header image, main background and menus.</p>
+		
+		<hr>
+    
+    <h3 id="background"><strong>D) Background and Header settings</strong> - <a href="#toc">top</a></h3>
+    
+    <h4 class="headline-without-space">1. Main Background settings</h4>
+		
+		<p>In the main page background, you can display your custom image or one selected color.</p>
+    
+    <p>For setting your own background image or color, go to "<strong>Appearance > Background</strong>" panel. Upload your own photography and set here all the background-image settings (position, repeating, attachment). For setting one-color background, use the color picker at the bottom of this page. To make the selected color visible, there SHOULD NOT be set any background image.</p> 
+    
+    <h4 class="headline-without-space">2. Header Image settings</h4>
+    
+    <p>For setting your custom header image, go to "Appearance > Header" panel and upload or select your own image. Your images should be at least 810 pixels wide. Suggested width is 810 pixels.</p>
+    
+    <p>The options for Logo/Site Title displaying are located in "Theme Options > General Settings > Header Options".</p>
+    
+    <p>In Premium Version, you can set the <a href="#homepage-slideshow-widget">slideshow</a> to display on your homepage instead of a static image.</p>
+    
+    <hr>
+		
+		<h3 id="widget-areas"><strong>E) Widget areas</strong> - <a href="#toc">top</a></h3>
+		
+		<p class="headline-without-space">There are several areas for displaying widgets in LeatherDiary Theme:</p>
+		
+			<ol>
+				<li>Right Sidebar widget area</li>
+				<li>Footer widget areas</li>
+				<li>Footer copyright notices</li>
+        <li>Homepage slideshow</li>
+        <li>Homepage posts</li>
+			</ol>
+      
+    <p>The Widget panel is located in "Appearance => Widgets" section. If you want to place a widget in some of that areas, simply drag its panel and drop it to the area where you want to display the widget.</p>
+    
+    
+    <h4 class="headline-without-space" id="sidebar-area">1. Right Sidebar widget area</h4>
+    
+    <p>Right Sidebar widget area displays in the right sidebar on all your pages and posts. Its name in "Appearance => Widgets" panel is "Right Sidebar". You can put here as many widgets as you want.</p>
+        
+    
+    <h4 class="headline-without-space" id="footer-area">2. Footer widget areas</h4>
+    
+    <p>Footer widget area displays in the footer as the 3 columns of widgets. In "Appearance => Widgets" panel, you can see 3 areas for individual columns: "Footer left widget area", "Footer middle widget area" and "Footer right widget area". This boxes represent those 3 columns. You can put as many widgets as you want on each column.</p>
+    
+    
+    <h4 class="headline-without-space" id="footer-notices">3. Footer copyright notices</h4>
+    
+    <p>The widget area for copyright and other notices displays in the footer, below the main Footer widget area (described above). Its name in "Appearance => Widgets" panel is "Footer notices". Put here one "Text" widget. Into the content field of this widget fill the text (or HTML code) you want to display here. The "Title" field of this Text widget should stay empty.</p>
+    
+    
+    <h4 class="headline-without-space" id="homepage-slideshow-widget">4. Homepage slideshow <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>The widget area for displaying Home page slideshow is reserved for one "Cyclone Slider Widget". Its name in "Appearance => Widgets" panel is "Homepage slideshow". Put here one "Cyclone Slider Widget" and choose the slideshow you want to display on your homepage.</p>
+    
+    <p>For making this feature available, the Cyclone Slider 2 plugin has to be installed. For creating a new Slideshow, go to the "Cyclone Slider" settings in your WordPress administration. After creating the Slideshow, go to the Widgets settings and follow the steps described above.</p>
+    
+    
+    <h4 class="headline-without-space" id="homepage-posts-widget">5. Homepage posts</h4>
+    
+    <p>LeatherDiary theme allows to display the latest posts from the specific categories. This is done by the LeatherDiary Homepage Widgets. You can choose from 5 different LeatherDiary Homepage Widgets to insert into "Homepage posts" widget area. The individual widgets differ in the way how the latest posts are displayed (described in detail in <a href="#custom-widgets">Custom widgets</a> paragraph).</p>
+		
+		<hr>
+		
+		<h3 id="custom-widgets"><strong>F) Custom widgets</strong> - <a href="#toc">top</a></h3>
+		
+		<p class="headline-without-space">LeatherDiary Theme offers 9 custom widgets altogether:</p>
+    
+      <ol>
+				<li>5 LeatherDiary Homepage Widgets <em style="color: #666666;">(1 in Free Version)</em></li>
+        <li>LeatherDiary Social Widget</li>
+        <li>LeatherDiary Facebook Like Box Widget</li>
+				<li>LeatherDiary Twitter Widget</li>
+        <li>LeatherDiary Tab Widget</li>
+			</ol>
+    
+    
+    <h4 class="headline-without-space" id="homepage-widgets">1. LeatherDiary Homepage Widgets</h4>
+    
+    <p class="headline-without-space">LeatherDiary Homepage Widgets allows to display the latest posts from the specific categories on your homepage. You can choose from 5 different LeatherDiary Homepage Widgets (in Free Version is available only the LeatherDiary Homepage Default-Posts widget):</p>
+    
+    <ol>
+      <li><strong>LeatherDiary Homepage Column-Posts</strong> (displays the latest posts from the selected category as a column with highlighted first post)</li>
+      <li><strong>LeatherDiary Homepage Default-Posts</strong> (displays the latest posts from the selected category in the default manner)</li>
+      <li><strong>LeatherDiary Homepage List-Posts</strong> (displays the latest posts from the selected category as an unordered list with highlighted first post)</li>
+      <li><strong>LeatherDiary Homepage Slider-Posts</strong> (displays the latest posts from the selected category as a horizontal slider)</li>
+      <li><strong>LeatherDiary Homepage Thumbnail-Posts</strong> (displays the latest posts from the selected category as the thumbnails)</li>
+    </ol>
+    
+    <p>For using these widgets, go to "Appearance > Widgets" settings. Insert as many LeatherDiary Homepage Widgets as you want into "Homepage posts" widget section.<br />
+    Note: LeatherDiary Homepage Widgets are designed ONLY for putting into "Homepage posts" widget area, not for the other widget areas.</p>
+    
+    <img src="assets/images/img4.png" alt="Homepage Widgets" />
+    <p class="img-describe">Boxes created by the LeatherDiary Homepage Widgets</p>
+    
+    
+    <h4 class="headline-without-space" id="social-widget">2. LeatherDiary Social Widget <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p class="headline-without-space">This widget is ready to use for displaying icons with links to your profiles on social networks and RSS feed. Put LeatherDiary Social Widget into Sidebar or Footer widget area in "Appearance => Widgets" panel and fill requested URL addresses. These social networks and services are supported:</p>
+    
+    <ul>
+      <li>Facebook</li>
+      <li>Twitter</li>
+      <li>Google+</li>
+      <li>Youtube</li>
+      <li>Linkedin</li>
+      <li>Delicious</li>
+      <li>Pinterest</li>
+      <li>Flickr</li>
+      <li>RSS</li>
+    </ul>
+    
+    
+    <h4 class="headline-without-space" id="facebook-widget">3. LeatherDiary Facebook Like Box Widget <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>This widget is ready to use for displaying Facebook Like Box. The Like Box is a special version of the Like Button designed only for Facebook Pages. Using this widget, you can easily promote your Facebook page on your website. <br />Put LeatherDiary Facebook Like Box Widget into Sidebar or Footer widget area in "Appearance => Widgets" panel and fill the full URL of your Facebook Page that will be liked. Then set a height of Like Box and specify whether to display the profile photos of people who like the Page and a stream of the latest posts by the Page.</p>
+    
+    
+    <h4 class="headline-without-space" id="twitter-widget">4. LeatherDiary Twitter Widget <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>This widget is ready to use for displaying Twitter Follow button. Put LeatherDiary Twitter Widget into Sidebar or Footer widget area in "Appearance => Widgets" panel and fill the Twitter username you want to display via Twitter Follow button.</p>
+    
+    <h4 class="headline-without-space" id="tab-widget">5. LeatherDiary Tab Widget <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>This widget is ready for displaying the popular posts, recent posts, comments and tags in tabbed format in your sidebar.</p>
+    
+    <hr>
+    
+    <h3 id="menu-areas"><strong>G) Menu areas</strong> - <a href="#toc">top</a></h3>
+    
+    <p class="headline-without-space">In LeatherDiary theme, there are 2 areas for displaying menus:</p>
+    
+      <ol>
+				<li>Vertical Fixed menu with unlimited levels of drop-down submenus</li>
+				<li>Horizontal Top Header menu with unlimited levels of drop-down submenus</li>
+			</ol>
+      
+    <p>Menu settings panel is located in "Appearance => Menus". At first create a new menu and assign it to one of two pre-defined Menu areas. Then in left panels choose required pages/categories or custom links and add them to your new Menu. Then save all changes.</p>
+    
+    <p>If you want to create a submenu, just drag required menu item and move it more to the right against its parent item. When you drop your sub-item, it should stay with indentation against the parent item. This way you can create unlimited levels of submenus.</p>
+    
+    <p>By default, the Fixed menu is displaying at fixed position on the right of the main content area. In "Theme Options > General Settings", you also can give the absolute position for this menu or you can hide the whole box.</p>
+    
+    <img src="assets/images/img3.png" alt="Menu" />
+    <p class="img-describe">Example of three-levels menu</p>
+		
+		<hr>
+    
+    <h3 id="page-templates"><strong>H) Page templates</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Beside Default Template, LeatherDiary Free Version offers 7 other custom Page templates. If you create a new page or edit some existing page, you can choose the Page template in "Page Attributes => Template" right panel.</p>
+
+    
+    <h4 class="headline-without-space" id="sitemap-page">1. Sitemap page <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>"Sitemap" Page template is ready for displaying your sitemap page. If you want to use it, the Dagon Design Sitemap Generator plugin must be activated. The sitemap options can be edited on "Settings => DDSitemapGen" panel.</p>
+    
+    <h4 class="headline-without-space" id="full-width-page">2. Full-width page (without right sidebar)</h4>
+    
+    <p>If you want to display only some pages without the main right sidebar, simply use this template for these pages.</p>
+    
+    <h4 class="headline-without-space" id="page-without-breadcrumb">3. Page without Breadcrumb Navigation</h4>
+    
+    <p>If you want to hide the Breadcrumb Navigation only on some pages, simply use this template for these pages.</p>
+    
+    <h4 class="headline-without-space" id="page-without-comments">4. Page without Comments</h4>
+    
+    <p>This template hides the whole Comments area (even if the comments are allowed for this page).</p>
+    
+    <h4 class="headline-without-space" id="page-without-title">5. Page without Title</h4>
+    
+    <p>This template displays only the page Content without the page Title.</p>
+    
+    <h4 class="headline-without-space" id="page-logged-in">6. Logged In</h4>
+    
+    <p>This template displays the page content only for logged-in users (otherwise it displays only the Log-in form).</p>
+    
+    <h4 class="headline-without-space" id="page-landing">7. Landing Page</h4>
+    
+    <p>This template displays only the page content without menus, right sidebar, comments area and footer widget areas. You can use it for creating a temporary home page before your website will be ready for the public launch.</p>
+    
+    <h4 class="headline-without-space" id="full-width-page-without-title">8. Full-width page without Title</h4>
+    
+    <p>This template displays the page in the same way as the "Full-width" template, but it will not display the page title.</p>
+    
+    <hr>
+    
+    <h3 id="plugins"><strong>I) Plugins</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Some functions of LeatherDiary are conditioned by installing some plugins. The recommended plugins are included in the installation folder of LeatherDiary (folder "plugins"). If some of the recommended plugins are inactive, you can see them in "Appearance => Install Plugins" panel.</p>
+    
+    <p class="headline-without-space">List of recommended plugins:</p>
+    
+      <ol>
+				<li>Breadcrumb Navigation plugin - <a href="http://mtekk.us/code/breadcrumb-navxt" target="_blank">Breadcrumb NavXT</a> by John Havlik</li>
+        <li>Sitemap plugin - <a href="http://www.dagondesign.com/articles/sitemap-generator-plugin-for-wordpress" target="_blank">Dagon Design Sitemap Generator</a> by Dagon Design</li>
+        <li>Slideshow plugin - <a href="http://www.codefleet.net/cyclone-slider-2" target="_blank">Cyclone Slider 2</a> by Nico Amarilla</li>
+			</ol>
+      
+    <p>The plugins are modified to ensure the best compatibility with LeatherDiary. If you will find their newer versions on web, I don't recommend to update them, because all the custom modifications will be lost. Plugins updates will come automatic with newer versions of LeatherDiary.</p>
+    
+    
+    <h4 class="headline-without-space" id="breadcrumb-plugin">1. Breadcrumb Navigation plugin</h4>
+    
+    <p>If you want to display breadcrumb navigation above the main content headlines, the Breadcrumb NavXT plugin has to be installed and activated. This plugin provides many advanced options for displaying breadcrumb navigation. You can set them on "Settings => Breadcrumb NavXT" panel.</p>
+    
+    <h4 class="headline-without-space" id="sitemap-plugin">2. Sitemap plugin <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>If you want to use the "Sitemap" Page template, the Dagon Design Sitemap Generator plugin has to be installed and activated. This plugin provides many advanced options for displaying pages and posts in sitemap. You can set them on "Settings => DDSitemapGen" panel.</p>
+    
+    <h4 class="headline-without-space" id="slideshow-plugin">3. Slideshow plugin <em style="color: #666666;">(only in Premium Version available)</em></h4>
+    
+    <p>Slideshows are based on Cyclone Slider 2 plugin. You can edit them under "Cyclone Slider" tab in the main WordPress navigation. The plugin provides displaying images, Youtube or Vimeo videos and Custom HTML content in Slideshow. There are 4 different slideshow templates customized for LeatherDiary: Standard, Default, Thumbnails and Dark. The control is very easy and intuitive. On the right panels of Slideshow editing form, you can set dimensions, transitions effects and other options. Above these panels are generated Shortcodes for simply adding your slideshows into the posts or pages.</p>
+    
+    <p>If you want to add some Slideshow into Homepage header using "Cyclone Slider Widget", please read <a href="#homepage-slideshow-widget">this paragraph</a>. Recommended size of Homepage slideshow is 810 x 410 px.</p>
+    
+    <p>For adding some slideshow in the content of your static pages or posts, you can use Cyclone Slider 2 shortcode: [cycloneslider id="slideshow-id"].</p>
+    
+    <hr>
+    
+    
+    <h3 id="shortcodes"><strong>J) Custom Shortcodes</strong> - <a href="#toc">top</a></h3>
+    
+    <p>LeatherDiary offers several custom shortcodes for easy displaying of some HTML objects on pages/posts or widgets:</p>
+    
+    <p>1.) <strong>[image src="<em>Image URL</em>"]</strong><br />
+    Shortcode for displaying images. It is especially useful for inserting images into Text widgets.</p>
+    
+    <p>2.) <strong>[table cols="<em>headline1,headline2</em>" data="<em>row 1 value 1,row 1 value 2,row 2 value 1,row 2 value 2</em>"]</strong> <em style="color: #666666;">(only in Premium Version available)</em><br />
+    Shortcode for displaying tables. The parameter "cols" is used for inserting headlines of individual columns. The parameter "data" is used for inserting own data in rows of your table.</p>
+    
+    <p>3.) <strong>[button link="<em>URL address</em>"]<em>TEXT OF YOUR BUTTON</em>[/button]</strong><br />
+    Shortcode for displaying left-aligned buttons.</p>
+    
+    <p>4.) <strong>[highlight]<em>HIGHLIGHTED TEXT</em>[/highlight]</strong><br />
+    Shortcode for displaying color-highlighted text (the color is editable in "Theme Options > Colors").</p>
+    
+    <p>5.) <strong>[google-map address="<em>Address of any place in the world</em>" width="<em>100%</em>" height="<em>200px</em>"]</strong> <em style="color: #666666;">(only in Premium Version available)</em><br />
+    Shortcode for displaying Google maps. The "width" and "height" parameters are optional. You can set the dimensions in percentages or pixels, but for responzive displaying is recommended to input percentage dimensions.</p>
+    
+    <p>6.) <strong>&lt;!-- ddsitemapgen --&gt;</strong> <em style="color: #666666;">(only in Premium Version available)</em><br />
+    Shortcode for displaying Sitemap in the content of any page/post.</p>
+    
+    <p>7.) <strong>[cycloneslider id="<em>slideshow-id</em>"]</strong> <em style="color: #666666;">(only in Premium Version available)</em><br />
+    Shortcode for displaying a slideshow created using Cyclone Slider 2 plugin in the content of any page/post.</p>
+    
+    <p>8.) <strong>[display-posts category="<em>category-slug</em>" include_excerpt="<em>true</em>"]</strong> <em style="color: #666666;">(only in Premium Version available)</em><br />
+    Shortcode for displaying a listing of posts in post/page content or in a Text widget.<br /><br />
+    <strong style="font-size: 15px;">Arguments for [display-posts] shortcode:</strong><br />
+    <strong>author</strong>
+<br />Specify the post author
+<br />Default: empty
+<br />Example: [display-posts author="bill"]<br /><br />
+
+<strong>category</strong>
+<br />Specify the category slug (or comma separated list of category slugs)
+<br />Default: empty
+<br />Example: [display-posts category="fishing,hiking"]<br /><br />
+
+<strong>date_format</strong>
+<br />Specify the date format used when include_date is true. See Formatting Date and Time on the Codex for more information.
+<br />Default: '(n/j/Y)'
+<br />Example: [display-posts include_date="true" date_format="F j, Y"]<br /><br />
+
+<strong>id</strong>
+<br />Specify a specific post ID (or multiple post IDs) to display.
+<br />Default: empty
+<br />Example: [display-posts id="9, 10"]<br /><br />
+
+<strong>image_size</strong>
+<br />Specify an image size for displaying the featured image, if the post has one. The image_size can be set to thumbnail, medium, large (all controlled from Settings > Reading), or a custom image size.
+<br />Default: empty
+<br />Example: [display-posts image_size="thumbnail"]<br /><br />
+
+<strong>include_date</strong>
+<br />Include the post's date after the post title. The default format is (7/30/12), but this can be customized using the 'date_format' parameter.
+<br />Default: empty
+<br />Example [display-posts include_date="true"]<br /><br />
+
+<strong>include_excerpt</strong>
+<br />Include the post's excerpt after the title (and date if provided).
+<br />Default: empty
+<br />Example: [display-posts include_excerpt="true"]<br /><br />
+
+<strong>offset</strong>
+<br />The number of posts to pass over
+<br />Default: 0
+<br />Example: [display-posts offset="3"]<br /><br />
+
+<strong>order</strong>
+<br />Specify whether posts are ordered in descending order (DESC) or ascending order (ASC).
+<br />Default: DESC
+<br />Example: [display-posts order="ASC"]<br /><br />
+
+<strong>orderby</strong>
+<br />Specify what the posts are ordered by. See the available parameters here.
+<br />Default: date
+<br />Example: [display-posts orderby="title"]<br /><br />
+
+<strong>post_parent</strong>
+<br />Display the pages that are a child of a certain page. You can either specify an ID or 'current', which displays the children of the current page.
+<br />Default: empty
+<br />Example: [display-posts post_type="page" post_parent="8"]<br /><br />
+
+<strong>post_status</strong>
+<br />Show posts associated with a certain post status
+<br />Default: publish
+<br />Example: [display-posts post_status="publish, future"]<br /><br />
+
+<strong>post_type</strong>
+<br />Specify which post type to use. You can use a default one (post or page), or a custom post type you've created.
+<br />Default: post
+<br />Example: [display-posts post_type="event"]<br /><br />
+
+<strong>posts_per_page</strong>
+<br />How many posts to display.
+<br />Default: 10
+<br />Example: [display-posts posts_per_page="5"]<br /><br />
+
+<strong>tag</strong>
+<br />Display posts from a specific tag, or tags
+<br />Default: empty
+<br />Example: [display-posts tag="tag1, tag2"]<br /><br />
+
+<strong>taxonomy, tax_term, and tax_operator</strong>
+<br />Use these parameters to do advanced taxonomy queries. Use 'taxonomy' for the taxonomy you'd like to query, 'tax_term' for the term slug (or terms) you'd like to include, and 'operator' to change how the query uses those terms (most likely this field will not be needed).
+<br />Default: 'taxonomy' = empty , 'tax_term' = empty , 'tax_operator' = 'IN'
+<br />Example: [display-posts taxonomy="color" tax_term="blue, green"]<br /><br />
+
+<strong>wrapper</strong>
+<br />What type of HTML should be used to display the listings. It can be an unordered list (ul), ordered list (ol), or divs (div) which you can then style yourself.
+<br />Default: ul
+<br />Example: [display-posts wrapper="ol"]</p>
+    
+    
+    <hr>
+    
+    <h3 id="translations"><strong>K) Translations</strong> - <a href="#toc">top</a></h3>
+    
+    <p>LeatherDiary theme is ready for translation into any language. The .pot file (leatherdiary.pot) is located in "languages" theme folder. LeatherDiary contains integrated Czech (cs_CZ), Danish (da_DK), Dutch (nl_NL), French (fr_FR), German (de_DE), Greek (el), Italian (it_IT), Polish (pl_PL), Russian (ru_RU), Slovak (sk_SK) and Spanish (es_ES) language localizations. The best way how to make the language localization is creating your own .po and .mo files and adding them in "languages" theme folder. If you create them, please let me know, I will add your language localization into the official theme distribution.</p>
+    
+    <p>If you don't know how to create the .po and .mo files, never mind! Simply install <a href="http://wordpress.org/plugins/codestyling-localization" target="_blank">CodeStyling Localization</a> plugin and create your language localization on "Tools => Localization" panel.</p>
+    
+    <hr>
+    
+    <h3 id="faq"><strong>L) FAQs about WordPress</strong> - <a href="#toc">top</a></h3>
+    
+    <p class="headline-without-space">1.) <strong>Where could I edit my website title and description?</strong></p>
+    <p>Go to the "Settings => General" panel and rewrite here the fields "Site Title" and "Tagline".</p>
+    
+    <p class="headline-without-space">2.) <strong>Where could I allow/disallow comments adding?</strong></p>
+    <p>Go to the "Settings => Discussion" panel and set the options according to your needs. If you want to disallow adding comments only for one specific page/post, you can do so using "Quick Edit" link at this page/post in "Posts > All Posts" or "Pages > All Pages".</p>
+    
+    <p class="headline-without-space">3.) <strong>What are the "Tags"?</strong></p>
+    <p>Tags are similar to Categories. They are used for better description of posts. We can say that Tags are the keywords which specify the posts in great detail.</p>
+    
+    <p class="headline-without-space">4.) <strong>How could I set title, description and keywords meta tags for each page and post?</strong></p>
+    <p>The easiest way is to install some SEO plugin, for example <a href="http://wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All In One SEO Pack</a>.</p>
+    
+    <p class="headline-without-space">5.) <strong>Where could I set the number of posts, which display on index/categories/archives/search pages?</strong></p>
+    <p>Go to the "Settings => Reading" panel and set the options according to your needs.</p>
+    
+    <p class="headline-without-space">6.) <strong>I do not want to display the latest posts on my home page. Could I set a static page as my home page?</strong></p>
+    <p>Yes, go to the "Settings => Reading" panel and choose the option "A static page" instead of "Your latest posts".</p>
+    
+    <p class="headline-without-space">7.) <strong>How could I set the URL addresses of my pages and posts into user-friendly form, instead of "?p=123" displaying?</strong></p>
+    <p>Go to the "Settings => Permalinks" panel and choose the option "Post name" in section "Common Settings".</p>
+    
+    <p class="headline-without-space">8.) <strong>Where could I set my time zone and date/time format?</strong></p>
+    <p>Go to the "Settings => General" panel and set the options according to your needs.</p>
+    
+    <hr>
+		
+		<p>Once again, thank you so much for choosing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. Best regards and have fun with LeatherDiary!</p> 
+		
+		<p class="append-bottom alt large"><strong>Tomas Toman</strong></p>
+		<p><a href="#toc">Go to Navigation</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

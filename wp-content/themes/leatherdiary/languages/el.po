@@ -1,0 +1,862 @@
+# Translation of the WordPress theme LeatherDiary 1.0 by Tomas Toman.
+# This file is distributed under the same license as the LeatherDiary package.
+# Tomas Toman <webdesign@tomastoman.cz>, 2014.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LeatherDiary 1.0\n"
+"POT-Creation-Date: 2014-02-04 08:52+0100\n"
+"PO-Revision-Date: 2014-05-09 10:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: Tomas Toman\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: 404.php:12 search.php:34
+msgid "Nothing Found"
+msgstr "Δε βρέθηκε κάτι"
+
+#: 404.php:14
+msgid ""
+"Apologies, but no results were found for your request. Perhaps searching "
+"will help you to find a related content."
+msgstr ""
+"Συγγνώμη, αλλά κανένα αποτέλεσμα δε βρέθηκε για το αίτημά σας. Ίσως μία νέα "
+"αναζήτηση σας βοηθήσει να βρείτε κάτι σχετικό."
+
+#: archive.php:15
+#, php-format
+msgid "Daily Archive: %s"
+msgstr "Αρχείο ημέρας: %s"
+
+#: archive.php:17
+#, php-format
+msgid "Monthly Archive: %s"
+msgstr "Μηνιαίο αρχείο: %s"
+
+#: archive.php:19
+#, php-format
+msgid "Yearly Archive: %s"
+msgstr "Ετήσιο αρχείο: %s"
+
+#: archive.php:21
+msgid "Archive"
+msgstr "Αρχείο"
+
+#: author.php:14
+#, php-format
+msgid "Author Archive: %s"
+msgstr "Αρχείο συγγραφέα: %s"
+
+#: author.php:20
+#, php-format
+msgid "About %s"
+msgstr "περίπου %s"
+
+#: class-tgm-plugin-activation.php:156 functions.php:400
+msgid "Install Required Plugins"
+msgstr "Εγκαταστήστε τα απαιτούμενα Plugins"
+
+#: class-tgm-plugin-activation.php:157 functions.php:401
+msgid "Install Plugins"
+msgstr "Εγκαταστήστε τα Plugins"
+
+#: class-tgm-plugin-activation.php:158 functions.php:405
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Εγκατάσταση Plugin: %s"
+
+#: class-tgm-plugin-activation.php:159
+msgid "Something went wrong."
+msgstr "Κάτι πήγε λάθος."
+
+#: class-tgm-plugin-activation.php:170 functions.php:411
+msgid "Return to Required Plugins Installer"
+msgstr "Επέστρεψε στα απαραίτητα για εγκατάσταση  Plugins"
+
+#: class-tgm-plugin-activation.php:171
+msgid "Return to the dashboard"
+msgstr "Επέστρεψε στον πίνακα ελέγχου"
+
+#: class-tgm-plugin-activation.php:172 class-tgm-plugin-activation.php:1840
+msgid "Plugin activated successfully."
+msgstr "Το Plugin ενεργοποιήθηκε σωστά."
+
+#: class-tgm-plugin-activation.php:173 class-tgm-plugin-activation.php:1538
+msgid "The following plugin was activated successfully:"
+msgstr "Το παρακάτω Plugin ενεργοποιήθηκε σωστά:"
+
+#: class-tgm-plugin-activation.php:174
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Όλα τα Plugins εγκαταστάθηκαν και ενεργοποιήθηκαν με επιτυχία. %1$s"
+
+#: class-tgm-plugin-activation.php:175
+msgid "Dismiss this notice"
+msgstr "Αγνόησε αυτό το μήνυμα"
+
+#: class-tgm-plugin-activation.php:1085
+msgid "External Link"
+msgstr "Εξωτερικός σύνδεσμος"
+
+#: class-tgm-plugin-activation.php:1090
+msgid "Private Repository"
+msgstr "Προσωπική αποθήκευση"
+
+#: class-tgm-plugin-activation.php:1093
+msgid "Pre-Packaged"
+msgstr "Προσυσκευασμένα"
+
+#: class-tgm-plugin-activation.php:1097
+msgid "WordPress Repository"
+msgstr "WordPress αποθήκευση"
+
+#: class-tgm-plugin-activation.php:1100
+msgid "Required"
+msgstr "Απαιτούμενα"
+
+#: class-tgm-plugin-activation.php:1100
+msgid "Recommended"
+msgstr "Συνιστάται"
+
+#: class-tgm-plugin-activation.php:1103
+msgid "Not Installed"
+msgstr "Δεν εγκαταστάθηκε"
+
+#: class-tgm-plugin-activation.php:1105
+msgid "Installed But Not Activated"
+msgstr "Εγκαταστάθηκε, αλλά δεν ενεργοποιήθηκε"
+
+#: class-tgm-plugin-activation.php:1275
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Κανένα plugin για εγκατάσταση ή ενργοποίηση. <a href=\"%1$s\" title="
+"\"Επιστροφή στον πίνακα ελέγχου\">Επιστροφή στον πίνακα ελέγχου</a>"
+
+#: class-tgm-plugin-activation.php:1291
+msgid "Plugin"
+msgstr "Plugin - Πρόσθετο"
+
+#: class-tgm-plugin-activation.php:1292
+msgid "Source"
+msgstr "Πηγή"
+
+#: class-tgm-plugin-activation.php:1293
+msgid "Type"
+msgstr "Τύπος"
+
+#: class-tgm-plugin-activation.php:1294
+msgid "Status"
+msgstr "Κατάσταση"
+
+#: class-tgm-plugin-activation.php:1312
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: class-tgm-plugin-activation.php:1313
+msgid "Activate"
+msgstr "Ενεργοποίηση"
+
+#: class-tgm-plugin-activation.php:1823
+msgid "Install package not available."
+msgstr "Το απαιτούμενο πακέτο προς εγκατάσταση δεν είναι διαθέσιμο."
+
+#: class-tgm-plugin-activation.php:1824
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Κατεβάστε το απαιτούμενο πακέτο για εγκατάσταση από <span class=\"code\">%s</"
+"span>&#8230;"
+
+#: class-tgm-plugin-activation.php:1825
+msgid "Unpacking the package&#8230;"
+msgstr "Αποσυμπιέστε το πακέτο&#8230;"
+
+#: class-tgm-plugin-activation.php:1826
+msgid "Installing the plugin&#8230;"
+msgstr "Εγκαθιστώντας το Plugin&#8230;"
+
+#: class-tgm-plugin-activation.php:1827
+msgid "Plugin install failed."
+msgstr "Η εγκατάσταση του Plugin απέτυχε."
+
+#: class-tgm-plugin-activation.php:1828
+msgid "Plugin installed successfully."
+msgstr "Το Plugin εγκαταστάθηκε επιτυχώς."
+
+#: class-tgm-plugin-activation.php:1839
+msgid "Plugin activation failed."
+msgstr "Η ενεργοποίηση του Plugin απέτυχε."
+
+#: class-tgm-plugin-activation.php:1949
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Η εγκατάσταση και η ενεργοποίηση ξεκίνησε. Αυτή η διαδικασία μπορεί να "
+"διαρκέσει αρκετή ώρα σε ορισμένους κεντρικούς υπολογιστές, γι 'αυτό παρακαλώ "
+"να περιμένετε."
+
+#: class-tgm-plugin-activation.php:1950
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s εγκαταστάθηκε και ενεργοποιήθηκε επιτυχώς."
+
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Show Details"
+msgstr "Δείξε μου λεπτομέρειες"
+
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Hide Details"
+msgstr "Απόκρυψη λεπτομέρειας"
+
+#: class-tgm-plugin-activation.php:1951
+msgid "All installations and activations have been completed."
+msgstr "Όλες οι εγκαταστάσεις και ενεργοποιήσεις ολοκληρώθηκαν."
+
+#: class-tgm-plugin-activation.php:1952
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Εγκαθιστώντας και ενεργοποιώντας το Plugin %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Η εγκατάσταση ξεκίνησε. Αυτή η διαδικασία μπορεί να διαρκέσει αρκετή ώρα σε "
+"ορισμένους κεντρικούς υπολογιστές, γι' αυτό παρακαλώ περιμένετε."
+
+#: class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Παρουσιάστηκε σφάλμα κατά την εγκατάσταση %1$s: <strong>%2$s</strong>."
+
+#: class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Η εγκατάσταση από %1$s απέτυχε."
+
+#: class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s εγκαταστάθηκε σωστά."
+
+#: class-tgm-plugin-activation.php:1960
+msgid "All installations have been completed."
+msgstr "Όλες οι εγκαταστάσεις έχουν ολοκληρωθεί."
+
+#: class-tgm-plugin-activation.php:1961
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Εγκατάσταση Plugin %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:2052
+msgid "Return to the Dashboard"
+msgstr "Επιστρέψτε στον πίνακα ελέγχου."
+
+#: comments.php:16
+msgid "Comment (1)"
+msgid_plural "Comments (%1$s)"
+msgstr[0] "Σχόλιο (1)"
+msgstr[1] "Σχόλια (%1$s )"
+
+#: comments.php:24
+msgid "Comment navigation"
+msgstr "σχόλια πλοήγησης"
+
+#: comments.php:25
+msgid "&larr; Older Comments"
+msgstr "&larr; Παλαιότερα σχόλια"
+
+#: comments.php:26
+msgid "Newer Comments &rarr;"
+msgstr "Νεότερα σχόλια &rarr;"
+
+#: comments.php:31
+msgid "Comments are closed."
+msgstr "Τα σχόλια είναι κλειστά. Δεν μπορείτε να αφήσετε άλλα σχόλια."
+
+#: comments.php:36
+msgid "Your name"
+msgstr "Το όνομά σου"
+
+#: comments.php:37
+msgid "Website"
+msgstr "Ιστοσελίδα - Ιστότοπος"
+
+#: comments.php:38
+msgid "Comment..."
+msgstr "Σχόλιο..."
+
+#: comments.php:42
+msgid "Leave a Comment"
+msgstr "Αφήστε το σχόλιό σας"
+
+#: functions.php:124
+msgid "Fixed Menu"
+msgstr "σταθερός Μενού"
+
+#: functions.php:125
+msgid "Top Header Menu"
+msgstr "Μενού πάνω Επικεφαλίδας"
+
+#: functions.php:137
+msgid "Right Sidebar"
+msgstr "Δεξιά μπάρα"
+
+#: functions.php:139
+msgid "Right sidebar which appears on all posts and pages."
+msgstr ""
+"Δεξιά πλαϊνή μπάρα που εμφανίζεται σε όλες τις αναρτήσεις και τις σελίδες."
+
+#: functions.php:146
+msgid "Footer left widget area"
+msgstr "Κάτω αριστερή περιοχή με widgets"
+
+#: functions.php:148
+msgid "Left column with widgets in footer."
+msgstr "Αριστερή στήλη με widgets στην κάτω πλευρά."
+
+#: functions.php:155
+msgid "Footer middle widget area"
+msgstr "Κάτω μεσαία περιοχή με widgets"
+
+#: functions.php:157
+msgid "Middle column with widgets in footer."
+msgstr "Μεσαία στήλη με widgets στο κάτω μέρος."
+
+#: functions.php:164
+msgid "Footer right widget area"
+msgstr "Κάτω δεξιά περιοχή με widgets"
+
+#: functions.php:166
+msgid "Right column with widgets in footer."
+msgstr "Δεξιά στήλη με widgets στην κάτω μπάρα."
+
+#: functions.php:173
+msgid "Footer notices"
+msgstr "Κάτω μπάρα ανακοινώσεων"
+
+#: functions.php:175
+msgid ""
+"The line for copyright and other notices below the footer widget areas. "
+"Insert here one Text widget. The \"Title\" field at this widget should stay "
+"empty."
+msgstr ""
+"Η γραμμή που περιέχει χώρο για τα δικαιώματα πνευματικής ιδιοκτησίας και "
+"άλλες ανακοινώσεις και βρίσκεται κάτω από τις περιοχές των widgets στο "
+"υποσέλιδο. Εισάγετε εδώ ένα widget κειμένου. Το πεδίο με ονομασία \"τίτλος "
+"\" σε αυτό το widget πρέπει να μείνει κενό."
+
+#: functions.php:182
+msgid "Homepage slideshow"
+msgstr ""
+"Αρχική σελίδα Slideshow (Slideshow = περιοδική / εναλλασόμενη εμφάνιση "
+"εικόνων, δηλαδή συνεχόμενη ροή εικόνων)"
+
+#: functions.php:184
+msgid ""
+"The area for Cyclone Slider Widget which displays a slideshow on your "
+"homepage."
+msgstr ""
+"Η περιοχή για το Widget του Cyclone Slider που εμφανίζει ένα slideshow στην "
+"ιστοσελίδα σας."
+
+#: functions.php:191
+msgid "Homepage posts"
+msgstr "Αρχική σελίδα δημοσίευση"
+
+#: functions.php:193
+msgid ""
+"The area for any LeatherDiary Homepage Widgets, which display latest posts "
+"from a specific category."
+msgstr ""
+"Η περιοχή που είναι για αναρτήσεις  widgets από LeatherDiary, που εμφανίζουν "
+"τις τελευταίες δημοσιεύσεις από μια συγκεκριμένη κατηγορία κάτω από την "
+"προεπιλεγμένη περιοχή των τελευταίων / πιο πρόσφατων αναρτήσεων/ "
+"δημοσιεύσεων."
+
+#: functions.php:240
+msgid "Post navigation"
+msgstr "Πλοήγηση στις αναρτήσεις / δημοσιεύσεις"
+
+#: functions.php:241
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> παλαιότερες δημοσιεύσεις"
+
+#: functions.php:242
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Πιο πρόσφατες δημοσιεύσεις <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:254
+msgid "&larr; Previous post"
+msgstr "&larr; Προηγούμενη δημοσίευση"
+
+#: functions.php:255
+msgid "Next post &rarr;"
+msgstr "Επόμενη δημοσίευση &rarr;"
+
+#: functions.php:271
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:271
+msgid "(Edit)"
+msgstr "(Επεξεργασία)"
+
+#: functions.php:284
+msgid "(Post author)"
+msgstr "(Δημοσίευση συγγραφέα)"
+
+#: functions.php:290
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s στο %2$s"
+
+#: functions.php:296
+msgid "Your comment is awaiting moderation."
+msgstr "Το σχόλιό σας αναμένει έγκριση."
+
+#: functions.php:302
+msgid "Reply"
+msgstr "Απάντηση"
+
+#: functions.php:304
+msgid "Edit"
+msgstr "Επεξεργασία"
+
+#: functions.php:402
+#, php-format
+msgid ""
+"The %1$s plugin is required for this theme. Click on the big blue button "
+"below to install and activate %1$s."
+msgstr ""
+"Το %1$s plugin απαιτείται για αυτό το θέμα. Κάντε κλικ στο μεγάλο γαλάζιο "
+"κουμπί παρακάτω για να το εγκαταστήσετε και να το  ενεργοποιήσετε %1$s."
+
+#: functions.php:403
+#, php-format
+msgid ""
+"The %1$s is installed but currently inactive. Please go to the <a href=\"%2$s"
+"\">plugin administration page</a> page to activate it."
+msgstr ""
+"Το %1$s εγκαταστάθηκε, αλλά είναι προσωριν) ανενεργό. Πηγαίνεται στη <a href="
+"\"%2$s\">plugin administration page </a>, σελίδα πρόσθετων και ενεργοποιήστε "
+"το."
+
+#: functions.php:404
+#, php-format
+msgid "Install %s Now"
+msgstr "Εγκαταστήστε το %s  τώρα"
+
+#: functions.php:406
+msgid "Something went wrong with the plugin API."
+msgstr "Κάτι πήγε λάθος με το Plugin API."
+
+#: functions.php:407
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. <a href=\"%2$s\"><strong>Click here to "
+"begin the installation process</strong></a>. You may be asked for FTP "
+"credentials based on your server setup."
+msgstr ""
+"Το θέμα αυτό απαιτεί το %1$s Plugin. <a href=\"%2$s\"><strong> Κάνε κλικ "
+"(εδώ) για να ξεκινήσει η διαδικασία εγκατάστασης </strong></a>. Μπορεί να "
+"ζητηθούν τα διαπιστευτήρια με βάση τις ρυθμίσεις του διακομιστή σας. "
+
+#: functions.php:408
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Λυπάμαι, αλλά δεν έχετε την έγκριση να εγκαταστήστε το %s Plugin.,"
+"Επικοινωνήστε με τον administrator (Διαχειριστή) της σελίδας και ζητήστε τη "
+"βοήθειά του για την εγκατάσταση του Plugin."
+
+#: functions.php:409
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. That plugin is currently inactive, so "
+"please go to the <a href=\"%2$s\">plugin administration page</a> to activate "
+"it."
+msgstr ""
+"Αυτό το Θέμα απαιτεί το %1$s Plugin. Το Plugin είναι προσωρινά ανενεργό, "
+"έτσι παρακαλούμε να μεταβείτε στην  <a href=\"%2$s\">σελίδα διαχείρισης των "
+"Plugins</a> για να το ενεργοποιήσετε."
+
+#: functions.php:410
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Συγγνώμη, αλλά δεν έχετε την άδεια για να ενεργοποιήσετε το %s Plugin. "
+"Επικοινωνήστε με τον Διαχειριστή αυτής της σελίδας, για να ενεργοποιήσετε το "
+"Plugin."
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Αποτελέσματα αναζήτησης για: %s"
+
+#: search.php:14
+msgid "<strong>Number of Results</strong>: "
+msgstr "<strong>Αριθμός αποτελεσμάτων:</strong>: "
+
+#: search.php:27
+msgid "Search results navigation"
+msgstr "Πλοήγηση στα αποτελέσματα αναζήτησης"
+
+#: search.php:28
+msgid "<span class=\"meta-nav\">&larr;</span> Previous results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Προηγούμενα αποτελέσματα"
+
+#: search.php:29
+msgid "Next results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Επόμενα αποτελέσματα <span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:35
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Λυπούμαστε, αλλά τίποτα δεν ταιριάζει με τα κριτήρια αναζήτησής σας. "
+"Παρακαλώ δοκιμάστε ξανά με κάποιες διαφορετικές λέξεις-κλειδιά."
+
+#: searchform.php:9
+msgid "Search here..."
+msgstr "Αναζήτηση εδώ..."
+
+#: single.php:21
+msgid "Pages:"
+msgstr "Σελίδες:"
+
+#: tag.php:13
+#, php-format
+msgid "Tag Archive: %s"
+msgstr "Λέξεις κλειδιά για την αναζήτηση: %s"
+
+#: cycloneslider/dark/slider.php:43
+msgid "View Larger Image"
+msgstr "Προβολή Μεγαλύτερης Εικόνας"
+
+#: cycloneslider/dark/slider.php:46 cycloneslider/dark/slider.php:48
+msgid "Learn More"
+msgstr "Μάθε περισσότερα"
+
+#: cycloneslider/dark/slider.php:64 cycloneslider/default/slider.php:62
+#: cycloneslider/default/slider.php:66 cycloneslider/default/slider.php:70
+#: cycloneslider/standard/slider.php:70 cycloneslider/thumbnails/slider.php:70
+msgid "Slide type not supported."
+msgstr "Αυτός ο τύπος slide δεν υποστηρίζεται."
+
+#: functions/be/fw-options.php:1208
+msgid "settings reset."
+msgstr "επαναφορά ρυθμίσεων."
+
+#: functions/be/fw-setup.php:16
+msgid "Theme Options"
+msgstr "Επιλογή θέματος"
+
+#: functions/fe/google-map-shortcode.php:100
+msgid "No location found for the entered address."
+msgstr "Η σχετική τοποθεσία για τη διεύθυνση που εισάγατε δεν βρέθηκε."
+
+#: functions/fe/google-map-shortcode.php:102
+msgid "Invalid request. Did you enter an address?"
+msgstr "Μη έγκυρο αίτημα. Εισάγατε τη διεύθυνση σωστά;"
+
+#: functions/fe/google-map-shortcode.php:104
+msgid ""
+"Something went wrong while retrieving your map, please ensure you have "
+"entered the short code correctly."
+msgstr ""
+"Κάτι πήγε στραβά κατά την ανάκτηση του χάρτη σας, παρακαλούμε βεβαιωθείτε "
+"ότι έχετε εισάγει τον κώδικα σωστά."
+
+#: functions/fe/google-map-shortcode.php:107
+msgid "Unable to contact Google API service."
+msgstr "Αδύνατη η σύνδεση με την υπηρεσία Google API."
+
+#: functions/fe/widget-facebook.php:12
+msgid "Displays Facebook Like Box."
+msgstr "Εμφάνιση εικονιδίου Facebook Like."
+
+#: functions/fe/widget-facebook.php:14
+msgid "LeatherDiary Facebook Like Box Widget"
+msgstr "LeatherDiary Facebook Like Box Widget"
+
+#: functions/fe/widget-facebook.php:56
+#: functions/fe/widget-homepage-column.php:41
+#: functions/fe/widget-homepage-default.php:41
+#: functions/fe/widget-homepage-list.php:41
+#: functions/fe/widget-homepage-slider.php:41
+#: functions/fe/widget-homepage-thumbnail.php:41
+#: functions/fe/widget-social.php:86 functions/fe/widget-twitter.php:39
+msgid "Title:"
+msgstr "Τίτλος:"
+
+#: functions/fe/widget-facebook.php:63
+msgid "Facebook Page URL:"
+msgstr "URL της σελίδας του Facebook:"
+
+#: functions/fe/widget-facebook.php:67
+msgid ""
+"Insert here the full URL of your Facebook Page that will be liked (example: "
+"http://www.facebook.com/FacebookDevelopers)."
+msgstr ""
+"Εισάγετε την πλήρη URL διεύθυνση του Facebook (παράδειγμα: http://www."
+"facebook.com/FacebookDevelopers)."
+
+#: functions/fe/widget-facebook.php:73
+msgid "Like Box Height: (optional)"
+msgstr "Διαστάσεις του εικονιδίου που κάνει Like): (προαιρετικό)"
+
+#: functions/fe/widget-facebook.php:77
+msgid ""
+"Insert here the height of Like Box. The value is in pixels, but in the field "
+"please write ONLY NUMBERS (without symbol \"px\")!"
+msgstr ""
+"Βάλτε εδώ το ύψος του εικονιδίου Like. Η τιμή είναι σε pixels, αλλά και στον "
+"τομέα γράψτε ΜΟΝΟ ΑΡΙΘΜΟΥΣ (όχι σύμβολα\"px\")!"
+
+#: functions/fe/widget-facebook.php:83
+msgid "Show Faces:"
+msgstr "Εμφάνιση προσώπων:"
+
+#: functions/fe/widget-facebook.php:90
+msgid "Specify whether to display profile photos of people who like the page."
+msgstr ""
+"Καθορίστε εάν επιθυμείτε την εμφάνιση φωτογραφιών με τα προφίλ των ανθρώπων "
+"που τους αρέσει η σελίδα."
+
+#: functions/fe/widget-facebook.php:96
+msgid "Show Stream:"
+msgstr "Εμφάνιση Stream:"
+
+#: functions/fe/widget-facebook.php:103
+msgid "Specify whether to display a stream of the latest posts by the Page."
+msgstr ""
+"Καθορίστε εάν επιθυμείτε την εμφάνιση μίας ροής των τελευταίων αναρτήσεων / "
+"δημοσιεύσεων από τη Σελίδα."
+
+#: functions/fe/widget-homepage-column.php:12
+msgid ""
+"Displays the latest posts from the selected category as a column with "
+"highlighted first post."
+msgstr ""
+"Εμφανίζει τις τελευταίες δημοσιεύσεις από την επιλεγμένη κατηγορία ως μία "
+"στήλη η οποία τονίζει την πρώτη δημοσίευση."
+
+#: functions/fe/widget-homepage-column.php:14
+msgid "LeatherDiary Homepage Column-Posts"
+msgstr "LeatherDiary Homepage Column-Posts"
+
+#: functions/fe/widget-homepage-column.php:48
+#: functions/fe/widget-homepage-default.php:48
+#: functions/fe/widget-homepage-list.php:48
+#: functions/fe/widget-homepage-slider.php:48
+#: functions/fe/widget-homepage-thumbnail.php:48
+msgid "Category:"
+msgstr "Κατηγορία:"
+
+#: functions/fe/widget-homepage-column.php:58
+#: functions/fe/widget-homepage-default.php:58
+#: functions/fe/widget-homepage-list.php:58
+#: functions/fe/widget-homepage-slider.php:58
+#: functions/fe/widget-homepage-thumbnail.php:58
+msgid "Select a category of posts."
+msgstr "Διάλεξε την κατηγορία μηνυμάτων (Δημοσιεύσεων / αναρτήσεων)."
+
+#: functions/fe/widget-homepage-column.php:64
+#: functions/fe/widget-homepage-default.php:64
+#: functions/fe/widget-homepage-list.php:64
+#: functions/fe/widget-homepage-slider.php:64
+#: functions/fe/widget-homepage-thumbnail.php:64
+msgid "Number of posts:"
+msgstr "Αριθμός μηνυμάτων (Δημοσιεύσεων / αναρτήσεων)."
+
+#: functions/fe/widget-homepage-column.php:68
+#: functions/fe/widget-homepage-default.php:68
+#: functions/fe/widget-homepage-list.php:68
+#: functions/fe/widget-homepage-slider.php:68
+#: functions/fe/widget-homepage-thumbnail.php:68
+msgid ""
+"Insert here the number of latest posts from the selected category which you "
+"want to display."
+msgstr ""
+"Εισάγετε εδώ τον αριθμό των τελευταίων δημοσιεύσεων από την επιλεγμένη "
+"κατηγορία που θέλετε να εμφανίσετε."
+
+#: functions/fe/widget-homepage-column.php:113
+#: functions/fe/widget-homepage-list.php:113
+msgid "Read more &gt;"
+msgstr "Περισσότερα &gt;"
+
+#: functions/fe/widget-homepage-default.php:12
+msgid ""
+"Displays the latest posts from the selected category in the default manner."
+msgstr ""
+"Εμφανίζει τις τελευταίες δημοσιεύσεις από την επιλεγμένη κατηγορία ως "
+"προεπιλογή."
+
+#: functions/fe/widget-homepage-default.php:14
+msgid "LeatherDiary Homepage Default-Posts"
+msgstr "LeatherDiary Homepage Default-Posts"
+
+#: functions/fe/widget-homepage-list.php:12
+msgid ""
+"Displays the latest posts from the selected category as an unordered list "
+"with highlighted first post."
+msgstr ""
+"Εμφανίζει τις τελευταίες δημοσιεύσεις από την επιλεγμένη κατηγορία ως μία μη "
+"διατεταγμένη λίστα με τονισμένη την πρώτη δημοσίευση."
+
+#: functions/fe/widget-homepage-list.php:14
+msgid "LeatherDiary Homepage List-Posts"
+msgstr "LeatherDiary Homepage List-Posts"
+
+#: functions/fe/widget-homepage-slider.php:12
+msgid "Displays the latest posts from the selected category as a slider."
+msgstr ""
+"Εμφανίζει τις τελευταίες δημοσιεύσεις από την επιλεγμένη κατηγορία ως μπάρα."
+
+#: functions/fe/widget-homepage-slider.php:14
+msgid "LeatherDiary Homepage Slider-Posts"
+msgstr "LeatherDiary Homepage Slider-Posts"
+
+#: functions/fe/widget-homepage-thumbnail.php:12
+msgid "Displays the latest posts from the selected category as the thumbnails."
+msgstr ""
+"Εμφανίζει τις τελευταίες δημοσιεύσεις από την επιλεγμένη κατηγορία ως "
+"μικρογραφίες."
+
+#: functions/fe/widget-homepage-thumbnail.php:14
+msgid "LeatherDiary Homepage Thumbnail-Posts"
+msgstr "LeatherDiary Homepage Thumbnail-Posts"
+
+#: functions/fe/widget-social.php:12
+msgid "A Social widget by LeatherDiary"
+msgstr "Τα Κοινωνικά δίκτυα από LeatherDiary"
+
+#: functions/fe/widget-social.php:14
+msgid "LeatherDiary Social Widget"
+msgstr "LeatherDiary Social Widget"
+
+#: functions/fe/widget-social.php:93
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: functions/fe/widget-social.php:97
+msgid "Insert the full URL of your Twitter profile."
+msgstr "Εισάγετε όλο το URL από το προφίλ σας στο Twitter."
+
+#: functions/fe/widget-social.php:103
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: functions/fe/widget-social.php:107
+msgid "Insert the full URL of your Facebook profile, page or group."
+msgstr "Εισάγετε το URL από το προφίλ σας στο Facebook, προσωπικό ή ομαδικό."
+
+#: functions/fe/widget-social.php:113
+msgid "RSS:"
+msgstr "RSS:"
+
+#: functions/fe/widget-social.php:117
+msgid "Insert the Url of your RSS. You may include your RSS from Feedburner."
+msgstr ""
+"Εισάγετε το URL από τα RSS.  Μπορείτε να συμπεριλάβετε RSS σας από το "
+"Feedburner."
+
+#: functions/fe/widget-social.php:123
+msgid "Google Plus:"
+msgstr "Google Plus:"
+
+#: functions/fe/widget-social.php:127
+msgid "Insert the full URL of your Google Plus profile"
+msgstr "Εισάγετε το URL από το προφίλ σας στο Google Plus."
+
+#: functions/fe/widget-social.php:133
+msgid "You Tube:"
+msgstr "You Tube:"
+
+#: functions/fe/widget-social.php:137
+msgid "Insert the full URL of your YouTube profile."
+msgstr "Εισάγετε το URL από το προφίλ σας στο YouTube."
+
+#: functions/fe/widget-social.php:143
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+#: functions/fe/widget-social.php:147
+msgid "Insert the full URL of your Linkedin profile."
+msgstr "Εισάγετε το URL από το προφίλ σας στο Linkedin."
+
+#: functions/fe/widget-social.php:153
+msgid "Delicious:"
+msgstr "Delicious:"
+
+#: functions/fe/widget-social.php:157
+msgid "Insert the full URL of your Delicious profile."
+msgstr "Εισάγετε το URL από το προφίλ σας στο Delicious."
+
+#: functions/fe/widget-social.php:163
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+#: functions/fe/widget-social.php:167
+msgid "Insert the full URL of your Pinterest profile."
+msgstr "Εισάγετε το URL από το προφίλ σας στο Pinterest."
+
+#: functions/fe/widget-social.php:173
+msgid "Flickr:"
+msgstr "Flickr:"
+
+#: functions/fe/widget-social.php:177
+msgid "Insert the full URL of your Flickr profile."
+msgstr "Εισάγετε το URL από το προφίλ σας στο Flickr."
+
+#: functions/fe/widget-twitter.php:13
+msgid "Twitter widget by LeatherDiary"
+msgstr "Widget του Twitter από LeatherDiary"
+
+#: functions/fe/widget-twitter.php:15
+msgid "LeatherDiary Twitter Widget"
+msgstr "LeatherDiary Twitter Widget"
+
+#: functions/fe/widget-twitter.php:25
+msgid "Join us on Twitter"
+msgstr "Ακολουθήστε μας στο Twitter"
+
+#: functions/fe/widget-twitter.php:46
+msgid "Twitter Username:"
+msgstr "Twitter Username:"
+
+#: functions/fe/widget-twitter.php:50
+msgid "Insert your Twitter username. (ex: leatherdiary)."
+msgstr "Εισάγετε το όνομα χρήστη στο Twitter. Πχ: leatherdiary."
+
+#: template-logged-in.php:25
+msgid "You must be logged in to view this page."
+msgstr "Πρέπει να συνδεθείτε για να δείτε αυτή τη σελίδα."
+
+#: functions.php:247 search.php:28
+msgid "&larr; Previous"
+msgstr "&larr; Προηγούμενη"
+
+#: functions.php:248 search.php:29
+msgid "Next &rarr;"
+msgstr "Επόμενη &rarr;"

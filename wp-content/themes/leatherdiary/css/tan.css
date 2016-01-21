@@ -1,0 +1,38 @@
+/* Color scheme Tan
+----------------------------------------------- */
+body #footer,
+body #fixed-navigation .scroll-top,
+body .highlight-text,
+body .date-arrow .bookmark,
+body input[type="submit"],
+body input[type="reset"],
+body .custom-button,
+body #searchform .searchform-wrapper .send {
+  background-color: #b09675;             
+}
+body .post-entry .post-entry-headline a,
+body .home-list-posts .home-list-posts-wrapper ul li a,
+body .flexslider .slides li a,
+body .sidebar-widget a {
+  color: #b09675;             
+}
+body #fixed-navigation .scroll-top:hover,
+body #top-navigation,
+body .footer-signature,
+body input[type="submit"]:hover,
+body input[type="reset"]:hover,
+body .custom-button:hover,
+body #searchform .send:hover {
+  background-color: #87745a;                                           
+}
+body a,
+body .site-title a,
+body .main-headline,
+body .entry-headline,
+body .sidebar-widget .sidebar-headline,
+body .comment-reply-title {
+  color: #87745a;       
+}
+body #footer a {
+  color: #524636;               
+}

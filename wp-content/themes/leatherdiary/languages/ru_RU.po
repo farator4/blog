@@ -1,0 +1,855 @@
+# Translation of the WordPress theme LeatherDiary 1.0 by Tomas Toman.
+# This file is distributed under the same license as the LeatherDiary package.
+# Tomas Toman <webdesign@tomastoman.cz>, 2014.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LeatherDiary 1.0\n"
+"POT-Creation-Date: 2014-02-04 08:52+0100\n"
+"PO-Revision-Date: 2014-04-25 08:43+0100\n"
+"Last-Translator: veshinak <veshinak@gmail.com>\n"
+"Language-Team: Tomas Toman\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 1 ? 0 : 1;\n"
+"X-Generator: Poedit 1.5.7\n"
+
+#: 404.php:12 search.php:34
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: 404.php:14
+msgid ""
+"Apologies, but no results were found for your request. Perhaps searching "
+"will help you to find a related content."
+msgstr ""
+"К сожалению, запрашиваемая Вами страница не найдена. Воспользуйтесь поиском "
+"для нахождения необходимой информации."
+
+#: archive.php:15
+#, php-format
+msgid "Daily Archive: %s"
+msgstr "Архив записей по дате: %s"
+
+#: archive.php:17
+#, php-format
+msgid "Monthly Archive: %s"
+msgstr "Архив записей по месяцу: %s"
+
+#: archive.php:19
+#, php-format
+msgid "Yearly Archive: %s"
+msgstr "Архив записей по году: %s"
+
+#: archive.php:21
+msgid "Archive"
+msgstr "Архив записей"
+
+#: author.php:14
+#, php-format
+msgid "Author Archive: %s"
+msgstr "Архив записей автора: %s"
+
+#: author.php:20
+#, php-format
+msgid "About %s"
+msgstr "Подробнее об авторе: %s"
+
+#: class-tgm-plugin-activation.php:156 functions.php:400
+msgid "Install Required Plugins"
+msgstr "Установите необходимые плагины"
+
+#: class-tgm-plugin-activation.php:157 functions.php:401
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#: class-tgm-plugin-activation.php:158 functions.php:405
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Устанавливается плагин: %s"
+
+#: class-tgm-plugin-activation.php:159
+msgid "Something went wrong."
+msgstr "Неизвестная ошибка."
+
+#: class-tgm-plugin-activation.php:170 functions.php:411
+msgid "Return to Required Plugins Installer"
+msgstr "Вернуться к инсталлятору необходимых плагинов"
+
+#: class-tgm-plugin-activation.php:171
+msgid "Return to the dashboard"
+msgstr "Вернуться в панель управления"
+
+#: class-tgm-plugin-activation.php:172 class-tgm-plugin-activation.php:1840
+msgid "Plugin activated successfully."
+msgstr "Плагин успешно активирован."
+
+#: class-tgm-plugin-activation.php:173 class-tgm-plugin-activation.php:1538
+msgid "The following plugin was activated successfully:"
+msgstr "Следующий плагин был успешно активирован:"
+
+#: class-tgm-plugin-activation.php:174
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Все плагины установлены и успешно активированы. %1$s"
+
+#: class-tgm-plugin-activation.php:175
+msgid "Dismiss this notice"
+msgstr "Скрыть это уведомление"
+
+#: class-tgm-plugin-activation.php:1085
+msgid "External Link"
+msgstr "Внешняя ссылка"
+
+#: class-tgm-plugin-activation.php:1090
+msgid "Private Repository"
+msgstr "Из личного репозитория"
+
+#: class-tgm-plugin-activation.php:1093
+msgid "Pre-Packaged"
+msgstr "Из комплекта установки"
+
+#: class-tgm-plugin-activation.php:1097
+msgid "WordPress Repository"
+msgstr "Из репозитория WordPress"
+
+#: class-tgm-plugin-activation.php:1100
+msgid "Required"
+msgstr "Требуется"
+
+#: class-tgm-plugin-activation.php:1100
+msgid "Recommended"
+msgstr "Рекомендовано"
+
+#: class-tgm-plugin-activation.php:1103
+msgid "Not Installed"
+msgstr "Не установлено"
+
+#: class-tgm-plugin-activation.php:1105
+msgid "Installed But Not Activated"
+msgstr "Установлено, но не активировано."
+
+#: class-tgm-plugin-activation.php:1275
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"Нет плагинов для установки или активации. <a href=\"%1$s\" title=\"Вернуться "
+"в панель управления\">Вернуться в панель управления</a>"
+
+#: class-tgm-plugin-activation.php:1291
+msgid "Plugin"
+msgstr "Плагин"
+
+#: class-tgm-plugin-activation.php:1292
+msgid "Source"
+msgstr "Источник"
+
+#: class-tgm-plugin-activation.php:1293
+msgid "Type"
+msgstr "Тип"
+
+#: class-tgm-plugin-activation.php:1294
+msgid "Status"
+msgstr "Статус"
+
+#: class-tgm-plugin-activation.php:1312
+msgid "Install"
+msgstr "Установить"
+
+#: class-tgm-plugin-activation.php:1313
+msgid "Activate"
+msgstr "Активировать"
+
+#: class-tgm-plugin-activation.php:1823
+msgid "Install package not available."
+msgstr "Установочный пакет недоступен."
+
+#: class-tgm-plugin-activation.php:1824
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+"Установочный пакет загружается из <span class=\"code\">%s</span>&#8230;"
+
+#: class-tgm-plugin-activation.php:1825
+msgid "Unpacking the package&#8230;"
+msgstr "Извлечение&#8230;"
+
+#: class-tgm-plugin-activation.php:1826
+msgid "Installing the plugin&#8230;"
+msgstr "Установка плагина&#8230;"
+
+#: class-tgm-plugin-activation.php:1827
+msgid "Plugin install failed."
+msgstr "Установка плагина прервана."
+
+#: class-tgm-plugin-activation.php:1828
+msgid "Plugin installed successfully."
+msgstr "Плагин успешно установлен."
+
+#: class-tgm-plugin-activation.php:1839
+msgid "Plugin activation failed."
+msgstr "Активация плагина прервана."
+
+#: class-tgm-plugin-activation.php:1949
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Процесс установки и активации запущен. В зависимости от хостинга эта "
+"процедура может занять некоторое время, наберитесь терпения."
+
+#: class-tgm-plugin-activation.php:1950
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s успешно установлен и активирован."
+
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Show Details"
+msgstr "Показать подробности"
+
+#: class-tgm-plugin-activation.php:1950 class-tgm-plugin-activation.php:1959
+msgid "Hide Details"
+msgstr "Скрыть подробности"
+
+#: class-tgm-plugin-activation.php:1951
+msgid "All installations and activations have been completed."
+msgstr "Установка и активация всех дополнений завершена."
+
+#: class-tgm-plugin-activation.php:1952
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:1956
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Процесс установки запущен. В зависимости от хостинга эта процедура может "
+"занять некоторое время, наберитесь терпения."
+
+#: class-tgm-plugin-activation.php:1957
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "В процессе установки  %1$s произошла ошибка: <strong>%2$s</strong>."
+
+#: class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Установка %1$s прервана."
+
+#: class-tgm-plugin-activation.php:1959
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s успешно установлен."
+
+#: class-tgm-plugin-activation.php:1960
+msgid "All installations have been completed."
+msgstr "Все установки завершены."
+
+#: class-tgm-plugin-activation.php:1961
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Устанавливается плагин %1$s (%2$d/%3$d)"
+
+#: class-tgm-plugin-activation.php:2052
+msgid "Return to the Dashboard"
+msgstr "Вернуться в панель управления"
+
+#: comments.php:16
+msgid "Comment (1)"
+msgid_plural "Comments (%1$s)"
+msgstr[0] "комментарий (1)"
+msgstr[1] "комментария (%1$s)"
+
+#: comments.php:24
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:25
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: comments.php:26
+msgid "Newer Comments &rarr;"
+msgstr "Свежие комментарии &rarr;"
+
+#: comments.php:31
+msgid "Comments are closed."
+msgstr "Возможность комментирования отключена."
+
+#: comments.php:36
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: comments.php:37
+msgid "Website"
+msgstr "Сайт"
+
+#: comments.php:38
+msgid "Comment..."
+msgstr "Комментировать..."
+
+#: comments.php:42
+msgid "Leave a Comment"
+msgstr "Оставьте комментарий"
+
+#: functions.php:124
+msgid "Fixed Menu"
+msgstr "неподвижный меню"
+
+#: functions.php:125
+msgid "Top Header Menu"
+msgstr "Верхнее меню"
+
+#: functions.php:137
+msgid "Right Sidebar"
+msgstr "Правый сайдбар"
+
+#: functions.php:139
+msgid "Right sidebar which appears on all posts and pages."
+msgstr "Сайдбар справа, присутствующий на всех страницах и во всех записях."
+
+#: functions.php:146
+msgid "Footer left widget area"
+msgstr "Левая секция подвала"
+
+#: functions.php:148
+msgid "Left column with widgets in footer."
+msgstr "Левая из трех секций подвала."
+
+#: functions.php:155
+msgid "Footer middle widget area"
+msgstr "Средняя секция подвала"
+
+#: functions.php:157
+msgid "Middle column with widgets in footer."
+msgstr "Средняя из трех секций подвала."
+
+#: functions.php:164
+msgid "Footer right widget area"
+msgstr "Правая секция подвала"
+
+#: functions.php:166
+msgid "Right column with widgets in footer."
+msgstr "Правая из трех секций подвала."
+
+#: functions.php:173
+msgid "Footer notices"
+msgstr "Реквизиты в подвале"
+
+#: functions.php:175
+msgid ""
+"The line for copyright and other notices below the footer widget areas. "
+"Insert here one Text widget. The \"Title\" field at this widget should stay "
+"empty."
+msgstr ""
+"Строка для размещения копирайтов или реквизитов в самом низу страницы. "
+"Разместите здесь один текстовый виджет. Поле \"Заголовок\" рекомендуется "
+"оставить пустым."
+
+#: functions.php:182
+msgid "Homepage slideshow"
+msgstr "Слайдшоу на главной"
+
+#: functions.php:184
+msgid ""
+"The area for Cyclone Slider Widget which displays a slideshow on your "
+"homepage."
+msgstr ""
+"Место для Cyclone Slider Widget, который осуществляет показ слайдов на Вашей "
+"главной странице."
+
+#: functions.php:191
+msgid "Homepage posts"
+msgstr "Записи на главной"
+
+#: functions.php:193
+msgid ""
+"The area for any LeatherDiary Homepage Widgets, which display latest posts "
+"from a specific category."
+msgstr ""
+"Место для любых виджетов главной страницы LeatherDiary, где показываются "
+"записи из определенной рубрики."
+
+#: functions.php:240
+msgid "Post navigation"
+msgstr "Навигация по записям"
+
+#: functions.php:241
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие записи"
+
+#: functions.php:242
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Свежие записи <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:254
+msgid "&larr; Previous post"
+msgstr "&larr; Предыдущая запись"
+
+#: functions.php:255
+msgid "Next post &rarr;"
+msgstr "Следующая запись &rarr;"
+
+#: functions.php:271
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:271
+msgid "(Edit)"
+msgstr "(Редактировать)"
+
+#: functions.php:284
+msgid "(Post author)"
+msgstr "(Автор)"
+
+#: functions.php:290
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: functions.php:296
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает проверки."
+
+#: functions.php:302
+msgid "Reply"
+msgstr "Ответить"
+
+#: functions.php:304
+msgid "Edit"
+msgstr "Редактировать"
+
+#: functions.php:402
+#, php-format
+msgid ""
+"The %1$s plugin is required for this theme. Click on the big blue button "
+"below to install and activate %1$s."
+msgstr ""
+"Для корректной работы этой темы требуется плагин %1$s. Чтобы установить и "
+"активировать %1$s, нажмите на синюю кнопку ниже."
+
+#: functions.php:403
+#, php-format
+msgid ""
+"The %1$s is installed but currently inactive. Please go to the <a href=\"%2$s"
+"\">plugin administration page</a> page to activate it."
+msgstr ""
+"Плагин %1$s установлен, но не активирован. Для активации плагина перейдите "
+"на <a href=\"%2$s\">страницу управления плагинами</a>."
+
+#: functions.php:404
+#, php-format
+msgid "Install %s Now"
+msgstr "Установить %s сейчас"
+
+#: functions.php:406
+msgid "Something went wrong with the plugin API."
+msgstr "Произошла неизвестная ошибка с API плагина."
+
+#: functions.php:407
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. <a href=\"%2$s\"><strong>Click here to "
+"begin the installation process</strong></a>. You may be asked for FTP "
+"credentials based on your server setup."
+msgstr ""
+"Для работы темы оформления необходим плагин %1$s. <a href=\"%2$s"
+"\"><strong>Нажмите, чтобы начать процесс установки</strong></a>. В "
+"зависимости от настроек сервера Вам могут потребоваться Ваши данные для FTP-"
+"соединения."
+
+#: functions.php:408
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr ""
+"Извините, у Вас недостаточно прав для установки плагина %s. Свяжитесь с "
+"администратором сайта для помощи в установке."
+
+#: functions.php:409
+#, php-format
+msgid ""
+"This theme requires the %1$s plugin. That plugin is currently inactive, so "
+"please go to the <a href=\"%2$s\">plugin administration page</a> to activate "
+"it."
+msgstr ""
+"Для работы темы оформления необходим плагин %s. Этот плагин в настоящее "
+"время не активирован. Для активации плагина перейдите на <a href=\"%2$s"
+"\">страницу управления плагинами</a>."
+
+#: functions.php:410
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr ""
+"Извините, у Вас недостаточно прав для активации плагина %s. Свяжитесь с "
+"администратором сайта для помощи в активации."
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результаты поиска по запросу: %s"
+
+#: search.php:14
+msgid "<strong>Number of Results</strong>: "
+msgstr "<strong>Всего найдено</strong>: "
+
+#: search.php:27
+msgid "Search results navigation"
+msgstr "Навигация по результатам поиска"
+
+#: search.php:28
+msgid "<span class=\"meta-nav\">&larr;</span> Previous results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие результаты"
+
+#: search.php:29
+msgid "Next results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Следующие результаты <span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:35
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, по заданным критериям поиска ничего не найдено. Попробуйте "
+"изменить поисковый запрос."
+
+#: searchform.php:9
+msgid "Search here..."
+msgstr "Поиск по сайту..."
+
+#: single.php:21
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: tag.php:13
+#, php-format
+msgid "Tag Archive: %s"
+msgstr "Архивные записи по метке: %s"
+
+#: cycloneslider/dark/slider.php:43
+msgid "View Larger Image"
+msgstr "Увеличить изображение"
+
+#: cycloneslider/dark/slider.php:46 cycloneslider/dark/slider.php:48
+msgid "Learn More"
+msgstr "Узнать больше"
+
+#: cycloneslider/dark/slider.php:64 cycloneslider/default/slider.php:62
+#: cycloneslider/default/slider.php:66 cycloneslider/default/slider.php:70
+#: cycloneslider/standard/slider.php:70 cycloneslider/thumbnails/slider.php:70
+msgid "Slide type not supported."
+msgstr "Тип слайда не поддерживается."
+
+#: functions/be/fw-options.php:1208
+msgid "settings reset."
+msgstr "сброшена к первоначальным настройкам."
+
+#: functions/be/fw-setup.php:16
+msgid "Theme Options"
+msgstr "Настройки темы"
+
+#: functions/fe/google-map-shortcode.php:100
+msgid "No location found for the entered address."
+msgstr "По заданному адресу местоположение не найдено."
+
+#: functions/fe/google-map-shortcode.php:102
+msgid "Invalid request. Did you enter an address?"
+msgstr "Неверный запрос. Вы ввели адрес?"
+
+#: functions/fe/google-map-shortcode.php:104
+msgid ""
+"Something went wrong while retrieving your map, please ensure you have "
+"entered the short code correctly."
+msgstr ""
+"При генерации карты возникла неизвестная ошибка. Пожалуйста, проверьте "
+"правильность вставки короткого кода."
+
+#: functions/fe/google-map-shortcode.php:107
+msgid "Unable to contact Google API service."
+msgstr "Нет соединения с сервисом Google API."
+
+#: functions/fe/widget-facebook.php:12
+msgid "Displays Facebook Like Box."
+msgstr "Показывает блок лайков Facebook."
+
+#: functions/fe/widget-facebook.php:14
+msgid "LeatherDiary Facebook Like Box Widget"
+msgstr "Виджет с блоком лайков Facebook"
+
+#: functions/fe/widget-facebook.php:56
+#: functions/fe/widget-homepage-column.php:41
+#: functions/fe/widget-homepage-default.php:41
+#: functions/fe/widget-homepage-list.php:41
+#: functions/fe/widget-homepage-slider.php:41
+#: functions/fe/widget-homepage-thumbnail.php:41
+#: functions/fe/widget-social.php:86 functions/fe/widget-twitter.php:39
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: functions/fe/widget-facebook.php:63
+msgid "Facebook Page URL:"
+msgstr "Ссылка на страницу Facebook:"
+
+#: functions/fe/widget-facebook.php:67
+msgid ""
+"Insert here the full URL of your Facebook Page that will be liked (example: "
+"http://www.facebook.com/FacebookDevelopers)."
+msgstr ""
+"Вставьте сюда полный URL Вашей страницы Facebook для которой будут "
+"показываться лайки (пример: http://www.facebook.com/FacebookDevelopers)."
+
+#: functions/fe/widget-facebook.php:73
+msgid "Like Box Height: (optional)"
+msgstr "Высота блока: (необязательно)"
+
+#: functions/fe/widget-facebook.php:77
+msgid ""
+"Insert here the height of Like Box. The value is in pixels, but in the field "
+"please write ONLY NUMBERS (without symbol \"px\")!"
+msgstr "Задайте высоту блока в пикселях. Впишите ТОЛЬКО ЦИФРЫ, без \"px\"!"
+
+#: functions/fe/widget-facebook.php:83
+msgid "Show Faces:"
+msgstr "Показывать лица:"
+
+#: functions/fe/widget-facebook.php:90
+msgid "Specify whether to display profile photos of people who like the page."
+msgstr ""
+"Выберите, нужно ли показывать фотографии из профилей людей, кому нравится "
+"эта страница."
+
+#: functions/fe/widget-facebook.php:96
+msgid "Show Stream:"
+msgstr "Показывать ленту:"
+
+#: functions/fe/widget-facebook.php:103
+msgid "Specify whether to display a stream of the latest posts by the Page."
+msgstr "Выберите, нужно ли показывать ленту записей страницы."
+
+#: functions/fe/widget-homepage-column.php:12
+msgid ""
+"Displays the latest posts from the selected category as a column with "
+"highlighted first post."
+msgstr ""
+"Показывает последние записи из выбранной рубрики в виде колонки с подсветкой "
+"первой записи."
+
+#: functions/fe/widget-homepage-column.php:14
+msgid "LeatherDiary Homepage Column-Posts"
+msgstr "LeatherDiary Homepage Column-Posts"
+
+#: functions/fe/widget-homepage-column.php:48
+#: functions/fe/widget-homepage-default.php:48
+#: functions/fe/widget-homepage-list.php:48
+#: functions/fe/widget-homepage-slider.php:48
+#: functions/fe/widget-homepage-thumbnail.php:48
+msgid "Category:"
+msgstr "Рубрика:"
+
+#: functions/fe/widget-homepage-column.php:58
+#: functions/fe/widget-homepage-default.php:58
+#: functions/fe/widget-homepage-list.php:58
+#: functions/fe/widget-homepage-slider.php:58
+#: functions/fe/widget-homepage-thumbnail.php:58
+msgid "Select a category of posts."
+msgstr "Выберите рубрику записей."
+
+#: functions/fe/widget-homepage-column.php:64
+#: functions/fe/widget-homepage-default.php:64
+#: functions/fe/widget-homepage-list.php:64
+#: functions/fe/widget-homepage-slider.php:64
+#: functions/fe/widget-homepage-thumbnail.php:64
+msgid "Number of posts:"
+msgstr "Количество записей:"
+
+#: functions/fe/widget-homepage-column.php:68
+#: functions/fe/widget-homepage-default.php:68
+#: functions/fe/widget-homepage-list.php:68
+#: functions/fe/widget-homepage-slider.php:68
+#: functions/fe/widget-homepage-thumbnail.php:68
+msgid ""
+"Insert here the number of latest posts from the selected category which you "
+"want to display."
+msgstr ""
+"Задайте количество последних записей из выбранной рубрики, которое будет "
+"отображаться."
+
+#: functions/fe/widget-homepage-column.php:113
+#: functions/fe/widget-homepage-list.php:113
+msgid "Read more &gt;"
+msgstr "Читать далее &gt;"
+
+#: functions/fe/widget-homepage-default.php:12
+msgid ""
+"Displays the latest posts from the selected category in the default manner."
+msgstr "Выводит последние записи из выбранной рубрики способом по умолчанию."
+
+#: functions/fe/widget-homepage-default.php:14
+msgid "LeatherDiary Homepage Default-Posts"
+msgstr "LeatherDiary Homepage Default-Posts"
+
+#: functions/fe/widget-homepage-list.php:12
+msgid ""
+"Displays the latest posts from the selected category as an unordered list "
+"with highlighted first post."
+msgstr ""
+"Показывает последние записи из выбранной рубрики в виде ненумерованного "
+"списка с подсветкой первой записи."
+
+#: functions/fe/widget-homepage-list.php:14
+msgid "LeatherDiary Homepage List-Posts"
+msgstr "LeatherDiary Homepage List-Posts"
+
+#: functions/fe/widget-homepage-slider.php:12
+msgid "Displays the latest posts from the selected category as a slider."
+msgstr "Показывает последние записи из выбранной рубрики в виде слайдера."
+
+#: functions/fe/widget-homepage-slider.php:14
+msgid "LeatherDiary Homepage Slider-Posts"
+msgstr "LeatherDiary Homepage Slider-Posts"
+
+#: functions/fe/widget-homepage-thumbnail.php:12
+msgid "Displays the latest posts from the selected category as the thumbnails."
+msgstr "Показывает последние записи из выбранной рубрики в виде миниатюры."
+
+#: functions/fe/widget-homepage-thumbnail.php:14
+msgid "LeatherDiary Homepage Thumbnail-Posts"
+msgstr "LeatherDiary Homepage Thumbnail-Posts"
+
+#: functions/fe/widget-social.php:12
+msgid "A Social widget by LeatherDiary"
+msgstr "Виджет социальных кнопок от LeatherDiary"
+
+#: functions/fe/widget-social.php:14
+msgid "LeatherDiary Social Widget"
+msgstr "LeatherDiary Social Widget"
+
+#: functions/fe/widget-social.php:93
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: functions/fe/widget-social.php:97
+msgid "Insert the full URL of your Twitter profile."
+msgstr "Впишите сюда полный URL Вашего профиля Twitter."
+
+#: functions/fe/widget-social.php:103
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: functions/fe/widget-social.php:107
+msgid "Insert the full URL of your Facebook profile, page or group."
+msgstr "Впишите сюда полный URL Вашего профиля Facebook, страницы или группы."
+
+#: functions/fe/widget-social.php:113
+msgid "RSS:"
+msgstr "RSS:"
+
+#: functions/fe/widget-social.php:117
+msgid "Insert the Url of your RSS. You may include your RSS from Feedburner."
+msgstr ""
+"Впишите сюда URL ВашВашей ленты RSS. Можете включить RSS из Feedburner."
+
+#: functions/fe/widget-social.php:123
+msgid "Google Plus:"
+msgstr "Google Plus:"
+
+#: functions/fe/widget-social.php:127
+msgid "Insert the full URL of your Google Plus profile"
+msgstr "Впишите сюда полный URL Вашего профиля Google Plus."
+
+#: functions/fe/widget-social.php:133
+msgid "You Tube:"
+msgstr "You Tube:"
+
+#: functions/fe/widget-social.php:137
+msgid "Insert the full URL of your YouTube profile."
+msgstr "Впишите сюда полный URL Вашего профиля YouTube."
+
+#: functions/fe/widget-social.php:143
+msgid "Linkedin:"
+msgstr "Linkedin:"
+
+#: functions/fe/widget-social.php:147
+msgid "Insert the full URL of your Linkedin profile."
+msgstr "Впишите сюда полный URL Вашего профиля Linkedin."
+
+#: functions/fe/widget-social.php:153
+msgid "Delicious:"
+msgstr "Delicious:"
+
+#: functions/fe/widget-social.php:157
+msgid "Insert the full URL of your Delicious profile."
+msgstr "Впишите сюда полный URL Вашего профиля Delicious."
+
+#: functions/fe/widget-social.php:163
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+#: functions/fe/widget-social.php:167
+msgid "Insert the full URL of your Pinterest profile."
+msgstr "Впишите сюда полный URL Вашего профиля Pinterest."
+
+#: functions/fe/widget-social.php:173
+msgid "Flickr:"
+msgstr "Flickr:"
+
+#: functions/fe/widget-social.php:177
+msgid "Insert the full URL of your Flickr profile."
+msgstr "Впишите сюда полный URL Вашего профиля Flickr."
+
+#: functions/fe/widget-twitter.php:13
+msgid "Twitter widget by LeatherDiary"
+msgstr "Виджет Twitter от LeatherDiary"
+
+#: functions/fe/widget-twitter.php:15
+msgid "LeatherDiary Twitter Widget"
+msgstr "Виджет Twitter от LeatherDiary"
+
+#: functions/fe/widget-twitter.php:25
+msgid "Join us on Twitter"
+msgstr "Читайте нас в Twitter"
+
+#: functions/fe/widget-twitter.php:46
+msgid "Twitter Username:"
+msgstr "Имя пользователя Twitter:"
+
+#: functions/fe/widget-twitter.php:50
+msgid "Insert your Twitter username. (ex: leatherdiary)."
+msgstr "Впишите свое имя пользователя Twitter. (Пример: leatherdiary)."
+
+#: template-logged-in.php:25
+msgid "You must be logged in to view this page."
+msgstr "Вы должны войти в систему для просмотра этой страницы."
+
+#: functions.php:247 search.php:28
+msgid "&larr; Previous"
+msgstr "&larr; Предыдущая"
+
+#: functions.php:248 search.php:29
+msgid "Next &rarr;"
+msgstr "Следующая &rarr;"
+
+#~ msgid "Related Posts"
+#~ msgstr "Похожие записи"
+
+#~ msgid ""
+#~ "Displays the latest posts from the selected category as a grid with "
+#~ "highlighted first post."
+#~ msgstr ""
+#~ "Показывает последние записи из выбранной рубрики в виде таблицы с "
+#~ "подсветкой первой записи."
+
+#~ msgid "LeatherDiary Homepage Grid-Posts"
+#~ msgstr "LeatherDiary Homepage Grid-Posts"
