@@ -1,0 +1,42 @@
+.wsw-ui-hidden {
+    display: none;
+
+}
+.wsw-global-save-view {
+    margin-top: 15px;
+}
+
+
+.wsw-score-box-block div {
+
+    border-style: double;
+    border-width: 3px;
+    border-color: olive;
+    background: transparent;
+}
+
+.wsw-score-box-block h1 {
+    color: rgba(80, 124, 35, 1.0);
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-top: 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.wsw-score-box-block hr {
+   margin: 0;
+   margin-bottom: 5px;
+
+    border-top: 3px solid #eee;
+}
+
+.wsw-score-box-block address {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}

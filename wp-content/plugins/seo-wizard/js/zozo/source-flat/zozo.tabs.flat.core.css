@@ -1,0 +1,114 @@
+/*#region ==========================================================================
+     flat
+========================================================================== */
+
+/* flat reset*/
+.z-tabs.flat,
+.z-tabs.flat > .z-container,
+.z-tabs.flat > ul.z-tabs-nav,
+.z-tabs.flat.horizontal > ul.z-tabs-nav,
+.z-tabs.flat.vertical > ul.z-tabs-nav.z-tabs-desktop,
+.z-tabs.flat > ul li.z-first,
+.z-tabs.flat > ul.z-tabs-nav > li > a,
+.z-tabs.flat.horizontal > ul.z-tabs-nav > li > a,
+.z-tabs.flat.horizontal.clean > ul.z-tabs-nav > li > a 
+{
+     border-width: 0; 
+     -moz-border-radius: 0; 
+     -webkit-border-radius: 0; 
+     border-radius: 0; 
+     -moz-box-shadow: none !important; 
+     -webkit-box-shadow: none !important; 
+     box-shadow: none !important; 
+}
+
+
+ /*flat sizes*/
+.z-tabs.flat.mini >  ul > li > a    {font-size: 11px;padding: 7px 16px;}
+.z-tabs.flat.small >  ul > li > a   {font-size: 11px;padding: 13px 20px;}
+.z-tabs.flat.medium >  ul > li > a  {font-size: 13px;padding: 16px 24px;} /*font 1+ top 1+ left +4*/
+.z-tabs.flat.large >  ul > li > a   {font-size: 14px;padding: 19px 28px;}
+.z-tabs.flat.xlarge >  ul > li > a  {font-size: 14px;padding: 22px 32px;}
+.z-tabs.flat.xxlarge >  ul > li > a {font-size: 15px;padding: 25px 36px;}
+
+    .z-tabs.flat.top-compact > ul > li > a,
+    .z-tabs.flat.bottom-compact > ul > li > a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+/*common*/
+
+.z-tabs.flat
+{
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: "Lato", Helvetica, Arial, sans-serif; 
+    font-weight: normal; 
+    line-height: 1.55em; 
+       
+    font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;  
+}
+
+.z-tabs.flat,
+.z-tabs.flat > ul > li > a { color: #374858;color: #2C3E50;text-shadow: none;}
+
+.z-tabs.flat > ul > li > a
+{/*text-transform: uppercase;*/
+    /*font-weight: 600;*/
+        font-family: "Lato", Helvetica, Arial, sans-serif; 
+    /*line-height: 1.55em;*/ 
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+.z-tabs.flat .z-container 
+{ 
+    -webkit-border-radius: 0 !important; 
+    -moz-border-radius: 0 !important; 
+    border-radius: 0 !important;
+}
+
+.z-tabs.flat > ul > li > a,
+.z-tabs.flat > .z-container,
+.z-tabs.flat > .z-container > .z-content { background: none; border-width: 0; }
+.z-tabs.flat > ul.z-tabs-nav > li > a:hover { background: #e3eaf0; background: #F6F7F9; text-shadow: none; box-shadow: none; }
+.z-tabs.flat > ul.z-tabs-nav > li.z-active > a { background: #bdc3c7; color: #fff; text-shadow: none; box-shadow: none; }
+
+
+/*dark*/
+.z-tabs.flat.z-dark  { color: #F1F6F7;color: rgba(248, 251, 252, 0.9);}
+.z-tabs.flat.z-dark > ul > li > a { color: #F1F6F7;}
+.z-tabs.flat.z-dark > ul.z-tabs-nav > li > a:hover { background: #e3eaf0; background: #152232; text-shadow: none; box-shadow: none; background: #1D3449; }
+.z-tabs.flat.z-dark > ul.z-tabs-nav > li.z-active > a { background: #bdc3c7; color: #fff; text-shadow: none; box-shadow: none; }
+
+
+
+/*horizontal*/
+.z-tabs.flat.horizontal > .z-container { margin-right: 0 !important; }
+.z-tabs.flat.horizontal > .z-container > .z-content > .z-content-inner { padding: 2em 0; }
+
+.z-tabs.flat.horizontal.top > ul.z-tabs-nav,
+.z-tabs.flat.horizontal.top > ul.z-tabs-nav > li,
+.z-tabs.flat.horizontal.bottom > ul.z-tabs-nav,
+.z-tabs.flat.horizontal.bottom > ul.z-tabs-nav > li { margin: 0; padding: 0; }
+.z-tabs.flat.horizontal > ul > li.z-active { top: 0; margin-top: 0; padding-bottom: 0; }
+.z-tabs.flat.horizontal.top > ul.z-tabs-nav > li.z-active { margin-bottom: 0; padding-bottom: 0; }
+
+
+
+/*vertical*/
+.z-tabs.flat.vertical > .z-container > .z-content > .z-content-inner { padding: 0 2em; }
+.z-tabs.flat.vertical.contained > .z-container > .z-content > .z-content-inner { padding: 2em; }
+.z-tabs.flat.vertical > ul.z-tabs-nav { margin-left: 0; margin-right: 0; }
+.z-tabs.flat.vertical > .z-container { border-width: 0; margin: 0; }
+.z-tabs.flat.vertical > ul > li.z-first.z-active > a { border-width: 0; }
+.z-tabs.flat.vertical > ul.z-tabs-nav > li.z-active { z-index: 0; }
+.z-tabs.flat.vertical > ul.z-tabs-nav > li > a { margin: 0 0 0 0; text-align: left; }
+
+/*flat responsive */
+.z-tabs.flat.clean.responsive.horizontal.bottom > ul > li.z-first-row > a,
+.z-tabs.flat.clean.responsive.horizontal.top > ul > li.z-last-row > a,
+.z-tabs.flat.clean.responsive.horizontal.bottom > ul > li.z-last-row > a { border-width: 0; }
+/*#endregion*/
+
+

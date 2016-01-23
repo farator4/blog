@@ -1,0 +1,212 @@
+
+/*#region ==========================================================================
+    Zozo Tabs Responsive
+========================================================================== */
+
+/*responsive normal style */
+
+.z-tabs > ul.z-tabs-mobile
+{
+    display: none;
+}
+
+
+/*horizontal */
+.z-tabs.responsive.horizontal.responsive > ul
+{
+    display: block;
+    width: 100%;
+}
+
+.z-tabs.responsive.horizontal > ul.z-tabs-mobile,
+.z-tabs.responsive.horizontal > ul.z-tabs-mobile > li
+{
+    width: 100%;
+    float: none;
+}
+
+.z-tabs.responsive.horizontal.mobile > ul > li > a
+{
+    margin: 0 !important;
+}
+
+.z-tabs.responsive.horizontal > ul > li.z-last-col > a
+{
+    margin-right: 0 !important;
+}
+
+/*horizontal top*/
+.z-tabs.responsive.horizontal.top > ul > li.z-active
+{
+    top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    z-index: initial;
+}
+
+.z-tabs.responsive.horizontal.top > ul > li.z-last-row.z-active
+{
+    top: 2px;
+    margin-top: -2px;
+    padding-bottom: 1px;
+    z-index: 1;
+}
+
+.z-tabs.horizontal.top.responsive > ul.z-tabs-desktop > li > a,
+.z-tabs.horizontal.top.z-stacked > ul.z-tabs-desktop > li > a
+{
+    border-bottom-width: 0;
+}
+
+.z-tabs.horizontal.responsive > ul.z-tabs-desktop > li > a
+{
+    margin: 0 -2px 0 0;
+}
+/*
+.z-tabs.horizontal.responsive > ul.z-tabs-desktop > li.z-last:nth-child(odd)
+{
+    width: 100%;
+}*/
+
+.ie7 .z-tabs.horizontal.responsive > ul.z-tabs-desktop > li
+{
+    margin-right: -3px;
+}
+
+.z-tabs.responsive.horizontal.bottom > ul > li.z-active
+{
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: initial;
+}
+
+.z-tabs.responsive.horizontal.bottom > ul > li.z-first-row.z-active
+{
+    top: 0;
+    padding-top: 0;
+    z-index: 9;
+}
+
+
+
+
+
+
+.z-tabs.horizontal.responsive > ul.z-tabs-desktop
+{
+    display: block;
+    width: 100%;
+}
+
+
+
+/*responsive underlined style */
+.z-tabs.horizontal.responsive.underlined > ul
+{
+    border-width: 0;
+}
+
+    .z-tabs.horizontal.responsive.underlined > ul > li.z-active,
+    .z-tabs.horizontal.responsive.underlined > ul > li:hover
+    {
+        border-top-width: 0;
+        border-bottom-width: 0;
+    }
+
+
+.z-tabs.underlined.horizontal > ul.z-tabs-mobile > li
+{
+    margin-left: 0;
+}
+
+    .z-tabs.underlined.horizontal > ul.z-tabs-mobile > li a
+    {
+        padding-left: 0;
+    }
+
+
+/*responsive rounded*/
+.z-tabs.responsive.top.z-rounded > ul > li.z-last-col > a
+{
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+.z-tabs.responsive.bottom.z-rounded > ul > li.z-first > a
+{
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+}
+
+
+.z-tabs.responsive.z-rounded.bottom > ul > li.z-left > a
+{
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+.z-tabs.responsive.z-rounded.bottom-left > ul > li.z-right > a
+{
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+
+.z-tabs.responsive.horizontal.top.z-rounded > ul > li.z-last > a
+{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+
+/*stacked*/
+.z-tabs.horizontal.z-stacked > ul.z-tabs-desktop > li
+{
+    width: 100%;
+    float: none;
+}
+
+
+.z-tabs.horizontal.z-stacked.responsive > ul.z-tabs-desktop > li.z-last > a,
+.z-tabs.horizontal.z-stacked.z-stacked > ul.z-tabs-desktop > li.z-last > a
+{
+    border-bottom-width: 1px;
+}
+
+.z-tabs.horizontal.z-stacked.responsive > ul.z-tabs-desktop > li.z-first > a
+{
+    border-top-width: 1px;
+}
+
+.z-tabs.horizontal.z-stacked > ul.z-tabs-desktop > li > a
+{
+    margin: 0;
+}
+
+/*stacked flat*/
+.z-tabs.flat.horizontal.z-stacked > ul.z-tabs-desktop > li > a
+{
+    border-width: 0 !important;
+}
+
+.z-tabs.z-stacked.horizontal > ul > li > a
+{
+    margin-right: 0 !important;
+}
+
+.z-tabs.flat.z-stacked.z-spaced.horizontal.responsive > ul.z-tabs-nav > li > a
+{
+    margin: 2px 0 0 0 !important;
+}
+
+/*#endregion*/
+
+
+

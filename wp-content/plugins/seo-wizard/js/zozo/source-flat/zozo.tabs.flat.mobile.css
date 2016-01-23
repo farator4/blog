@@ -1,0 +1,272 @@
+/*#region ==========================================================================
+     Mobile
+========================================================================== */
+
+/*light*/
+.z-tabs.flat > ul.z-tabs-mobile > li a
+{
+    background: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.z-tabs.flat > ul.z-tabs-mobile.z-state-closed > li a,
+.z-tabs.flat > ul.z-tabs-mobile > li a
+{
+    background: #bdc3c7;
+    color: #fff;
+}
+
+/*dark*/
+.z-tabs.flat.z-dark > ul.z-tabs-mobile > li a
+{
+    background: none;
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.z-tabs.flat.z-dark > ul.z-tabs-mobile.z-state-closed > li a
+{
+    color: #fff;
+}
+
+
+
+.z-tabs.flat > ul.z-tabs-mobile
+{
+    opacity: 1;
+}
+
+.z-tabs.flat.mobile > ul.z-tabs-desktop > li a
+{
+    background: #fff;
+}
+
+
+.z-tabs.flat.mobile > ul > li > a
+{
+    border-width: 0 !important;
+}
+
+.z-tabs.flat.mobile.z-rounded > ul.z-tabs-mobile > li > a
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.z-tabs.flat.mobile > ul.z-tabs-nav > li > a
+{
+    text-align: left;
+}
+
+.z-tabs.flat > ul.z-tabs-desktop > li
+{
+    margin: 0;
+}
+
+.z-tabs.flat.mobile.z-bordered > .z-container,
+.z-tabs.flat.mobile > ul.z-tabs-nav,
+.z-tabs.flat.mobile > ul.z-tabs-nav,
+.z-tabs.flat.mobile > ul.z-tabs-nav.z-tabs-mobile.z-state-closed,
+.z-tabs.flat.mobile > ul.z-tabs-nav > li
+{
+    border-width: 0;
+}
+
+
+    .z-tabs.flat.mobile > ul.z-tabs-nav > li > a
+    {
+        text-align: left;
+    }
+
+    .z-tabs.flat.mobile > ul.z-tabs-nav > li > a,
+    .z-tabs.flat.mobile > ul.z-tabs-nav > li > a
+    {
+        margin: 0 !important;
+        padding-left: 2em !important;
+        padding-right: 0 !important;
+        margin-top: 0 !important;
+    }
+
+
+.z-tabs.flat.responsive.z-bordered > .z-container,
+.z-tabs.flat.mobile.z-bordered > .z-container
+{
+    border-width: 0 !important;
+}
+
+
+/*contained spaced*/
+
+.z-tabs.flat.mobile.horizontal.z-contained > .z-container > .z-content,
+.z-tabs.flat.mobile.vertical.z-contained > .z-container,
+.z-tabs.flat.mobile.horizontal.top.z-contained > .z-container > .z-content,
+.z-tabs.flat.mobile.vertical.z-contained > .z-container > .z-content
+{
+    margin: 3px 0 0 0;
+}
+
+.z-tabs.flat.mobile.vertical.z-contained > ul.z-tabs-desktop
+{
+    margin: 0;
+}
+
+/*#endregion*/
+
+
+
+/*#region ==========================================================================
+     New Dropdown
+========================================================================== */
+
+/*mobile dropdown absolute */
+.z-tabs
+{
+    position: relative;
+}
+    .z-tabs > .z-dropdown-arrow
+    {
+        display: none;
+    }
+
+
+    .z-tabs.flat.mobile > .z-container > .z-content > .z-content-inner
+    {
+        padding: 1.4em .25em;
+    }
+
+    .z-tabs.flat.mobile > ul.z-tabs-desktop > li
+    {
+        margin: 1px 1px 0px !important;
+    }
+
+    .z-tabs.flat.mobile.z-dark > ul.z-tabs-desktop > li
+    {
+        margin: 1px 4px 0px !important;
+    }
+
+    .z-tabs.flat.mobile > ul.z-tabs-desktop > li > a
+    {
+        border-width: 0;
+        text-align: left !important;
+        padding-left: 1.5em !important;
+    }
+    
+    .z-tabs.flat.mobile > ul.z-tabs-desktop > li.z-active > a
+    {
+        /*color: #f1f6f7;*/
+        font-weight:normal;
+    }
+
+    .z-tabs.flat.mobile > ul.z-tabs-desktop > li:not(.z-active) > a:hover
+    {
+        background: #fff;
+    }
+
+
+    .z-tabs.flat.mobile > ul.z-tabs-desktop
+    {
+        width: 100%;
+        background-color: #E0E2E6;
+        padding: 1px 0 4px;
+        margin-top: 18px;
+        visibility: visible;
+        border: none;
+        /*overflow-y: auto;*/
+    }
+
+        .z-tabs.flat.mobile > ul.z-tabs-desktop.z-hide-menu
+        {
+            opacity: 0;
+            height: 0;
+            visibility: hidden !important;
+        }
+
+
+    /*flat light mobile */
+    .z-tabs.mobile > ul.z-tabs-mobile.z-state-closed + .z-dropdown-arrow
+    {
+        display: none;
+    }
+
+    .z-tabs.flat.mobile .z-dropdown-arrow
+    {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+
+    .z-tabs.flat.mobile .z-dropdown-arrow
+    {
+        border-style: solid;
+        border-width: 0 9px 9px 9px;
+        border-color: transparent transparent #f3f4f5 transparent;
+        border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #f3f4f5 rgba(0, 0, 0, 0);
+        height: 0;
+        margin-top: 0;
+        opacity: 0;
+        position: absolute;
+        right: 1.35em;
+        top: inherit;
+        width: 0;
+        z-index: 10;
+        -webkit-transform: rotate(360deg);
+        -webkit-transition: 0.25s;
+        -moz-transition: 0.25s;
+        -o-transition: 0.25s;
+        transition: 0.25s;
+        -webkit-backface-visibility: hidden;
+        /*dropdown-arrow-inverse*/
+        border-bottom-color: #E0E2E6;
+        border-top-color: #E0E2E6;
+        margin-top: 9px;
+        opacity: 1;
+    }
+
+    .z-tabs.flat.mobile.z-rounded > ul.z-tabs-desktop
+    {
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+    }
+
+        .z-tabs.flat.mobile.z-rounded > ul.z-tabs-desktop > li.z-active > a
+        {
+            border-radius: 2px !important;
+        }
+
+
+    /*flat dark mobile */
+    .z-tabs.flat.z-dark.mobile > ul > li > a
+    {
+        color: #2C3E50;
+        color: #F1F6F7;
+        background: none;
+    }
+
+    .z-tabs.flat.z-dark.mobile > ul.z-tabs-desktop > li:not(.z-active) > a:hover
+    {
+        background: #34495E;
+    }
+
+    .z-tabs.flat.z-dark.mobile > ul.z-tabs-desktop
+    {
+        background-color: #2C3E50;
+        color: #FFF;
+        padding: 4px 0 4px;
+    }
+
+    .z-tabs.flat.z-dark.mobile .z-dropdown-arrow
+    {
+        border-bottom-color: #2C3E50;
+        border-top-color: #2C3E50;
+    }
+
+
+/*#endregion*/
+
+
+
+
+

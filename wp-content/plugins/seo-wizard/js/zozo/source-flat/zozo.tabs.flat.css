@@ -1,0 +1,16 @@
+/**************************************************************************
+*	@name		    Zozo UI Tabs
+*	@descripton	    Create awesome tabbed content area
+*	@version	    6.4
+*   @requires       jQuery v1.7 or later
+*	@copyright      Copyright (c) 2013 Zozo UI
+*   @author         Zozo UI
+*   @URL:           http://www.zozoui.com
+* This files should be not used in production.
+**************************************************************************/
+
+@import "zozo.tabs.flat.core.css";
+@import "zozo.tabs.flat.styles.css";
+@import "zozo.tabs.flat.themes.css";
+@import "zozo.tabs.flat.mobile.css";
+

@@ -1,0 +1,359 @@
+/**************************************************************************
+*	 Zozo Tabs: Horizontal
+*
+*    1. Horizontal Structure
+*    2. Horizontal Positioning 
+*    3. Horizontal Rounded Cornors
+     4. Horizontal Shadows
+*    
+*   Most of the time you shouldn't delete/edit section 1 (structure).
+*   - You can delete/edit part of positioning
+*   - You can delete/edit rounded and shadows section if you need.
+* 
+**************************************************************************/
+
+
+/*#region ==========================================================================
+      Horizontal Structure
+========================================================================== */
+
+.z-tabs.horizontal > ul > li
+{
+    float: left;
+}
+
+    .z-tabs.horizontal > ul > li.z-active
+    {
+        background: none;
+        z-index: 1;
+    }
+
+    .z-tabs.horizontal > ul > li > a
+    {
+        margin-right: -1px;
+        /*font-size: 12px;
+        padding: 13px 24px;*/
+        min-height: 1px;
+    }
+
+
+    .z-tabs.top-compact > ul > li > a,
+    .z-tabs.bottom-compact > ul > li > a
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*top*/
+.z-tabs.horizontal.top > ul > li.z-active
+{
+    top: 2px;
+    margin-top: -2px;
+    padding-bottom: 2px;
+}
+
+.z-tabs.horizontal.top > ul > li > a
+{
+    top: 1px;
+    border-width: 1px 1px 0 1px;
+}
+
+.z-tabs.horizontal > ul > li.z-last > a,
+.z-tabs.horizontal > ul > li.z-last-col > a
+{
+    margin-right: 0 !important;
+}
+
+.z-tabs.horizontal > .z-container
+{
+    clear: both;
+    zoom: 1;
+}
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+      Horizontal Positioning 
+========================================================================== */
+
+/*top-left is the defalt structure above in region*/
+
+/* top-center */
+.z-tabs.horizontal.top-center > ul.z-tabs-desktop
+{
+    clear: left;
+    float: left;
+    left: 50%;
+    text-align: center;
+}
+
+    .z-tabs.horizontal.top-center > ul > li
+    {
+        right: 50%;
+    }
+
+/* top-right */
+.z-tabs.horizontal.top-right > ul
+{
+    float: right;
+    margin: 0 -1px 0 0;
+}
+
+    .z-tabs.horizontal.top-right > ul > li.z-last
+    {
+        margin-right: 1px;
+    }
+
+.ie7 body .z-tabs.horizontal.top-right > ul > li.z-last
+{
+    margin-right: -1px;
+}
+
+.ie7 body .z-tabs.horizontal > .z-container
+{
+    clear: none;
+    width: 100%;
+}
+
+/* bottom-left*/
+
+/*bottom*/
+.z-tabs.horizontal.bottom > ul > li.z-active
+{
+    top: -1px;
+    padding-top: 1px;
+    z-index: 9;
+}
+
+.z-tabs.horizontal.bottom > .z-container
+{
+z-index: 7;
+}
+
+.z-tabs.horizontal.bottom > ul > li > a
+{
+    top: -1px;
+    border-width: 0 1px 1px 1px;
+}
+
+/* bottom-center*/
+.z-tabs.horizontal.bottom-center > ul
+{
+    float: left;
+    left: 50%;
+    text-align: center;
+}
+
+    .z-tabs.horizontal.bottom-center > ul > li
+    {
+        right: 50%;
+    }
+
+/* bottom-right*/
+.z-tabs.horizontal.bottom-right > ul
+{
+    float: right;
+}
+
+/* top compact*/
+.ie7 .z-tabs.horizontal.top-compact > ul.z-tabs-desktop > li.z-last
+{
+    margin-right: 0;
+}
+
+
+/* bottom compact*/
+.ie7 .z-tabs.horizontal.bottom-compact > ul.z-tabs-desktop > li.z-last
+{
+    margin-right: 0;
+}
+
+/**/
+.z-tabs.horizontal.responsive > ul > li > a,
+.z-tabs.horizontal.top-compact > ul > li > a,
+.z-tabs.horizontal.bottom-compact > ul > li > a,
+.z-tabs.horizontal.top-center > ul > li > a,
+.z-tabs.horizontal.bottom-center > ul > li > a
+{
+    text-align: center;
+}
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+     Horizontal Rounded Cornors
+========================================================================== */
+
+/*top*/
+.z-tabs.horizontal.top.z-rounded > ul > li.z-first,
+.z-tabs.horizontal.top.z-rounded > ul > li.z-first > a
+{
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0;
+}
+
+.z-tabs.horizontal.top.z-rounded > ul > li.z-last,
+.z-tabs.horizontal.top.z-rounded > ul > li.z-last > a
+{
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+/*top-left*/
+.z-tabs.horizontal.top-left.z-rounded > .z-container
+{
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+/*top-center*/
+.z-tabs.horizontal.top-center.z-rounded > .z-container
+{
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+}
+
+/*top-right*/
+.z-tabs.horizontal.top-right.z-rounded > .z-container
+{
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+/* top compact*/
+.z-tabs.horizontal.z-rounded.top-compact > .z-container
+{
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -khtml-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+
+/* bottom*/
+.z-tabs.horizontal.z-rounded.bottom > ul > li.z-first,
+.z-tabs.horizontal.z-rounded.bottom > ul > li.z-first > a
+{
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+.z-tabs.horizontal.z-rounded.bottom > ul > li.z-last,
+.z-tabs.horizontal.z-rounded.bottom > ul > li.z-last > a
+{
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+/* bottom-left*/
+.z-tabs.horizontal.z-rounded.bottom-left > .z-container
+{
+    -webkit-border-radius: 6px 6px 6px 0;
+    -moz-border-radius: 6px 6px 6px 0;
+    border-radius: 6px 6px 6px 0;
+}
+
+/* bottom-center*/
+.z-tabs.horizontal.z-rounded.bottom-center > .z-container
+{
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+/* bottom-right*/
+.z-tabs.horizontal.z-rounded.bottom-right .z-container
+{
+    -webkit-border-radius: 6px 6px 0 6px;
+    -moz-border-radius: 6px 6px 0 6px;
+    -khtml-border-radius: 6px 6px 0 6px;
+    border-radius: 6px 6px 0 6px;
+}
+
+/* bottom compact*/
+.z-tabs.horizontal.z-rounded.bottom-compact > .z-container
+{
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -khtml-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+/*responsive*/
+.z-tabs.horizontal.responsive.top.z-rounded > .z-container
+{
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+
+.z-tabs.horizontal.responsive.bottom.z-rounded > .z-container
+{
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+/*responsive mobile dropdown menu*/
+.z-tabs.horizontal.responsive.top.z-rounded > .z-tabs-mobile,
+.z-tabs.horizontal.responsive.top.z-rounded > .z-tabs-mobile > li
+{
+    -webkit-border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.z-tabs.horizontal.responsive.bottom.z-rounded > .z-tabs-mobile,
+.z-tabs.horizontal.responsive.bottom.z-rounded > .z-tabs-mobile > li
+{
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+}
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+     Horizontal Shadows
+========================================================================== */
+.z-tabs.horizontal.z-shadows > .z-container
+{ 
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, .125);
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, .125);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .125);
+}
+
+.z-tabs.horizontal.z-shadows > ul > li > a{box-shadow: -2px 0px 2px -2px rgba(0, 0, 0, .1);}
+/*
+.z-tabs.top.z-shadows > ul > li.z-first > a,
+.z-tabs.bottom.z-shadows > ul > li.z-first > a{box-shadow: -3px 1px 1px -3px rgba(0, 0, 0, .2);}
+
+.z-tabs.top.z-shadows > ul > li.z-last > a,
+.z-tabs.bottom.z-shadows > ul > li.z-last > a{box-shadow: 3px 1px 1px -3px rgba(0, 0, 0, .2);}
+*/
+
+.z-tabs.horizontal.z-shadows > ul > li.z-first > a{box-shadow: -3px 1px 1px -3px rgba(0, 0, 0, .2);}
+.z-tabs.horizontal.z-shadows > ul > li.z-last > a{box-shadow: 3px 1px 1px -3px rgba(0, 0, 0, .2);}
+
+/*#endregion*/
+
+
+
+
+

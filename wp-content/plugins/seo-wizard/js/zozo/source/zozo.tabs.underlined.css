@@ -1,0 +1,415 @@
+/**************************************************************************
+*	 Zozo Tabs: Underlined
+*
+*    1. Underlined Structure
+*    2. Underlined Vertical 
+*    3. Underlined Sizes
+*    4. Underlined Themes
+*    
+*   Most of the time you shouldn't section 1 (structure).
+*   You can delete/edit vertical, sizes and themes section if you need.
+* 
+**************************************************************************/
+
+
+
+/*#region ==========================================================================
+    Underlined Sizes
+========================================================================== */
+
+
+
+
+/*#endregion*/
+
+
+/*#region ==========================================================================
+    Underlined Structure
+========================================================================== */
+
+
+/* underlined reset*/
+.z-tabs.underlined,
+.z-tabs.underlined > ul,
+.z-tabs.underlined > ul > li,
+.z-tabs.underlined > ul > li.z-first,
+.z-tabs.underlined > ul > li.z-last,
+.z-tabs.underlined > ul > li.z-first.z-active,
+.z-tabs.underlined > ul > li.z-last.z-active,
+.z-tabs.underlined > ul > li.z-active,
+.z-tabs.underlined > ul > li:hover,
+.z-tabs.underlined > ul > li > a.z-link,
+.z-tabs.underlined > ul > li > a:hover,
+.z-tabs.underlined > .z-container
+{
+    border-width: 0;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background: none;
+    filter: none;
+}
+
+
+
+    .z-tabs.underlined > ul > li
+    {
+        top: 0;
+        padding: 0;
+    }
+
+
+    .z-tabs.underlined.horizontal > ul > li.z-active
+    {
+        top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+
+    .z-tabs.underlined.horizontal > ul > li > a
+    {
+        top: 0;
+        text-shadow: 0 1px 1px white;
+        color: #333;
+        opacity: 0.80;
+        filter: none;
+        margin-left: 16px;
+    }
+
+
+
+    .z-tabs.underlined.horizontal.top-compact > ul.z-tabs-nav.z-tabs-desktop > li,
+    .z-tabs.underlined.horizontal.top-compact > ul.z-tabs-nav.z-tabs-desktop > li.z-active,
+    .z-tabs.underlined.horizontal.top-compact > ul.z-tabs-nav.z-tabs-desktop > li:hover,
+    .z-tabs.underlined.horizontal.top-left > ul.z-tabs-nav > li.z-first > a,
+    .z-tabs.underlined.horizontal.bottom-left > ul.z-tabs-nav > li.z-first > a
+    {
+        margin-left: 0;
+    }
+
+    .z-tabs.underlined.horizontal.top-right > ul.z-tabs-nav > li.z-last > a,
+    .z-tabs.underlined.horizontal.bottom-right > ul.z-tabs-nav > li.z-last > a
+    {
+        margin-right: 0;
+    }
+
+
+
+    .z-tabs.underlined.horizontal > .z-container > .z-content > .z-content-inner
+    {
+        padding: 1.4em 0;
+    }
+
+
+ 
+
+
+
+
+.z-tabs.underlined.horizontal.top > ul > li > a:hover,
+.z-tabs.underlined.horizontal.top> ul > li.z-active > a
+{
+    font-weight: normal;
+    margin-bottom: 0;
+    border-width: 0 0 3px 0;
+    opacity: 1;
+}
+
+.z-tabs.underlined.horizontal.top > .z-container
+{
+    border-width: 1px 0 0 0;
+}
+
+
+
+
+
+/*underlined horizontal bottom*/
+.z-tabs.underlined.horizontal.bottom > .z-container
+{
+    border-width: 0 0 1px 0;
+}
+
+.z-tabs.underlined.horizontal.bottom > ul > li > a
+{
+    margin-top: 3px;
+}
+
+.z-tabs.underlined.horizontal.bottom > ul > li > a:hover,
+.z-tabs.underlined.horizontal.bottom > ul > li.z-active > a
+{
+    font-weight: normal;
+    margin-bottom: 0;
+    border-width: 3px 0 0 0;
+    margin-top: 0;
+}
+
+
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+    Underlined Vertical
+========================================================================== */
+.z-tabs.underlined.vertical > ul
+{
+    border-width: 0;
+}
+
+.z-tabs.underlined.vertical > .z-container > .z-content > .z-content-inner
+{
+    padding: 0 2em;
+}
+
+.z-tabs.vertical.underlined > ul > li > a
+{
+    filter: none;
+    background: transparent;
+    margin: 0;
+    text-shadow: 0 1px 1px white;
+    color: #333;
+    margin-left: 3px;
+}
+
+.z-tabs.vertical.underlined.top-left > ul
+{
+    border-width: 0 1px 0 0;
+}
+
+.z-tabs.vertical.underlined.top-right > ul
+{
+    border-width: 0 0 0 1px;
+}
+
+.z-tabs.vertical.underlined > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.vertical.underlined > ul.z-tabs-nav > li > a:hover
+{
+    font-weight: normal;
+    margin-bottom: 0;
+    border-width: 0;
+    background: #FAFAFA;
+}
+
+.z-tabs.vertical.underlined.top-left > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.vertical.underlined.top-left > ul.z-tabs-nav > li > a:hover
+{
+    border-width: 0 3px 0 0;
+}
+
+.z-tabs.vertical.underlined.top-right > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.vertical.underlined.top-right > ul.z-tabs-nav > li > a:hover
+{
+    border-width: 0 0 0 3px;
+    margin-left: 0;
+}
+
+
+
+
+.ie7 body .z-tabs.underlined.vertical.top-right > ul.z-tabs-nav > li.z-active { border-right-width: 0 !important; border-left: 3px solid #444 !important; left:-1px; }
+.ie7 body .z-tabs.underlined.vertical.top-left > ul.z-tabs-nav > li.z-active { border-right: 3px solid #444 !important; }
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+    Underlined Sizes
+========================================================================== */
+
+
+/*underlined sizes*/
+.z-tabs.underlined.horizontal.mini > ul.z-tabs-nav > li > a.z-link {padding: 6px 6px;}
+.z-tabs.underlined.horizontal.small > ul.z-tabs-nav > li > a.z-link{padding: 8px 8px;}
+.z-tabs.underlined.horizontal.medium > ul.z-tabs-nav > li > a.z-link{padding: 10px 10px;}
+.z-tabs.underlined.horizontal.large > ul.z-tabs-nav > li > a.z-link{padding: 10px 12px;}
+.z-tabs.underlined.horizontal.xlarge > ul.z-tabs-nav > li > a.z-link{padding: 12px 14px;}
+.z-tabs.underlined.horizontal.xxlarge > ul.z-tabs-nav > li > a.z-link{padding: 14px 16px;}
+
+.z-tabs.underlined.horizontal.mini > ul.z-tabs-nav > li:hover, 
+.z-tabs.underlined.horizontal.mini > ul.z-tabs-nav > li.z-active,
+.z-tabs.underlined.horizontal.small > ul.z-tabs-nav > li:hover, 
+.z-tabs.underlined.horizontal.small > ul.z-tabs-nav > li.z-active {border-bottom-width: 2px;}
+
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+    Underlined Themes
+========================================================================== */
+
+.z-tabs.underlined > .z-container,
+.z-tabs.underlined > ul.z-tabs-nav,
+.z-tabs.underlined > ul.z-tabs-nav > li > a{border-color: #e6e6e6;}
+
+.z-tabs.underlined.red  > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.red  > ul.z-tabs-nav > li > a:hover{border-color:#DD4B39;}
+
+.z-tabs.underlined.blue > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.blue > ul.z-tabs-nav > li > a:hover{border-color:#00B0D8;}
+
+.z-tabs.underlined.deepblue > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.deepblue > ul.z-tabs-nav > li:hover{border-color:#1E69DE;}
+
+.z-tabs.underlined.orange > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.orange > ul.z-tabs-nav > li > a:hover{border-color:#FD9C00;}
+
+.z-tabs.underlined.green > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.green > ul.z-tabs-nav > li > a:hover{border-color:#093;}
+
+.z-tabs.underlined.white > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.white > ul.z-tabs-nav > li > a:hover{border-color:#D8D8D8;}
+
+.z-tabs.underlined.crystal > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.crystal > ul.z-tabs-nav > li > a:hover{border-color:#999;}
+
+.z-tabs.underlined.silver > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.silver > ul.z-tabs-nav > li > a:hover{border-color:#777;}
+
+.z-tabs.underlined.gray > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.gray > ul.z-tabs-nav > li > a:hover{border-color:#333;}
+
+.z-tabs.underlined.black > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.black > ul.z-tabs-nav > li > a:hover{border-color:black;}
+
+/*#endregion*/
+
+
+
+
+
+/*#region ==========================================================================
+    Mobile
+========================================================================== */
+
+.z-tabs.underlined.mobile > ul.z-tabs-mobile,
+.z-tabs.underlined.mobile > ul.z-tabs-desktop
+{
+    border-width: 0;
+    margin-top: 0;
+}
+
+.z-tabs.mobile.underlined> .z-container > .z-content > .z-content-inner {
+padding: 0;
+}
+     
+
+
+/*underlined tabs*/
+/*
+.z-tabs.underlined.mobile.horizontal > ul > li,
+.z-tabs.underlined.mobile.horizontal > ul > li.z-active
+{
+    margin-left: 0;
+}
+*/
+.z-tabs.mobile.underlined > .z-container
+{
+    border-width: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*
+.z-tabs.mobile.underlined > ul > li > a:hover,
+.z-tabs.mobile.underlined > ul > li.z-active > a
+{
+    border-bottom-width: 1px;
+}*/
+
+
+.z-tabs.underlined.mobile > ul.z-tabs-mobile.z-state-closed
+{
+    border-width: 0;
+}
+
+/* general*/
+/*
+.z-tabs.underlined.mobile.top > .z-container,
+.z-tabs.underlined.mobile.bottom > .z-container
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+*/
+
+
+.z-tabs.underlined.mobile.vertical > .z-container > .z-content .z-content-inner
+{
+    padding: 2em;
+}
+/*
+.z-tabs.underlined.mobile.horizontal > ul.z-tabs-desktop > li.z-first > a
+{
+    border-top-width: 0;
+}*/
+
+/* mobile themes*/
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li > a
+{
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.z-tabs.underlined.mobile > ul.z-tabs-desktop > li > a
+{
+    -moz-transition: background-color 200ms ease-out, color 200ms ease-out,text-shadow 200ms ease-out;
+    -o-transition: background-color 200ms ease-out, color 200ms ease-out,text-shadow 200ms ease-out;
+    -webkit-transition: background-color 200ms ease-out, color 200ms ease-out,text-shadow 200ms ease-out;
+    -ms-transition: background-color 200ms ease-out, color 200ms ease-out,text-shadow 200ms ease-out;
+    transition: background-color 200ms ease-out, color 200ms ease-out,text-shadow 200ms ease-out;
+}
+
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li > a/*,
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li.z-active > a,
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li.z-last > a,
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li > a:hover,
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li.z-last > a:hover*/
+{
+    border-color: #E6E6E6;
+    background: #fff;
+    border-width: 0 0 1px 0 !important;
+    opacity: 1;
+    border-style: dotted;
+}
+/*
+.z-tabs.underlined.mobile > ul.z-tabs-nav > li.z-last > a
+{
+    border-width: 0 0 1px 0;
+}*/
+
+                              
+
+.z-tabs.underlined.mobile.hover > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover > ul.z-tabs-desktop > li:hover > a{background: #FAFAFA;color: #333;text-shadow: 1px 0px 1px rgba(175, 175, 175, 0.25);}        
+
+.z-tabs.underlined.mobile.m-red > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover.m-red > ul.z-tabs-desktop > li:hover > a{color: #DD4B39;}
+
+.z-tabs.underlined.mobile.m-blue > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover.m-blue > ul.z-tabs-desktop > li > a:hover{color: #00B0D8;}
+
+.z-tabs.underlined.mobile.m-deepblue > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover.m-deepblue > ul.z-tabs-desktop > li:hover > a{color: #1E69DE;}
+
+.z-tabs.underlined.mobile.m-orange > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover.m-orange > ul.z-tabs-desktop > li:hover > a{color: #FD9C00;}
+
+.z-tabs.underlined.mobile.m-green > ul.z-tabs-desktop > li.z-active > a,
+.z-tabs.underlined.mobile.hover.m-green > ul.z-tabs-desktop > li:hover > a{color: #093;}
+
+/*#endregion*/

@@ -1,0 +1,436 @@
+/**************************************************************************
+*	@name		    Zozo UI Tabs
+*	@descripton	    Create awesome tabbed content area
+*	@version	    6.4
+*   @requires       jQuery v1.7 or later
+*	@copyright      Copyright (c) 2013 Zozo UI
+*   @author         Zozo UI
+*   @URL:           http://www.zozoui.com
+*
+*    1. Core (structure)
+*    2. Sizes 
+*    3. AJAX Support   
+*    4. Video 
+*    5. Icons
+*    6. Helper classes
+*    
+*   Most of the time you shouldn't delete/edit section 1 (Core).
+*   You can delete/edit sizes, video, icons support and Helper classes if you need.
+* 
+**************************************************************************/
+
+/*#region ==========================================================================
+    Import Fonts (google fonts)
+========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+
+/*#endregion*/
+
+
+/*#region ==========================================================================
+    Global Reset
+========================================================================== */
+
+/* cross browser compatibility html5 tags */
+article, aside, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+
+/*reset box-sizing*/
+.z-tabs,
+.z-tabs > ul,
+.z-tabs > ul > li,
+.z-tabs > ul > li > a,
+.z-tabs > .z-container,
+.z-tabs > .z-container > .z-content,
+.z-tabs > .z-container > .z-content > .z-content-inner {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+    .z-tabs, .z-tabs:before, .z-tabs:after {
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+        /* common reset*/
+        .z-tabs,
+        .z-tabs > ul,
+        .z-tabs > ul > li,
+        .z-tabs > ul > li > a {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            display: block;
+            outline: 0 none;
+            text-decoration: none;
+            list-style: none;
+            list-style-type: none;
+        }
+
+            /*clear floats after each content*/
+            .z-tabs > .z-container > .z-content::after,
+            .z-tabs > .z-container > .z-content > .z-content-inner::after {
+                content: ".";
+                display: block;
+                height: 0;
+                clear: both;
+                visibility: hidden;
+            }
+
+            /*clear floats after each content For IE 6/7 */
+            .z-tabs > .z-container > .z-content,
+            .z-tabs > .z-container > .z-content > .z-content-inner {
+                zoom: 1;
+            }
+
+
+/*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+    Core (structure)
+========================================================================== */
+
+.z-tabs {
+    clear: both;
+    color: #333;
+    font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+    .z-tabs > ul > li > a {
+        color: #111;
+        line-height: 18px;
+        font-weight: inherit;
+        font-size: 12px;
+        padding: 13px 24px;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    .z-tabs > ul > li.z-active > a {
+        cursor: default;
+    }
+
+    .z-tabs > ul,
+    .z-tabs > ul > li > a,
+    .z-tabs > .z-container {
+        border-color: #CECECE;
+        border-style: solid;
+    }
+
+    .z-tabs > .z-container {
+        padding: 0;
+        margin: 0;
+        border-width: 1px;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .z-tabs > .z-container > .z-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 0;
+            z-index: 7;
+            display: none;
+        }
+
+            .z-tabs > .z-container > .z-content.z-active {
+                z-index: 8;
+            }
+
+            .z-tabs > .z-container > .z-content > .z-content-inner {
+                padding: 18px 24px;
+                height: auto;
+            }
+
+    /*#endregion*/
+
+
+
+
+/*#region ==========================================================================
+    Sizes
+========================================================================== */
+/* version 6.0
+.z-tabs.mini > ul > li > a,
+.z-tabs.small > ul > li > a  {font-weight: inherit;}
+
+.z-tabs.mini > ul > li.z-active > a,
+.z-tabs.small > ul > li.z-active > a  {font-weight: bold;}*/
+    
+
+/*top padding +2 and left -4*/
+
+/*default sizes*/
+.z-tabs.mini >  ul > li > a    {font-size: 11px;padding: 7px 16px;}
+.z-tabs.small >  ul > li > a   {font-size: 11px;padding: 10px 16px;}
+.z-tabs.medium >  ul > li > a  {font-size: 12px;padding: 15px 20px;}
+.z-tabs.large >  ul > li > a   {font-size: 13px;padding: 16px 24px;}
+.z-tabs.xlarge >  ul > li > a  {font-size: 14px;padding: 19px 28px;}
+.z-tabs.xxlarge >  ul > li > a {font-size: 15px;padding: 22px 32px;}
+
+/*vertical sizes*/
+.z-tabs.mini.vertical > ul > li > a     {padding: 7px 13px;}
+.z-tabs.small.vertical > ul > li > a    {padding: 10px 16px;}
+.z-tabs.medium.vertical > ul > li > a   {padding: 13px 19px;}
+.z-tabs.large.vertical > ul > li > a    {padding: 16px 22px;}
+.z-tabs.xlarge.vertical > ul > li > a   {padding: 19px 25px;}
+.z-tabs.xxlarge.vertical > ul > li > a  {padding: 22px 28px;}
+
+
+.z-tabs.white.z-bordered > ul > li.z-active > a {color: #D13636;}
+
+/*vertical left size white theme with border*/
+.z-tabs.vertical.top-right.white.z-bordered > ul > li.z-active > a {border-right: 3px solid #D13636;}
+.z-tabs.vertical.top-left.white.z-bordered > ul > li.z-active > a {border-left: 3px solid #D13636;}
+
+.z-tabs.mini.vertical.top-right.white.z-bordered > ul > li.z-active > a {border-right: 1px solid #D13636;}
+.z-tabs.mini.vertical.top-left.white.z-bordered > ul > li.z-active > a {border-left: 1px solid #D13636;}
+
+.z-tabs.small.vertical.top-right.white.z-bordered > ul > li.z-active > a {border-right: 2px solid #D13636;}
+.z-tabs.small.vertical.top-left.white.z-bordered > ul > li.z-active > a {border-left: 2px solid #D13636;}
+
+.z-tabs.mini.vertical.top-left.white.z-bordered > ul > li.z-active > a     {padding-left: 10px;}
+.z-tabs.small.vertical.top-left.white.z-bordered > ul > li.z-active > a    {padding-left: 13px;}
+.z-tabs.medium.vertical.top-left.white.z-bordered > ul > li.z-active > a   {padding-left: 16px;}
+.z-tabs.large.vertical.top-left.white.z-bordered > ul > li.z-active > a    {padding-left: 19px;}
+.z-tabs.xlarge.vertical.top-left.white.z-bordered > ul > li.z-active > a   {padding-left: 22px;}
+.z-tabs.xxlarge.vertical.top-left.white.z-bordered > ul > li.z-active > a  {padding-left: 25px;}
+
+
+/*horizontal top size white theme with border*/
+.z-tabs.horizontal.top.white.z-bordered > ul > li.z-active > a {border-top: 3px solid #F44343;margin-top: 0;margin-bottom: 0;}
+
+
+
+.z-tabs.mini.horizontal.top.white.z-bordered > ul > li.z-active > a     {padding-top: 7px; border-top-width: 1px}
+.z-tabs.small.horizontal.top.white.z-bordered > ul > li.z-active > a    {padding-top: 9px;border-top-width: 2px}
+.z-tabs.medium.horizontal.top.white.z-bordered > ul > li.z-active > a   {padding-top: 13px;}
+.z-tabs.large.horizontal.top.white.z-bordered > ul > li.z-active > a    {padding-top: 14px;}
+.z-tabs.xlarge.horizontal.top.white.z-bordered > ul > li.z-active > a   {padding-top: 17px;}
+.z-tabs.xxlarge.horizontal.top.white.z-bordered > ul > li.z-active > a  {padding-top: 20px;}
+
+
+/*horizontal bottom size white theme with border*/
+.z-tabs.horizontal.bottom.white.z-bordered > ul > li.z-active > a {border-bottom: 3px solid #D13636;margin-top: 0;margin-bottom: 0;}
+
+.z-tabs.mini.horizontal.bottom.white.z-bordered > ul > li.z-active > a     {padding-bottom: 5px;}
+.z-tabs.small.horizontal.bottom.white.z-bordered > ul > li.z-active > a    {padding-bottom: 8px;}
+.z-tabs.medium.horizontal.bottom.white.z-bordered > ul > li.z-active > a   {padding-bottom: 11px;}
+.z-tabs.large.horizontal.bottom.white.z-bordered > ul > li.z-active > a    {padding-bottom: 14px;}
+.z-tabs.xlarge.horizontal.bottom.white.z-bordered > ul > li.z-active > a   {padding-bottom: 17px;}
+.z-tabs.xxlarge.horizontal.bottom.white.z-bordered > ul > li.z-active > a  {padding-bottom: 20px;}
+
+/*white bordered mobile*/
+.z-tabs.white.mobile.z-bordered > ul > li.z-active > a{border-bottom: 3px solid #D13636 !important;}
+
+/*#endregion*/
+
+
+
+
+    /*#region ==========================================================================
+    AJAX Support
+========================================================================== */
+
+.z-tabs-loading {position: relative;width: 100%;min-height: 120px;}
+.z-tabs-loading ul, .z-tabs-loading div {display: none;}
+
+
+.z-tabs .z-container {
+    position: relative;
+}
+
+.z-tabs span.z-spinner, .z-tabs-loading .z-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    text-indent: -999em;
+    width: 55px;
+    height: 55px;
+    margin: -28px 0 0 -50px;
+    padding: 24px;
+    background: rgb(255, 255, 255) url("../img/loading-image.gif") no-repeat 50% 50%;
+}
+
+.z-tabs.z-rounded span.z-spinner {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+    /*#endregion*/
+
+
+
+    /*#region ==========================================================================
+    Video Support, Youtube, Vimeo, Iframe
+========================================================================== */
+
+.z-tabs .z-video {
+    position: relative;
+    padding-bottom: 46.25%;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.z-tabs .z-video.z-wide-screen {
+    padding-bottom: 56.25%; /* hard-coded 16:9 aspect ratio */
+}
+
+.z-tabs .z-video.z-four-by-three {
+    padding-bottom: 75%; /* hard-coded 4:3 aspect ratio */
+}
+
+.z-tabs .z-video.z-top-padding {
+    padding-top: 30px;
+}
+
+
+
+.z-tabs .z-video iframe,
+.z-tabs .z-video object,
+.z-tabs .z-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 50;
+}
+
+    /*#endregion*/
+
+
+
+
+    /*#region ==========================================================================
+    Icons Support
+========================================================================== */
+    /* Font Awesome */
+    .z-tabs > ul > li > a i {
+        font-size: 1.125em;
+        display: inline;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        width: 24px;
+        display: inline-block;
+        margin-top: 0.015em;
+    }
+
+    .z-tabs > ul.z-tabs-mobile > li > a i {
+        display: none;
+    }
+
+
+    /*icons on top*/
+    .z-tabs.z-icons-large > ul > li > a i {
+        font-size: 2.25em;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 0.65em;
+        text-align: center;
+        line-height: 0;
+        margin-top: 0.65em;
+    }
+
+    .z-tabs.mini > ul > li > a i,
+    .z-tabs.small > ul > li > a i {
+        font-size: 1.25em;
+    }
+
+    .z-tabs.z-icons-large > ul > li > a {
+        text-align: center;
+    }
+
+    .z-tabs > ul > li > a > span.z-icon,
+    .z-tabs.z-multiline > ul.z-tabs-nav.z-tabs-desktop > li > a > span.z-icon,
+    .z-tabs.z-multiline > ul.z-tabs-nav.z-tabs-mobile > li > a > span > span.z-icon {
+        width: 20px;
+        display: inline-block;
+        font-size: inherit;
+        font-weight: normal;
+        text-transform: initial;
+        text-align: left;
+    }
+
+
+    .z-tabs.vertical > ul.z-tabs-nav > li > a > span.z-icon,
+    .z-tabs.z-multiline.vertical > ul.z-tabs-nav.z-tabs-desktop > li > a > span.z-icon,
+    .z-tabs.z-multiline.vertical > ul.z-tabs-nav.z-tabs-mobile > li > a > span > span.z-icon {
+        width: 24px;
+    }
+
+
+
+/*#endregion*/
+
+
+
+
+    /*#region ==========================================================================
+    Helper classes
+========================================================================== */
+
+    /*align tabs titles center*/
+    .z-tabs.center > ul > li > a,
+    .z-tabs.center.mobile > ul > li > a {
+        text-align: center !important;
+    }
+
+    /*align tabs titles right*/
+    .z-tabs.right > ul > li > a,
+    .z-tabs.right.mobile > ul > li > a {
+        text-align: right !important;
+    }
+
+    /*align tabs titles left*/
+    .z-tabs.left > ul > li > a,
+    .z-tabs.left.mobile > ul > li > a {
+        text-align: left !important;
+    }
+
+    /*z-nopadding on content*/
+    .z-tabs.vertical > .z-container > .z-content.z-nopadding > .z-content-inner,
+    .z-tabs.horizontal > .z-container > .z-content.z-nopadding > .z-content-inner,
+    .z-tabs > .z-container > .z-content.z-nopadding > .z-content-inner {
+        padding: 0 !important;
+    }
+
+
+/*Clear the float on any element*/
+.clearfix {
+    *zoom: 1;
+}
+
+    .clearfix:before,
+    .clearfix:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
+
+
+/*#endregion*/
+
+
