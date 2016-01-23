@@ -5,7 +5,7 @@ Description: Artisteer-generated theme
 Version: 1.0
 Author: 
 Author URI: 
-Tags: fixed-width, left-sidebar, two-columns, valid HTML5, widgets
+Tags: fixed-width, one-column, valid HTML5, widgets
 */
 
 /* Created by Artisteer v4.0.0.58475 */
@@ -110,14 +110,14 @@ ul.art-vmenu a
 {
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
-   color: #164EE9;
+   color: #324253;
 }
 
 .art-postcontent a:visited, .art-postcontent a.visited
 {
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: underline;
-   color: #164EE9;
+   color: #324253;
 }
 
 .art-postcontent  a:hover, .art-postcontent a.hover
@@ -382,7 +382,7 @@ li p, .art-postcontent li p, .art-blockcontent li p
   display: inline-block;
   position: absolute;
   min-width: 50px;
-  top: 228px;
+  top: 214px;
   left: 0.12%;
   line-height: 100%;
   margin-left: 0px !important;
@@ -400,7 +400,7 @@ li p, .art-postcontent li p, .art-blockcontent li p
 .art-headline a:visited, 
 .art-headline a:hover
 {
-font-size: 22px;
+font-size: 36px;
 font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 font-weight: normal;
 font-style: normal;
@@ -874,7 +874,7 @@ ul.art-hmenu ul
 .art-layout-wrapper
 {
    position: relative;
-   margin: 0 auto 0 auto;
+   margin: 30px auto 0 auto;
    z-index: auto !important;
 }
 
@@ -895,188 +895,6 @@ ul.art-hmenu ul
 {
    display: table-cell;
    vertical-align: top;
-}
-
-.art-vmenublock
-{
-   margin:3px;
-}
-div.art-vmenublock img
-{
-   margin: 0;
-}
-
-.art-vmenublockheader
-{
-   padding:10px 0;
-   margin:0 auto 7px;
-}
-.art-vmenublockheader .t,
-.art-vmenublockheader .t a,
-.art-vmenublockheader .t a:link,
-.art-vmenublockheader .t a:visited, 
-.art-vmenublockheader .t a:hover
-{
-   color: #303F50;
-   font-size: 20px;
-   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-   font-weight: normal;
-   font-style: normal;
-   margin: 0 10px;
-}
-
-.art-vmenublockcontent
-{
-   margin:0 auto;
-}
-
-ul.art-vmenu, ul.art-vmenu ul
-{
-   list-style: none;
-   display: block;
-}
-
-ul.art-vmenu, ul.art-vmenu li
-{
-   display: block;
-   margin: 0;
-   padding: 0;
-   width: auto;
-   line-height: 0;
-}
-
-ul.art-vmenu
-{
-   margin-top: 0;
-   margin-bottom: 0;
-}
-
-ul.art-vmenu ul
-{
-   display: none;
-   position:relative;
-}
-
-ul.art-vmenu ul.active
-{
-   display: block;
-}
-
-ul.art-vmenu>li>a
-{
-   padding:0 15px;
-   margin:0 auto;
-   color: #607E9F;
-   min-height: 30px;
-   line-height: 30px;
-}
-ul.art-vmenu a 
-{
-   display: block;
-   cursor: pointer;
-   z-index: 1;
-   font-size: 13px;
-   font-family: Tahoma, Arial, Helvetica, Sans-Serif;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   position:relative;
-}
-
-ul.art-vmenu li{
-   position:relative;
-}
-
-ul.art-vmenu>li
-{
-   margin-top: 0;
-}
-ul.art-vmenu>li>ul
-{
-   margin-top: 0;
-}
-ul.art-vmenu>li:first-child
-{
-   margin-top:0;
-}
-
-ul.art-vmenu>li>a:before
-{
-   content:url('images/vmenuitemicon.png');
-   margin-right:5px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-}
-.opera ul.art-vmenu>li>a:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
-ul.art-vmenu>li>a.active:before
-{
-   content:url('images/vmenuactiveitemicon.png');
-   margin-right:5px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-}
-.opera ul.art-vmenu>li>a.active:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
-ul.art-vmenu>li>a:hover:before
-{
-   content:url('images/vmenuhovereditemicon.png');
-   margin-right:5px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-}
-.opera ul.art-vmenu>li>a:hover:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
-ul.art-vmenu>li>a:hover, ul.art-vmenu>li>a.active:hover
-{
-   padding:0 15px;
-   margin:0 auto;
-}
-ul.art-vmenu>li>a:hover, ul.art-vmenu>li>a.active:hover
-{
-   text-decoration: none;
-}
-
-ul.art-vmenu a:hover, ul.art-vmenu a.active:hover 
-{
-   color: #A38729;
-}
-
-ul.art-vmenu>li>a.active:hover>span.border-top, ul.art-vmenu>li>a.active:hover>span.border-bottom 
-{
-   background-color: transparent;
-}
-
-ul.art-vmenu>li>a.active
-{
-   padding:0 15px;
-   margin:0 auto;
-   text-decoration: none;
-   color: #000000;
 }
 
 .art-block
@@ -1137,13 +955,13 @@ div.art-block img
 
 .art-blockcontent a, .art-blockcontent a:link
 {
-   color: #164EE9;
+   color: #324253;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
 }
 
 .art-blockcontent a:visited, .art-blockcontent a.visited
 {
-   color: #164EE9;
+   color: #324253;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
@@ -1154,41 +972,13 @@ div.art-block img
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
-.art-block ul>li:before
-{
-   content:url('images/blockbullets.png');
-   margin-right:6px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-   margin-left: -13px;
-}
-.opera .art-block ul>li:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
 .art-block li
 {
    font-size: 13px;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    line-height: 175%;
-   color: #4E6883;
+   color: #0F1419;
    margin: 5px 0 0 10px;
-}
-
-.art-block ul>li, .art-block ol
-{
-   padding: 0;
-}
-
-.art-block ul>li
-{
-   padding-left: 13px;
 }
 
 .art-breadcrumbs
@@ -1267,12 +1057,12 @@ input.art-button
    margin:0 auto;
 }
 .art-button.active, .art-button.active:hover {
-   color: #FFFFFF !important;
+   color: #000000 !important;
 }
 
 .art-button.hover, .art-button:hover
 {
-   background: #303F50;
+   background: #F4F4B8;
    -webkit-border-radius:3px;
    -moz-border-radius:3px;
    border-radius:3px;
@@ -1280,7 +1070,7 @@ input.art-button
    margin:0 auto;
 }
 .art-button.hover, .art-button:hover {
-   color: #FFFFFF !important;
+   color: #000000 !important;
 }
 
 input[type="text"], input[type="password"], input[type="email"], input[type="url"], textarea
@@ -1634,7 +1424,7 @@ pre
 {
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
-   color: #164EE9;
+   color: #151C23;
 }
 
 .art-postheadericons a:visited, .art-postheadericons a.visited
@@ -1643,7 +1433,7 @@ pre
    font-weight: normal;
    font-style: normal;
    text-decoration: none;
-   color: #164EE9;
+   color: #151C23;
 }
 
 .art-postheadericons a:hover, .art-postheadericons a.hover
@@ -1826,6 +1616,61 @@ blockquote p,
    margin: 5px 0;
 }
 
+.art-postfootericons,
+.art-postfootericons a,
+.art-postfootericons a:link,
+.art-postfootericons a:visited,
+.art-postfootericons a:hover
+{
+   font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+   color: #4E6883;
+}
+
+.art-postfootericons
+{
+   display:inline-block;
+   padding: 1px;
+   margin: 0 0 0 10px;
+}
+
+.art-postfootericons a, .art-postfootericons a:link
+{
+   font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #E65005;
+}
+
+.art-postfootericons a:visited, .art-postfootericons a.visited
+{
+   font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #4C5967;
+}
+
+.art-postfootericons a:hover, .art-postfootericons a.hover
+{
+   font-family: Tahoma, Arial, Helvetica, Sans-Serif;
+   text-decoration: none;
+   color: #E65005;
+}
+
+.art-postcommentsicon:before
+{
+   content:url('images/postcommentsicon.png');
+   margin-right:6px;
+   bottom: 2px;
+   position:relative;
+   display:inline-block;
+   vertical-align:middle;
+   font-size:0;
+   line-height:0;
+}
+.opera .art-postcommentsicon:before
+{
+   /* Vertical-align:middle in Opera doesn't need additional offset */
+    bottom: 0;
+}
+
 .art-footer
 {
    border-top:1px dotted #9CAFC4;
@@ -1862,14 +1707,14 @@ blockquote p,
 .art-footer a,
 .art-footer a:link
 {
-   color: #164EE9;
+   color: #324253;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
 
 .art-footer a:visited
 {
-   color: #164EE9;
+   color: #324253;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    text-decoration: none;
 }
@@ -2154,13 +1999,6 @@ img.art-lightbox-image.active
 }
 .ie8 .cw, .ie8 .ccw {
    display: none;
-}
-
-.art-content-layout .art-sidebar1
-{
-   border-right:1px dotted #969696;
-   margin:0 auto;
-   width: 200px;
 }
 
 .art-content-layout .art-content

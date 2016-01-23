@@ -456,12 +456,6 @@ $theme_page_meta_options = array (
 		'desc' => __('Yes', THEME_NS),
 		'type' => 'checkbox'
 	),
-	array(
-		'id'   => 'theme_layout_template_left_sidebar',
-		'name' => __('Show Left Sidebar on Page', THEME_NS),
-		'desc' => __('Yes', THEME_NS),
-		'type' => 'checkbox'
-	),
 
 );
 

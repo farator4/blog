@@ -30,7 +30,7 @@ theme_post_wrapper(
 			'heading' => theme_get_option('theme_' . (is_home() ? 'posts' : 'single') . '_article_title_tag'),
 			'before' => theme_get_metadata_icons('date,author,edit', 'header'),
 			'content' => theme_get_excerpt(),
-			'after' => theme_get_metadata_icons('', 'footer')
+			'after' => theme_get_metadata_icons('comments', 'footer')
 		)
 );
 ?>

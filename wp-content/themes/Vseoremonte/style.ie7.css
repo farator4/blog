@@ -62,10 +62,6 @@ ul.art-hmenu ul{
    clear: right;
 }
 
-ul.art-vmenu, ul.art-vmenu ul, ul.art-vmenu li{
-   zoom: 1;
-}
-
 input[type="text"]
 {
    margin:0 0 0 -3px;
@@ -100,32 +96,14 @@ form.art-search div>input[type="text"]
    height: 1%;
 }
 
+.art-postfootericons span{
+   zoom: 1;
+}
 .close-alt, .arrow-right-alt, .arrow-left-alt {
    display: block !important;
 }
 .cw, .ccw {
    display: none !important;
-}
-
-.art-sidebar1
-{
-   background: none !important;
-   border: none !important;
-   zoom:expression(runtimeStyle.zoom=1, parentNode.parentNode.insertBefore(document.createElement('div'),parentNode.parentNode.firstChild).className='art-sidebar1-bg' + (className.indexOf('art-sidebar1-fix') == -1 ? '' : ' art-sidebar1-bg-fix' ));
-}
-
-.art-sidebar1-bg 
-{
-   border-right:1px dotted #969696;
-   position:absolute;
-   z-index:-2;
-   direction: ltr;
-   left:  0;
-   bottom:0;
-   top:0;
-   width: 200px;
-   overflow:hidden;
-   display:block;
 }
 
 .art-content 

@@ -40,7 +40,8 @@ if (!theme_is_empty_html($title)) {
 ?>
                                                 <?php echo $before; ?>
                 <?php echo $thumbnail; ?><div class="art-postcontent clearfix"><?php echo $content; ?></div>
-</article>
+                                <?php echo $after; ?>
+                </article>
 	<?php
 }
 
@@ -120,54 +121,3 @@ EOL;
 	echo $end;
 }
 
-
-function theme_vmenu_wrapper($args) {
-	$args = wp_parse_args($args, array(
-			'id'      => '',
-			'class'   => '',
-			'title'   => '',
-			'heading' => 'div',
-			'content' => '',
-		)
-	);
-	extract($args);
-	if (theme_is_empty_html($title) && theme_is_empty_html($content))
-		return;
-	if ($id) {
-		$id = ' id="' . $id . '" ';
-	}
-	if ($class) {
-		$class = ' ' . $class;
-	}
-
-	$begin = <<<EOL
-<div {$id}class="art-vmenublock clearfix">
-        
-EOL;
-	$begin_title = <<<EOL
-<div class="art-vmenublockheader">
-            <$heading class="t">
-EOL;
-	$end_title = <<<EOL
-</$heading>
-        </div>
-EOL;
-	$begin_content = <<<EOL
-<div class="art-vmenublockcontent">
-EOL;
-	$end_content = <<<EOL
-</div>
-EOL;
-	$end = <<<EOL
-
-</div>
-EOL;
-	echo $begin;
-	if ($begin_title && $end_title && !theme_is_empty_html($title)) {
-		echo $begin_title . $title . $end_title;
-	}
-	echo $begin_content;
-	echo $content;
-	echo $end_content;
-	echo $end;
-}

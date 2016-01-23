@@ -26,11 +26,6 @@ function theme_is_empty_html($str) {
 }
 
 
-function theme_is_vmenu_widget($id) {
-	return (strpos($id, 'vmenu') !== false);
-}
-
-
 
 function theme_trim_long_str($str, $len = 50, $sep = ' ') {
 	$words = explode($sep, $str);

@@ -100,6 +100,5 @@ $theme_default_meta_options = array(
 	'theme_header_image' => '',
 	'theme_header_image_with_flash' => 1,
 		'theme_layout_template_header' => 1,
-	'theme_layout_template_left_sidebar' => 1,
 
 );

@@ -304,31 +304,6 @@ function responsiveLayoutCell(responsiveDesign) {
     });
 }
 
-jQuery(window).bind("responsive", function (event, responsiveDesign) {
-    "use strict";
-    responsiveLayoutCell(responsiveDesign);
-});
-
-function responsiveLayoutCell(responsiveDesign) {
-    "use strict";
-    jQuery(".art-content .art-content-layout-row,.art-footer .art-content-layout-row").each(function () {
-        var row = jQuery(this);
-        var rowChildren = row.children(".art-layout-cell");
-        if (rowChildren.length > 1) {
-            if (responsiveDesign.isTablet) {
-                rowChildren.addClass("responsive-tablet-layout-cell").each(function (i) {
-                    if ((i + 1) % 2 === 0) {
-                        jQuery(this).after("<div class=\"cleared responsive-cleared\">");
-                    }
-                });
-            } else {
-                rowChildren.removeClass("responsive-tablet-layout-cell");
-                row.children(".responsive-cleared").remove();
-            }
-        }
-    });
-}
-
 
 
 jQuery(responsiveDesign.initialize);

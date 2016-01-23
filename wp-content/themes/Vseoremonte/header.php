@@ -59,5 +59,5 @@ wp_head();
 <div class="art-layout-wrapper clearfix">
                 <div class="art-content-layout">
                     <div class="art-content-layout-row">
-                        <?php get_sidebar(); ?>
                         <div class="art-layout-cell art-content clearfix">
+

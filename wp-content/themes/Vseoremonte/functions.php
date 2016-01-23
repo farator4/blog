@@ -119,16 +119,12 @@ function theme_init_layout() {
 	global $theme_layout;
 	$theme_layout = array(
 		'header' => 1,
-		'left_sidebar' => 1,
 
 		);
 		if (is_page()) {
 			foreach ($theme_layout as $layout_part_name => $included) {
 				$theme_layout[$layout_part_name] = theme_get_meta_option(theme_get_the_ID(), 'theme_layout_template_' . $layout_part_name);
 			}
-	} elseif(is_attachment()) {
-		$theme_layout['left_sidebar'] = 0;
-		
 	}
 }
 

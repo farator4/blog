@@ -10,9 +10,6 @@ $theme_widgets_style = array(
 
 function theme_get_widget_style($id, $style = null) {
 
-	if (theme_is_vmenu_widget($id))
-		return 'vmenu';
-
 	$result = theme_get_widget_meta_option($id, 'theme_widget_styles');
 	global $theme_widgets_style;
 	if (!in_array($result, array_keys($theme_widgets_style))) {
@@ -102,19 +99,6 @@ function theme_widget_extra_control() {
 	}
 	$id = $matches[1] . '-' . $params[0]['number'];
 	
-	if (theme_is_vmenu_widget($id)) {
-		$need_delete = false;
-		foreach($_theme_widget_meta_options as $option_id => $option) {
-			if($option['id'] == 'theme_widget_styles') {
-				$need_delete = true;
-				break;
-			}
-		}
-		if($need_delete) {
-			unset($_theme_widget_meta_options[$option_id]);
-		}
-	}
-	
 	?>
 	<h3 style="margin-bottom:3px;"><?php _e('Theme Options', THEME_NS); ?></h3>
 	<?php
@@ -139,7 +123,7 @@ class VMenuWidget extends WP_Widget {
 			'source' => $instance['source'],
 			'depth'  => theme_get_option('theme_vmenu_depth'),
 			'menu'   => wp_get_nav_menu_object($instance['nav_menu']),
-			'class'  => 'art-vmenu'
+			'class'  => ''
 		));
 		echo $after_widget;
 	}
