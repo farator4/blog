@@ -1,25 +1,26 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the id=main div and all content after
+ *
+ * @package untitled
+ */
+?>
 
+	</div><!-- #main .site-main -->
+</div><!-- #page .hfeed .site -->
 
-                        </div>
-                    </div>
-                </div>
-            </div><footer class="art-footer clearfix"><?php get_sidebar('footer'); ?><?php
-global $theme_default_options;
-echo do_shortcode(theme_get_option('theme_override_default_footer_content') ? theme_get_option('theme_footer_content') : theme_get_array_value($theme_default_options, 'theme_footer_content'));
-?></footer>
+	<div id="colophon-wrap">
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info">
+				<?php do_action( 'untitled_credits' ); ?>
+				<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'untitled' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'untitled' ), 'WordPress' ); ?></a>.
+				<?php printf( __( 'Theme: %1$s by %2$s.', 'untitled' ), 'Untitled', '<a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>' ); ?>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #colophon-wrap -->
 
-    </div>
-    <p class="art-page-footer">
-        <span id="art-footnote-links">Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a> and <a href="http://www.artisteer.com/?p=wordpress_themes" target="_blank">WordPress Theme</a> created with Artisteer.</span>
-    </p>
-</div>
-
-
-
-<div id="wp-footer">
-	<?php wp_footer(); ?>
-	<!-- <?php printf(__('%d queries. %s seconds.', THEME_NS), get_num_queries(), timer_stop(0, 3)); ?> -->
-</div>
+<?php wp_footer(); ?>
 </body>
 </html>
-

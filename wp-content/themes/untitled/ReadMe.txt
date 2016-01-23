@@ -1,64 +1,71 @@
-========
-Contents
-========
-* Installing WordPress Themes
-* Creating localized WordPress Themes with Artisteer
-* Installing additional language support
-* Editing translations
+Untitled
+---------------
 
-For more information please visit http://www.artisteer.com/?p=help_wordpress
+Untitled, like WordPress, is licensed under the GPL.
+Untitled, Copyright 2013 Automattic.com
+Untitled is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 
-
-*** Installing WordPress Themes
--------------------------------
-1. Access your Web server using an FTP client or Web server administration tools.
-
-2. Create a folder for your specific theme under "wp-content/themes" folder within WordPress installation. For example:
-<WordPressFolder>\wp-content\themes\<YourThemeName>
-
-3. Copy or upload theme files exported from Artisteer into the newly created <YourThemeName> folder.
-
-4. Login to your WordPress administration panel and select Design -> Themes.
-
-5. In the 'Available Themes' section click on your theme title or screenshot, then click the 'Activate Theme' link to activate it.
-
-For more information please refer to the official WordPress documentation:
-http://codex.wordpress.org/Using_Themes#Adding_New_Themes
+Untitled uses the following fonts:
+Raleway: This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Arvo: This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Genericons: http://genericons.com/ is licensed under the GPL.
 
 
-*** Creating localized WordPress Themes with Artisteer
--------------------------------
-When exporting themes Artisteer automatically includes several language files
-obtained from Wordpress Website at http://codex.wordpress.org/WordPress_Localization
-Specifically French, German, Italian and Spanish translations are exported by Artisteer in the Wordpress compliant file naming format:
+Requirements
+---------------
 
-<country>_<lang>.mo
-
-For example German language file is: de_DE.mo
-
-*** Installing additional language support
--------------------------------
-To include a different or additional language support in your Worpdress theme
-please find and copy the desired language files into your specific Wordpress theme folder.
-You can find the additional language files in your default theme folder "<WordPressFolder>\wp-content\themes\default",
-or on the Wordpress Website at http://codex.wordpress.org/WordPress_Localization
-
-To select a different language than your current Wordpress language,
-change the "define" function in the wp-config.php file, for example:
-define('WPLANG', 'de_DE')
+For self-hosted WordPress sites, the Jetpack plugin is required in order for the featured posts slider to work:
+http://wordpress.org/plugins/jetpack/
 
 
-*** Editing translations
--------------------------------
-To edit translations for your language please download and install
-Codestyling Localization plug-in from http://wordpress.org/extend/plugins/codestyling-localization/
-Then in WordPress administration select Manage -> Localization.
+Notices
+---------------
+
+By design, the description is not displayed in the theme. If you would like to include one, uploading a custom logo is recommended. This is done using the Custom Header feature.
 
 
-*** Creating a custom Vertical Menu with separators
----------------------------------------------------
-To create a custom Vertical Menu with separators:
+Features
+---------------
 
-   1. Create/Open your custom Vertical Menu in Dashboard -> Appearance -> Menus -> [custom menu name].
-   2. Go to the "Custom Links" block, enter # symbol in the URL field and name the separator (e.g. my separator 1). Press "Add to Menu" and see the newly created separator in the list with other Vertical Menu items. Continue the procedure to add more separator menu items.
-   3. Create new menu items or drag and drop the existing items to place them inside the separator menu item. Press "Save Menu" and go to your website to check the Vertical Menu. 
+* Full-bleed flex slider
+* Featured Image support
+* Full-width page template
+* Responsive layout
+* Custom Background
+* Custom Header (to upload a logo)
+* Jetpack.me compatibility for infinite scroll
+* Keyboard navigation for image attachment templates.
+* CSS3 transition effects
+* The GPL license in license.txt. :) Use it to make something cool.
+
+
+Slider Setup Instructions
+---------------
+
+To take advantage of the full-bleed featured post slider (requires WordPress.com Featured Content or Jetpack [http://jetpack.me] Featured Content):
+1. Create a post with a featured image that's at least 960px wide.
+2. Navigate to Appearance → Customize.
+3. In the section labeled "Featured Content," enter the name of a tag.
+4. Click the "Save" button.
+5. Once a tag name has been saved, posts having this tag will appear in the featured content section. You can specify an image to be displayed with each post by setting a Featured Images.
+
+== Changelog ==
+
+= 1.1.4 - Jun 15 2015 =
+* More exhaustive escaping throughout
+
+= 1.1 - Dec 06 2013 =
+* Fixed cite styling.
+* Ensured captioned images don't overflow the content container.
+* General code cleanup and optimization.
+* Added parent class to .carousel to avoid conflict with Gallery widget and Flexslider.
+* Removed no longer needed background nav image that returns a 404.
+* Updated author in footer and stylesheet.
+* Added featured image support to Pages as well as Posts.
+* Removed obsolete header text options.
+
+= 1.0.4 - Jul 08 2013 =
+* Something was updated here too.
+
+= 1.0.3 - Jun 04 2013 =
+* Initial release.

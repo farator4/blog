@@ -1,0 +1,240 @@
+/*
+Styles for older IE versions (previous to IE9).
+*/
+img.size-full,
+img.size-large,
+img.header-image,
+img.wp-post-image,
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
+}
+embed,
+iframe,
+object {
+	max-width: none;
+}
+
+.sidebar-left {
+	background-color: transparent;
+	border: none;
+	margin-top: 4px;
+}
+
+.site-content {
+	padding-left: 300px;
+}
+
+.sidebar-left {
+	float: left;
+	width: 302px;
+}
+
+.content-container {
+	clear: none;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding: 0 0 10px 0;
+}
+
+.entry-summary,
+.entry-content {
+	padding: 0 20px;
+}
+
+.image-and-cats {
+	clear: none;
+}
+ /* nav menu */
+.site-navigation  ul {	
+	margin: 0;
+	padding: 0;
+	text-indent: 0;
+	list-style: none;
+}
+
+.nav-menu li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.nav-menu ul li {
+	border-bottom: 1px solid #555;
+}
+
+.site-navigation a {
+	display: inline-block;
+	line-height: 1;
+	padding: 5px 0 5px 40px;
+	text-decoration: none;
+	width: 262px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background: #e3e3e3;
+	color: #111;
+}
+
+.site-navigation div.nav-menu > ul {
+	display: none;
+}
+
+.site-navigation ul.nav-menu,
+.site-navigation div.nav-menu > ul {
+	display: inline-block !important;
+	text-align: left;
+	width: 100%;
+}
+
+.site-navigation li a,
+.site-navigation li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.site-navigation li a {
+	white-space: nowrap;
+}
+
+.site-navigation li a:hover,
+.site-navigation li a:focus {
+	color: #112;
+}
+
+.site-navigation li {
+	position: relative;
+}
+
+.site-navigation li ul {
+	background: #e3e3e3;
+	border: 1px solid #fff;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	left: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: -1px;
+	width: 1px;
+	z-index: 2;
+}
+
+.site-navigation ul li:hover > ul,
+.site-navigation ul li:focus > ul,
+.site-navigation .focus > ul {
+	clip: inherit;
+	overflow: inherit;
+	height: inherit;
+	width: inherit;
+}
+
+.site-navigation li ul li a {
+	color: #02050c;
+	display: block;
+	padding: 5px 10px;
+	width: 180px;
+	white-space: normal;
+}
+
+.site-navigation li ul li a:hover,
+.site-navigation li ul li a:focus {
+	color: #fff;
+	background: #02050c;
+}
+
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a,
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a {
+	background-image: url(img/menu.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	color: #fff;
+	font-weight: bold;
+}
+
+.site-navigation li ul .current-menu-item > a,
+.site-navigation li ul .current-menu-ancestor > a,
+.site-navigation li ul  .current_page_item > a,
+.site-navigation li ul .current_page_ancestor > a {
+	background: #111;
+	color: #fff;
+	font-weight: bold;
+}
+.site-navigation ul.nav-menu,
+.site-navigation div.nav-menu > ul {
+	display: inline-block !important;
+	text-align: left;
+	width: 100%;
+}
+.ie7 .site-navigation li a,
+.ie7 .site-navigation li {
+	display: inline;
+}
+.ie7 .site-navigation ul li:hover > ul,
+.ie7 .site-navigation ul li:focus > ul {
+	display: block;
+}
+ /* Content Navigation */
+.meta-nav {
+	text-align: right;
+}
+.previous-image,
+.next-image,
+.nav-previous, 
+.nav-next {
+	width: 45%;
+}
+
+.previous-image,
+.nav-previous {
+	float: left;
+	margin-left: 20px;
+}
+
+.previous-image a,
+.next-image a,
+.nav-previous a,
+.nav-next  a {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.next-image,
+.nav-next {
+	float: right;
+	margin-left: 20px;
+	text-align: right;
+}
+.widget {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.widget-wrap {
+	display: block;
+}
+.column {
+	display: block;
+}
+.top-sidebar-default .sidebar-top .widget-wrap{
+	display: inline-block;
+	vertical-align: top;
+	width: 24.7%;
+}
+.top-sidebar-default .sidebar-footer .widget-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+.format-standard .image-and-cats {
+	float: right;
+	margin: 20px;
+	width: 302px;
+}
+.sidebar-footer {
+	padding: 40px 170px;
+}
+.entry-header .entry-title {
+	text-align: left;
+}

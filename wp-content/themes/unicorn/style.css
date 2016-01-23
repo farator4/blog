@@ -1,0 +1,327 @@
+/*
+Theme Name: Unicorn
+Template: jolene
+Author: Cats_456
+Theme URI: http://wpblogs.ru/themes/blog/theme/unicorn/
+Author URI: http://wpblogs.ru/themes/
+Description: Unicorn comes equipped with many options to tweak the way it shows your content. There are options to enable or disable sidebars, 3 nav menus, favicon, scroll to top button, custom header, logo and background (or have no header and background at all), options to change colors of design elements and the option to enable or disable header image and text on not core pages. You can also choose to display your recent posts or a custom page to be shown at the site’s front page with it’s own unique widgetized areas. Unicorn has 2 custom widgets for displaying social media icons and slider. It can show up a slideshow at a different frame rate speed in any sidebar. Translation ready. You can find the demo at http://wpblogs.ru/themes/unikorn/.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: white, blue, dark, light, green, gray, black, left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, fluid-layout, responsive-layout, custom-background, custom-header, flexible-header, full-width-template, custom-menu, featured-images, post-formats, sticky-post, translation-ready, photoblogging, holiday, custom-colors, editor-style, theme-options, threaded-comments, featured-image-header
+Text Domain: unicorn
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 300;
+}
+
+input,
+textarea {
+	border: 1px solid #ccc;
+}
+
+.site {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#masthead #menu-1 {
+	border: none;
+}
+
+#top-1-navigation {
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+}
+#masthead #menu-1 a,
+#menu-2 a,
+#menu-3 a {
+	text-shadow: none;
+}
+#top-navigation {
+	margin: 0 0 20px 0;
+}	
+
+.site #top-navigation {
+	margin-bottom: 0;
+}
+
+.site-info-text-top .site-title a,
+.site-title a {
+	color: #000;
+}
+
+.site-title {
+	font-size: 36px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.site-info-text-top {
+	border-bottom: 1px solid #eee;
+}
+.site-info-text-top a{
+	display: block;
+	text-align: center;
+}
+
+.site-info-text-top  .site-title a {
+	color: #ccc;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding: 0 20px;
+	text-decoration: none;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.site-description {
+	color: #999;
+	display: none;
+}
+
+.img-container,
+.site-info-text {
+	margin-top: 20px;
+}
+
+.site-title {
+	margin-top: 0;
+}
+
+.sidebar-header-right {
+	margin: 0 auto;
+}
+
+#menu-1 .menu-toggle {
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+#menu-1 div {
+	clear: both;
+	padding-bottom: 20px;
+}
+
+.header-wrapper {
+	background: #fff;
+	margin-bottom: 0;
+}
+
+.widget.jolene_socialicons {
+	padding-bottom: 0 !important;
+}
+
+.horizontal.big li {
+	height: 60px;
+	width: 60px;
+}
+
+.column .widget .after-widget-title {
+	background: none;
+}
+
+.column .widget .widget-title {
+	border: none;
+}
+
+.sidebar-left {
+	max-width: 280px;
+}
+
+.sidebar-left {
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.sidebar-right{
+	margin-right: 10px;
+	margin-top: 20px;
+	max-width: 280px;
+}
+
+.column .widget {
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+	margin-top: 0 !important;
+}
+
+.column {
+	padding-top: 0;
+}
+
+.site .site-content {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.site-content .entry-title {
+	border-bottom: 1px solid #eee;
+	font-weight: 300;
+	text-align: center;
+}
+.site-content .entry-title a {
+	text-decoration: none;
+}
+
+.image-and-cats-big .category-list,
+.image-and-cats .category-list {
+	background: transparent !important;
+}
+
+.horizontal-navigation a,
+.image-and-cats-big .category-list a,
+.image-and-cats .category-list a,
+.site-cat a {
+	font-weight: 300;
+}
+
+.image-and-cats-big {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+.image-and-cats-big .category-list {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: right;
+}
+
+.sticky {
+	border: none;
+} 
+
+.archive-title {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#sidebar-1 .widget_search .search-form input[type="search"] {
+	margin: 20px;
+}
+
+#sidebar-1 .search-submit {
+	display: none;
+}
+
+#sidebar-1 .widget_search .search-form input[type="search"] {
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.sidebar-footer ul {
+	list-style: none;
+}
+
+.image-and-cats-large {
+	background: url(texture.jpg) repeat center center fixed;
+}
+
+/* Genericons Icons */
+.sidebar-footer li:before,
+.column li:before {
+	color: #fff;
+	content: '\f428';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 32px/1 'Genericons';
+	padding-right: 5px;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	vertical-align: middle;	
+}
+
+.sidebar-footer .widget_search .search-form input[type="search"] {
+	width: 100%;
+}
+
+.sidebar-footer .widget-wrap {
+	margin: 0 auto;
+	width: 90%;
+}
+.sidebar-top-full {
+	margin-bottom: 0;
+}
+
+.sidebar-before-footer .widget-title,
+.sidebar-top-full .widget-title,
+.sidebar-top .widget-title,
+.sidebar-content .widget-title {
+	border-bottom: 1px solid #eee;
+	font-weight: 300;
+	text-align: center;
+}
+
+.category-list a,
+.sidebar-top-full a,
+.sidebar-before-footer a,
+.sidebar-top a,
+.sidebar-content a {
+	font-weight: 300;
+}
+
+.footer-list a {
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	text-decoration: none;
+}
+
+.widget.jolene_extended .widget-title {
+	margin-bottom: 10px;
+}
+
+.category-list .site-title {
+	position: relative;
+}
+
+@media screen and (min-width: 680px) {	
+	.horisontal-navigation .current-menu-item > a,
+	.horisontal-navigation .current-menu-ancestor > a,
+	.horisontal-navigation .current_page_item > a,
+	.horisontal-navigation .current_page_ancestor > a {
+		background-image: linear-gradient( rgba(77, 151, 153, 0.1), rgba(77, 151, 153, 0.1));
+	}
+	
+	#menu-1 div {
+		clear: none;
+		padding-bottom: 0;
+	}
+	
+	.site-info-text-top a{
+		display: inline-block;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	#sidebar-1 .widget_search .search-form input[type="search"] {
+		width: 40%;
+	}
+	.site-description {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 940px) {
+
+	.sidebar-footer 	{
+		padding: 0 10%;
+	}
+	.sidebar-footer .widget-wrap {
+		display: inline-block;
+		vertical-align: top;
+		width: 33.3333%;
+	}
+	.sidebar-footer .widget-title {
+		border-bottom: 10px solid #eee;
+		text-align: center;
+	}
+	#sidebar-1 .widget_search .search-form input[type="search"] {
+		width: 40%;
+	}
+}

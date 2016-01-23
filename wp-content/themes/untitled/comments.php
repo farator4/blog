@@ -1,43 +1,64 @@
 <?php
 /**
+ * The template for displaying Comments.
  *
- * comments.php
+ * The area of the page that contains both current comments
+ * and the comment form. The actual display of comments is
+ * handled by a callback to untitled_comment() which is
+ * located in the functions.php file.
  *
- * The comments template. Used to display post or page comments and comment form.
- * 
- * Additional settings are available under the Appearance -> Theme Options -> Comments.
- *
+ * @package untitled
  */
-if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-	die('Please do not load this page directly. Thanks!');
 
-if (post_password_required()) {
-	theme_post_wrapper(array('content' => '<p class="nocomments">' . __('This post is password protected. Enter the password to view any comments.', THEME_NS) . '</p>'));
+/*
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the comments.
+ */
+if ( post_password_required() ) :
 	return;
-}
+endif;
+?>
 
-if (have_comments()) {
-	theme_ob_start();
-	printf(_n('One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), THEME_NS), number_format_i18n(get_comments_number()), '<em>' . get_the_title() . '</em>');
-	theme_post_wrapper(array('content' => '<h4 id="comments">' . theme_ob_get_clean() . '</h4>'));
-	$prev_link = get_previous_comments_link(__('<span class="meta-nav">&larr;</span> Older Comments', THEME_NS));
-	$next_link = get_next_comments_link(__('Newer Comments <span class="meta-nav">&rarr;</span>', THEME_NS));
-	theme_page_navigation(array('prev_link' => $prev_link, 'next_link' => $next_link));
-	echo '<ul id="comments-list">';
-	wp_list_comments('type=all&callback=theme_comment');
-	echo '</ul>';
-	theme_page_navigation(array('prev_link' => $prev_link, 'next_link' => $next_link));
-}
-theme_ob_start();
-$args = array();
-if (theme_get_option('theme_comment_use_smilies')) {
+<div id="comments" class="comments-area">
 
-	function theme_comment_form_field_comment($form_field) {
-		theme_include_lib('smiley.php');
-		return theme_get_smilies_js() . '<p class="smilies">' . theme_get_smilies() . '</p>' . $form_field;
-	}
+	<?php if ( have_comments() ) : ?>
+		<h2 class="comments-title">
+			<?php
+				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'untitled' ),
+					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
+			?>
+		</h2>
 
-	add_filter('comment_form_field_comment', 'theme_comment_form_field_comment');
-}
-comment_form();
-theme_post_wrapper(array('content' => str_replace(array(' id="respond"', 'type="submit"'), array('', 'class="art-button" type="submit"'), theme_ob_get_clean()), 'id' => 'respond'));
+		<ol class="commentlist">
+			<?php
+				/* Loop through and list the comments. Tell wp_list_comments()
+				 * to use untitled_comment() to format the comments.
+				 * If you want to overload this in a child theme then you can
+				 * define untitled_comment() and that will be used instead.
+				 * See untitled_comment() in inc/template-tags.php for more.
+				 */
+				wp_list_comments( array( 'callback' => 'untitled_comment' ) );
+			?>
+		</ol><!-- .commentlist -->
+
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<nav role="navigation" id="comment-nav-below" class="site-navigation comment-navigation">
+			<h1 class="assistive-text"><?php _e( 'Comment navigation', 'untitled' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'untitled' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'untitled' ) ); ?></div>
+		</nav><!-- #comment-nav-below .site-navigation .comment-navigation -->
+		<?php endif; // check for comment navigation ?>
+
+	<?php endif; // have_comments() ?>
+
+	<?php
+		// If comments are closed and there are comments, let's leave a little note, shall we?
+		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+	?>
+		<p class="nocomments"><?php _e( 'Comments are closed.', 'untitled' ); ?></p>
+	<?php endif; ?>
+
+	<?php comment_form(); ?>
+
+</div><!-- #comments .comments-area -->

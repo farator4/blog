@@ -1,21 +1,58 @@
 <?php
 /**
- *
- * 404.php
- *
  * The template for displaying 404 pages (Not Found).
- * Used when WordPress cannot find a post or page that matches the query.
  *
- * To change the error message:
- * 1. Open functions.php file
- * 2. Find the theme_404_content() function
- * 3. Change the error_message variable value
- *
- * Additional settings are available under the Appearance -> Theme Options -> Pages.
- *
+ * @package untitled
  */
+
 get_header(); ?>
-			<?php get_sidebar('top'); ?>
-			<?php theme_404_content(); ?>
-			<?php get_sidebar('bottom'); ?>
+<div id="main" class="site-main">
+		<div id="primary" class="content-area">
+			<div id="content" class="site-content" role="main">
+
+			<article id="post-0" class="post error404 not-found">
+				<header class="entry-header">
+					<h1 class="entry-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'untitled' ); ?></h1>
+				</header><!-- .entry-header -->
+
+				<div class="entry-content">
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'untitled' ); ?></p>
+
+					<?php get_search_form(); ?>
+
+					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+
+					<?php if ( untitled_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<div class="widget widget_categories">
+						<h2 class="widgettitle"><?php _e( 'Most Used Categories', 'untitled' ); ?></h2>
+						<ul>
+						<?php
+							wp_list_categories( array(
+								'orderby'    => 'count',
+								'order'      => 'DESC',
+								'show_count' => 1,
+								'title_li'   => '',
+								'number'     => 10,
+							) );
+						?>
+						</ul>
+					</div><!-- .widget -->
+					<?php endif; ?>
+
+					<?php
+					/* translators: %1$s: smiley */
+					$archive_content = '<p>' . sprintf( __( 'Try looking in the monthly archives. %1$s', 'untitled' ), convert_smilies( ':)' ) ) . '</p>';
+					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+					?>
+
+					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
+
+				</div><!-- .entry-content -->
+			</article><!-- #post-0 .post .error404 .not-found -->
+
+		</div><!-- #content .site-content -->
+	</div><!-- #primary .content-area -->
+
+
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

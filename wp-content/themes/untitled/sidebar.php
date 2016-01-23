@@ -1,19 +1,12 @@
-
-<?php if(theme_has_layout_part("left_sidebar")) : ?>
 <?php
-$places = theme_get_sidebar_places('default');
-$count_widgets = array_sum(array_map('count', $places));
-if($count_widgets > 0) {
-?>
-<div class="art-layout-cell art-sidebar1 clearfix">
-<?php
-	theme_print_sidebar('default', $places);
-?>
+/**
+ * The Sidebar containing the main widget areas.
+ *
+ * @package untitled
+ */
 
-
-
-
-                        </div><?php
-}
-?>
-<?php endif; ?>
+if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+</div><!-- #secondary -->
+<?php endif;

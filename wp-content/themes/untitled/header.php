@@ -1,38 +1,47 @@
-<!DOCTYPE html>
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package untitled
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo('charset') ?>" />
-<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
-<!-- Created by Artisteer v4.0.0.58475 -->
-<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
-<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width" />
+<title><?php wp_title( '|', true, 'right' ); ?></title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<![endif]-->
 
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" media="screen" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php
-remove_action('wp_head', 'wp_generator');
-if (is_singular() && get_option('thread_comments')) {
-	wp_enqueue_script('comment-reply');
-}
-wp_head();
-?>
+<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
 
-<div id="art-main">
-    <div class="art-sheet clearfix">
-<nav class="art-nav clearfix">    <?php
-	echo theme_get_menu(array(
-			'source' => theme_get_option('theme_menu_source'),
-			'depth' => theme_get_option('theme_menu_depth'),
-			'menu' => 'primary-menu',
-			'class' => 'art-hmenu'
-		)
-	);
-?> 
-    </nav>
-<div class="art-layout-wrapper clearfix">
-                <div class="art-content-layout">
-                    <div class="art-content-layout-row">
-                        <?php get_sidebar(); ?>
-                        <div class="art-layout-cell art-content clearfix">
+<body <?php body_class(); ?>>
+	<div id="page" class="hfeed site">
+		<?php do_action( 'before' ); ?>
+		<div id="masthead-wrap">
+			<header id="masthead" class="site-header" role="banner">
+				<div id="logo">
+					<?php if ( get_header_image() ) : ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="<?php header_image(); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
+					</a>
+					<?php else : ?>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<?php endif; ?>
+				</div>
+				<div class="nav-wrap">
+					<nav role="navigation" class="site-navigation main-navigation">
+						<h1 class="assistive-text"><?php _e( 'Menu', 'untitled' ); ?></h1>
+						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'untitled' ); ?>"><?php _e( 'Skip to content', 'untitled' ); ?></a></div>
+
+						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					</nav><!-- .site-navigation -->
+				</div><!-- .nav-wrap -->
+			</header><!-- #masthead -->
+		</div><!-- #masthead-wrap -->
