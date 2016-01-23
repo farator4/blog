@@ -1513,43 +1513,11 @@ pre
     bottom: 0;
 }
 
-.art-postcontent ul>li:before,  .art-post ul>li:before,  .art-textblock ul>li:before
-{
-   content:url('images/postbullets.png');
-   margin-right:10px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-}
-.opera .art-postcontent ul>li:before, .opera   .art-post ul>li:before, .opera   .art-textblock ul>li:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
 .art-postcontent li, .art-post li, .art-textblock li
 {
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    color: #303F50;
    margin: 3px 0 0 11px;
-}
-
-.art-postcontent ul>li, .art-post ul>li, .art-textblock ul>li, .art-postcontent ol, .art-post ol, .art-textblock ol
-{
-   padding: 0;
-}
-
-.art-postcontent ul>li, .art-post ul>li, .art-textblock ul>li
-{
-   padding-left: 17px;
-}
-
-.art-postcontent ul>li:before,  .art-post ul>li:before,  .art-textblock ul>li:before
-{
-   margin-left: -17px;
 }
 
 .art-postcontent ol, .art-post ol, .art-textblock ol, .art-postcontent ul, .art-post ul, .art-textblock ul
@@ -1565,19 +1533,6 @@ pre
 .art-postcontent li, .art-post li, .art-textblock li
 {
    margin: 3px 0 0 0;
-}
-
-.art-postcontent ol>li, .art-post ol>li, .art-textblock ol>li
-{
-   /* overrides overflow for "ul li" and sets the default value */
-  overflow: visible;
-}
-
-.art-postcontent ul>li, .art-post ul>li, .art-textblock ul>li
-{
-   /* makes "ul li" not to align behind the image if they are in the same line */
-  overflow-x: visible;
-   overflow-y: hidden;
 }
 
 blockquote
@@ -1748,39 +1703,11 @@ blockquote p,
    vertical-align: middle;
 }
 
-.art-footer ul>li:before
-{
-   content:url('images/footerbullets.png');
-   margin-right:6px;
-   bottom: 2px;
-   position:relative;
-   display:inline-block;
-   vertical-align:middle;
-   font-size:0;
-   line-height:0;
-   margin-left: -13px;
-}
-.opera .art-footer ul>li:before
-{
-   /* Vertical-align:middle in Opera doesn't need additional offset */
-    bottom: 0;
-}
-
 .art-footer li
 {
    font-size: 13px;
    font-family: Tahoma, Arial, Helvetica, Sans-Serif;
    color: #303F50;
-}
-
-.art-footer ul>li, .art-footer ol
-{
-   padding: 0;
-}
-
-.art-footer ul>li
-{
-   padding-left: 13px;
 }
 
 .art-page-footer, 
